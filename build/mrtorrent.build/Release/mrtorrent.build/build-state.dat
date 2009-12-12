@@ -1,847 +1,0 @@
-Tmrtorrent
-v7
-r0
-t282324058.502279
-cCheck dependencies
-cProcessInfoPlistFile /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/Info.plist mrtorrent-Info.plist
-cPBXCp build/Release/mrtorrent.app/Contents/Frameworks/XMLRPC.framework /Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework
-cCopyStringsFile /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-cCompileXIB /Users/will/Documents/Development/Cocoa/mrtorrent/English.lproj/MainMenu.xib
-cProcessPCH /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-chfxlaqrunchbwcpsqrguiqwblmi/mrtorrent_Prefix.pch.gch mrtorrent_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hateptxohucpbzaneesoptbcuegq/mrtorrent_Prefix.pch.gch mrtorrent_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hfloydvbjesfjwbvpanjbrnzqvrn/mrtorrent_Prefix.pch.gch mrtorrent_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/main.o /Users/will/Documents/Development/Cocoa/mrtorrent/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/mrtorrentAppDelegate.o /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/MainView.o /Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/TorrentCell.o /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/Torrent.o /Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/TorrentListModel.o /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/RateModel.o /Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/mrtorrent normal x86_64
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/main.o /Users/will/Documents/Development/Cocoa/mrtorrent/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/mrtorrentAppDelegate.o /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/MainView.o /Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/TorrentCell.o /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/Torrent.o /Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/TorrentListModel.o /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/RateModel.o /Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/mrtorrent normal i386
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/main.o /Users/will/Documents/Development/Cocoa/mrtorrent/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/mrtorrentAppDelegate.o /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/MainView.o /Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/TorrentCell.o /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/Torrent.o /Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/TorrentListModel.o /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/RateModel.o /Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cLd /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/mrtorrent normal ppc
-cCreateUniversalBinary /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/MacOS/mrtorrent normal "x86_64 i386 ppc"
-cGenerateDSYMFile /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app.dSYM /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/MacOS/mrtorrent
-cTouch /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app
-
-N/Developer/SDKs/MacOSX10.6.sdk
-c000000004A769DAB00000000000000EE
-t1249287595
-s238
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c0000000040C4AA6800000000000001E5
-t1086630504
-s485
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004A600B8400000000000013E6
-t1247808388
-s5094
-
-N/Developer/SDKs/MacOSX10.6.sdk/usr/include/dispatch/dispatch.h
-c000000004A585D8900000000000002C9
-t1247305097
-s713
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004A1F2D63000000000000A5E0
-t1243557219
-s42464
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/English.lproj/InfoPlist.strings
-c000000004B1B077F000000000000002D
-t1260062591
-s45
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/English.lproj/MainMenu.xib
-c000000004B21B69300000000000371EE
-t1260500627
-s225774
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/MainView.h
-c000000004B204C180000000000000169
-t1260407832
-s361
-i<Cocoa/Cocoa.h>
-i<XMLRPC/XMLRPC.h>
-i"TorrentCell.h"
-i"TorrentListModel.h"
-i"RateModel.h"
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m
-c000000004B204C24000000000000036C
-t1260407844
-s876
-i"MainView.h"
-i"Torrent.h"
-i<dispatch/dispatch.h>
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.h
-c000000004B2052E1000000000000025D
-t1260409569
-s605
-i<Cocoa/Cocoa.h>
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m
-c000000004B20639C00000000000012DE
-t1260413852
-s4830
-i"RateModel.h"
-i"XMLRPC/XMLRPC.h"
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.h
-c000000004B203C6300000000000001CF
-t1260403811
-s463
-i<Cocoa/Cocoa.h>
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m
-c000000004B203C70000000000000032F
-t1260403824
-s815
-i"Torrent.h"
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.h
-c000000004B21B2B1000000000000015C
-t1260499633
-s348
-i<Cocoa/Cocoa.h>
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m
-c000000004B23DC180000000000000490
-t1260641304
-s1168
-i"TorrentCell.h"
-i"Torrent.h"
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.h
-c000000004B20436500000000000001F3
-t1260405605
-s499
-i<Cocoa/Cocoa.h>
-i"Torrent.h"
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m
-c000000004B20477A0000000000000E94
-t1260406650
-s3732
-i"TorrentListModel.h"
-i"XMLRPC/XMLRPC.h"
-i"TorrentCell.h"
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app
-t1260500630
-s102
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app.dSYM
-t1260500630
-s102
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/Frameworks/XMLRPC.framework
-t1260140374
-s204
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/Info.plist
-t1260140374
-s892
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/MacOS/mrtorrent
-t1260500630
-s130184
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/PkgInfo
-t1260140374
-s8
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/Resources/English.lproj/InfoPlist.strings
-t1260140374
-s92
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/Resources/English.lproj/MainMenu.nib
-t1260500629
-s51004
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/MainView.o
-t1260499642
-s21768
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/RateModel.o
-t1260413857
-s33824
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/Torrent.o
-t1260404668
-s8972
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/TorrentCell.o
-t1260500630
-s17452
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/TorrentListModel.o
-t1260499642
-s37008
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/main.o
-t1260141180
-s4872
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/mrtorrent
-t1260500630
-s36496
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/mrtorrent.LinkFileList
-c000000004B204878000000000000038C
-t1260406904
-s908
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/mrtorrentAppDelegate.o
-t1260141181
-s18656
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/MainView.o
-t1260499642
-s22156
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/RateModel.o
-t1260413857
-s35892
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/Torrent.o
-t1260404671
-s9164
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/TorrentCell.o
-t1260500630
-s17920
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/TorrentListModel.o
-t1260499642
-s38660
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/main.o
-t1260141181
-s4900
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/mrtorrent
-t1260500630
-s35976
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/mrtorrent.LinkFileList
-c000000004B2048780000000000000385
-t1260406904
-s901
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/mrtorrentAppDelegate.o
-t1260141181
-s18692
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/MainView.o
-t1260499641
-s26076
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/RateModel.o
-t1260413857
-s49212
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/Torrent.o
-t1260404665
-s13920
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/TorrentCell.o
-t1260500630
-s19728
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/TorrentListModel.o
-t1260499642
-s51060
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/main.o
-t1260141180
-s5072
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/mrtorrent
-t1260500630
-s50176
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/mrtorrent.LinkFileList
-c000000004B204878000000000000039A
-t1260406904
-s922
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/mrtorrentAppDelegate.o
-t1260141180
-s25576
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/main.m
-c000000004B1B077F00000000000000F4
-t1260062591
-s244
-i<Cocoa/Cocoa.h>
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.h
-c000000004B1C2A9F000000000000016D
-t1260137119
-s365
-i<Cocoa/Cocoa.h>
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m
-c000000004B1B4A670000000000000213
-t1260079719
-s531
-i"mrtorrentAppDelegate.h"
-
-N/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent_Prefix.pch
-c000000004B1B077F0000000000000095
-t1260062591
-s149
-i<Cocoa/Cocoa.h>
-
-N/Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework
-c000000004B1B11BA00000000000000EE
-t1260065210
-s238
-
-N/Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework/Headers/XMLRPC.h
-c000000004B1B0E1200000000000005F4
-t1260064274
-s1524
-i<XMLRPC/XMLRPCConnection.h>
-i<XMLRPC/XMLRPCConnectionDelegate.h>
-i<XMLRPC/XMLRPCConnectionManager.h>
-i<XMLRPC/XMLRPCResponse.h>
-i<XMLRPC/XMLRPCRequest.h>
-
-N/Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework/Headers/XMLRPCConnection.h
-c000000004B1B0E12000000000000083E
-t1260064274
-s2110
-i<Foundation/Foundation.h>
-i"XMLRPCConnectionDelegate.h"
-
-N/Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework/Headers/XMLRPCConnectionDelegate.h
-c000000004B1B0E120000000000000763
-t1260064274
-s1891
-i<Foundation/Foundation.h>
-
-N/Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework/Headers/XMLRPCConnectionManager.h
-c000000004B1B0E1200000000000007EC
-t1260064274
-s2028
-i<Foundation/Foundation.h>
-i"XMLRPCConnectionDelegate.h"
-
-N/Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework/Headers/XMLRPCRequest.h
-c000000004B1B0E120000000000000800
-t1260064274
-s2048
-i<Foundation/Foundation.h>
-
-N/Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework/Headers/XMLRPCResponse.h
-c000000004B1B0E1200000000000006A0
-t1260064274
-s1696
-i<Foundation/Foundation.h>
-
-N/Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework/XMLRPC
-c000000004B1B0E230000000000030918
-t1260064291
-s198936
-
-N/var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-chfxlaqrunchbwcpsqrguiqwblmi/mrtorrent_Prefix.pch.gch
-t1260141177
-s52877072
-
-N/var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-dfpuaryiycqihobsnmtwahdsbitk/mrtorrent_Prefix.pch.gch
-t1260140381
-s52868880
-
-N/var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-fhrmusbwnsxbfdgsbaadyoxctapv/mrtorrent_Prefix.pch.gch
-t1260140384
-s52737616
-
-N/var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hateptxohucpbzaneesoptbcuegq/mrtorrent_Prefix.pch.gch
-t1260141178
-s55506736
-
-N/var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hdjfxudavuhqweaxgttzpubhfvzt/mrtorrent_Prefix.pch.gch
-t1260140381
-s55502640
-
-N/var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hfloydvbjesfjwbvpanjbrnzqvrn/mrtorrent_Prefix.pch.gch
-t1260141180
-s52745808
-
-Nmrtorrent-Info.plist
-c000000004B1B077F00000000000003EA
-t1260062591
-s1002
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies282324058#282324058#0(0"0(0#1#0"4300882208#0"0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/MainView.o /Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s282192441.953869
-e282192442.225583
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/MainView.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m282192441#282192442#0(0"0(0#0#60"/Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m4300882208#1736"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/i386 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hateptxohucpbzaneesoptbcuegq/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/MainView.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/RateModel.o /Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s282106657.220154
-e282106657.514622
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/RateModel.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@69"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m282106657#282106657#0(0"0(0#0#61"/Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m4300882208#1738"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/i386 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hateptxohucpbzaneesoptbcuegq/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/RateModel.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/Torrent.o /Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s282097468.550234
-e282097468.698718
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/Torrent.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@67"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m282097468#282097468#0(0"0(0#0#59"/Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m4300882208#1734"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/i386 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hateptxohucpbzaneesoptbcuegq/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/Torrent.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/TorrentCell.o /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s282193429.851410
-e282193430.052292
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/TorrentCell.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m282193429#282193430#0(0"0(0#0#63"/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m4300882208#1742"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/i386 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hateptxohucpbzaneesoptbcuegq/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/TorrentCell.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/TorrentListModel.o /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s282192442.226044
-e282192442.460270
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/TorrentListModel.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m282192442#282192442#0(0"0(0#0#68"/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m4300882208#1752"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/i386 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hateptxohucpbzaneesoptbcuegq/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/TorrentListModel.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/main.o /Users/will/Documents/Development/Cocoa/mrtorrent/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s281833980.737513
-e281833980.893738
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/main.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/main.m281833980#281833980#0(0"0(0#0#56"/Users/will/Documents/Development/Cocoa/mrtorrent/main.m4300882208#1728"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/i386 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hateptxohucpbzaneesoptbcuegq/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/main.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/main.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/mrtorrentAppDelegate.o /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s281833980.893823
-e281833981.106725
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/mrtorrentAppDelegate.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m281833980#281833981#0(0"0(0#0#72"/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m4300882208#1760"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/i386 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hateptxohucpbzaneesoptbcuegq/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/mrtorrentAppDelegate.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/MainView.o /Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s282192442.285344
-e282192442.568426
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/MainView.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m282192442#282192442#0(0"0(0#0#60"/Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m4300882208#1730"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/ppc -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hfloydvbjesfjwbvpanjbrnzqvrn/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/MainView.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/RateModel.o /Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s282106657.560638
-e282106658.009401
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/RateModel.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@69"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m282106657#282106658#0(0"0(0#0#61"/Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m4300882208#1732"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/ppc -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hfloydvbjesfjwbvpanjbrnzqvrn/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/RateModel.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/Torrent.o /Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s282097471.386161
-e282097471.571527
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/Torrent.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@67"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m282097471#282097471#0(0"0(0#0#59"/Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m4300882208#1728"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/ppc -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hfloydvbjesfjwbvpanjbrnzqvrn/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/Torrent.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/TorrentCell.o /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s282193430.064193
-e282193430.195780
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/TorrentCell.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m282193430#282193430#0(0"0(0#0#63"/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m4300882208#1736"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/ppc -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hfloydvbjesfjwbvpanjbrnzqvrn/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/TorrentCell.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/TorrentListModel.o /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s282192442.568666
-e282192442.807320
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/TorrentListModel.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m282192442#282192442#0(0"0(0#0#68"/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m4300882208#1746"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/ppc -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hfloydvbjesfjwbvpanjbrnzqvrn/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/TorrentListModel.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/main.o /Users/will/Documents/Development/Cocoa/mrtorrent/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s281833981.180545
-e281833981.392879
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/main.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/main.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/main.m281833981#281833981#0(0"0(0#0#56"/Users/will/Documents/Development/Cocoa/mrtorrent/main.m4300882208#1722"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/ppc -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hfloydvbjesfjwbvpanjbrnzqvrn/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/main.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/main.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/mrtorrentAppDelegate.o /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s281833981.392971
-e281833981.672446
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/mrtorrentAppDelegate.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m281833981#281833981#0(0"0(0#0#72"/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m4300882208#1754"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/ppc -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hfloydvbjesfjwbvpanjbrnzqvrn/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/mrtorrentAppDelegate.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/MainView.o /Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s282192441.573668
-e282192441.834519
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/MainView.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m282192441#282192441#0(0"0(0#0#60"/Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m4300882208#1742"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/x86_64 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-chfxlaqrunchbwcpsqrguiqwblmi/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/MainView.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/MainView.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/RateModel.o /Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s282106657.218925
-e282106657.509970
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/RateModel.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@69"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m282106657#282106657#0(0"0(0#0#61"/Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m4300882208#1744"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/x86_64 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-chfxlaqrunchbwcpsqrguiqwblmi/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/RateModel.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/RateModel.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/Torrent.o /Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s282097465.252916
-e282097465.477209
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/Torrent.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@67"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m282097465#282097465#0(0"0(0#0#59"/Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m4300882208#1740"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/x86_64 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-chfxlaqrunchbwcpsqrguiqwblmi/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/Torrent.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/Torrent.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/TorrentCell.o /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s282193429.850090
-e282193430.014933
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/TorrentCell.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m282193429#282193430#0(0"0(0#0#63"/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m4300882208#1748"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/x86_64 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-chfxlaqrunchbwcpsqrguiqwblmi/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentCell.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/TorrentCell.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/TorrentListModel.o /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s282192441.834700
-e282192442.072871
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/TorrentListModel.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m282192441#282192442#0(0"0(0#0#68"/Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m4300882208#1758"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/x86_64 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-chfxlaqrunchbwcpsqrguiqwblmi/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/TorrentListModel.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/TorrentListModel.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/main.o /Users/will/Documents/Development/Cocoa/mrtorrent/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s281833980.579567
-e281833980.727078
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/main.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/main.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/main.m281833980#281833980#0(0"0(0#0#56"/Users/will/Documents/Development/Cocoa/mrtorrent/main.m4300882208#1734"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/x86_64 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-chfxlaqrunchbwcpsqrguiqwblmi/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/main.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/main.o0#
-
-CCompileC build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/mrtorrentAppDelegate.o /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s281833980.580647
-e281833980.737427
-r1
-xCompileC
-xbuild/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/mrtorrentAppDelegate.o
-x/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m281833980#281833980#0(0"0(0#0#72"/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m4300882208#1766"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/x86_64 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -include /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-chfxlaqrunchbwcpsqrguiqwblmi/mrtorrent_Prefix.pch -c /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrentAppDelegate.m -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/mrtorrentAppDelegate.o0#
-
-CCompileXIB /Users/will/Documents/Development/Cocoa/mrtorrent/English.lproj/MainMenu.xib
-s282193429.384531
-e282193429.849612
-r1
-xCompileXIB
-x/Users/will/Documents/Development/Cocoa/mrtorrent/English.lproj/MainMenu.xib
-o/* com.apple.ibtool.document.notices */
-o/Users/will/Documents/Development/Cocoa/mrtorrent/English.lproj/MainMenu.xib:624: note: This view is clipping its content.
-o/Users/will/Documents/Development/Cocoa/mrtorrent/English.lproj/MainMenu.xib:618: note: This view is clipping its content.
-lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib282193429#282193429#0(286"/* com.apple.ibtool.document.notices *//Users/will/Documents/Development/Cocoa/mrtorrent/English.lproj/MainMenu.xib:624: note: This view is clipping its content./Users/will/Documents/Development/Cocoa/mrtorrent/English.lproj/MainMenu.xib:618: note: This view is clipping its content.2(13@34"This view is clipping its content.282193429#18446744073709551615#0#0(6@76"/Users/will/Documents/Development/Cocoa/mrtorrent/English.lproj/MainMenu.xib282193427#624#0#624#0#0"0(13@34"This view is clipping its content.282193429#18446744073709551615#0#0(6@76"/Users/will/Documents/Development/Cocoa/mrtorrent/English.lproj/MainMenu.xib282193427#618#0#618#0#0"0(0#0#76"/Users/will/Documents/Development/Cocoa/mrtorrent/English.lproj/MainMenu.xib4300882208#364"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/Resources/English.lproj/MainMenu.nib /Users/will/Documents/Development/Cocoa/mrtorrent/English.lproj/MainMenu.xib0#
-
-CCopyStringsFile /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-s281833174.483238
-e281833174.815854
-r1
-xCopyStringsFile
-x/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/Resources/English.lproj/InfoPlist.strings
-xEnglish.lproj/InfoPlist.strings
-lSLF07#2@36"Copy English.lproj/InfoPlist.strings281833174#281833174#0(0"0(0#0#81"/Users/will/Documents/Development/Cocoa/mrtorrent/English.lproj/InfoPlist.strings4300882208#391"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/Resources/English.lproj0#
-
-CCreateUniversalBinary /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/MacOS/mrtorrent normal "x86_64 i386 ppc"
-s282193430.221467
-e282193430.224018
-r1
-xCreateUniversalBinary
-x/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/MacOS/mrtorrent
-xnormal
-xx86_64 i386 ppc
-lSLF07#2@99"CreateUniversalBinary build/Release/mrtorrent.app/Contents/MacOS/mrtorrent normal "x86_64 i386 ppc"282193430#282193430#0(0"0(0#0#65"/Users/will/Documents/Development/Cocoa/mrtorrent/x86_64 i386 ppc4300882208#573"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    /usr/bin/lipo -create /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/mrtorrent /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/mrtorrent /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/mrtorrent -output /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/MacOS/mrtorrent0#
-
-CGenerateDSYMFile /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app.dSYM /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/MacOS/mrtorrent
-s282193430.224075
-e282193430.245055
-r1
-xGenerateDSYMFile
-x/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app.dSYM
-x/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/MacOS/mrtorrent
-lSLF07#2@102"GenerateDSYMFile build/Release/mrtorrent.app.dSYM build/Release/mrtorrent.app/Contents/MacOS/mrtorrent282193430#282193430#0(0"0(0#0#102"/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/MacOS/mrtorrent4300882208#278"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    /Developer/usr/bin/dsymutil /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/MacOS/mrtorrent -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app.dSYM0#
-
-CLd /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/MacOS/mrtorrent normal x86_64
-r0
-
-CLd /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/mrtorrent normal i386
-s282193430.052567
-e282193430.091070
-r1
-xLd
-x/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/mrtorrent
-xnormal
-xi386
-lSLF07#2@130"Link /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/mrtorrent282193430#282193430#0(0"0(0#0#0"4300882208#728"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -filelist /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/mrtorrent.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework XMLRPC -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/i386/mrtorrent0#
-
-CLd /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/mrtorrent normal ppc
-s282193430.195855
-e282193430.221372
-r1
-xLd
-x/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/mrtorrent
-xnormal
-xppc
-lSLF07#2@129"Link /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/mrtorrent282193430#282193430#0(0"0(0#0#0"4300882208#725"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch ppc -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -filelist /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/mrtorrent.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework XMLRPC -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/ppc/mrtorrent0#
-
-CLd /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/mrtorrent normal x86_64
-s282193430.015013
-e282193430.063907
-r1
-xLd
-x/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/mrtorrent
-xnormal
-xx86_64
-lSLF07#2@132"Link /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/mrtorrent282193430#282193430#0(0"0(0#0#0"4300882208#734"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -filelist /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/mrtorrent.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework XMLRPC -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/Objects-normal/x86_64/mrtorrent0#
-
-CPBXCp build/Release/mrtorrent.app/Contents/Frameworks/XMLRPC.framework /Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework
-s281833174.383733
-e281833174.483138
-r1
-xPBXCp
-xbuild/Release/mrtorrent.app/Contents/Frameworks/XMLRPC.framework
-x/Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework
-lSLF07#2@82"Copy /Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework281833174#281833174#0(0"0(0#0#77"/Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework4300882208#402"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/Frameworks0#
-
-CProcessInfoPlistFile /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/Info.plist mrtorrent-Info.plist
-s281833174.380642
-e281833174.383674
-r1
-xProcessInfoPlistFile
-x/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/Info.plist
-xmrtorrent-Info.plist
-lSLF07#2@28"Process mrtorrent-Info.plist281833174#281833174#0(0"0(0#0#70"/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent-Info.plist4300882208#353"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    builtin-infoPlistUtility mrtorrent-Info.plist -genpkginfo /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app/Contents/Info.plist0#
-
-CProcessPCH /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-chfxlaqrunchbwcpsqrguiqwblmi/mrtorrent_Prefix.pch.gch mrtorrent_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s281833974.158328
-e281833978.014226
-r1
-xProcessPCH
-x/var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-chfxlaqrunchbwcpsqrguiqwblmi/mrtorrent_Prefix.pch.gch
-xmrtorrent_Prefix.pch
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@31"Precompile mrtorrent_Prefix.pch281833974#281833978#0(0"0(0#0#70"/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent_Prefix.pch4300882208#1625"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/x86_64 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -c /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent_Prefix.pch -o /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-chfxlaqrunchbwcpsqrguiqwblmi/mrtorrent_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-dfpuaryiycqihobsnmtwahdsbitk/mrtorrent_Prefix.pch.gch mrtorrent_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s281833175.032954
-e281833181.631674
-r1
-xProcessPCH
-x/var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-dfpuaryiycqihobsnmtwahdsbitk/mrtorrent_Prefix.pch.gch
-xmrtorrent_Prefix.pch
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@31"Precompile mrtorrent_Prefix.pch281833175#281833181#0(0"0(0#0#70"/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent_Prefix.pch4300882208#1615"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/x86_64 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -c /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent_Prefix.pch -o /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-dfpuaryiycqihobsnmtwahdsbitk/mrtorrent_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-fhrmusbwnsxbfdgsbaadyoxctapv/mrtorrent_Prefix.pch.gch mrtorrent_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
-s281833181.631866
-e281833184.615561
-r1
-xProcessPCH
-x/var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-fhrmusbwnsxbfdgsbaadyoxctapv/mrtorrent_Prefix.pch.gch
-xmrtorrent_Prefix.pch
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@31"Precompile mrtorrent_Prefix.pch281833181#281833184#0(0"0(0#0#70"/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent_Prefix.pch4300882208#1606"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/ppc -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -c /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent_Prefix.pch -o /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-fhrmusbwnsxbfdgsbaadyoxctapv/mrtorrent_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hateptxohucpbzaneesoptbcuegq/mrtorrent_Prefix.pch.gch mrtorrent_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s281833974.159010
-e281833978.326956
-r1
-xProcessPCH
-x/var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hateptxohucpbzaneesoptbcuegq/mrtorrent_Prefix.pch.gch
-xmrtorrent_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@31"Precompile mrtorrent_Prefix.pch281833974#281833978#0(0"0(0#0#70"/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent_Prefix.pch4300882208#1621"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/i386 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -c /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent_Prefix.pch -o /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hateptxohucpbzaneesoptbcuegq/mrtorrent_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hdjfxudavuhqweaxgttzpubhfvzt/mrtorrent_Prefix.pch.gch mrtorrent_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s281833175.033889
-e281833182.245929
-r1
-xProcessPCH
-x/var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hdjfxudavuhqweaxgttzpubhfvzt/mrtorrent_Prefix.pch.gch
-xmrtorrent_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@31"Precompile mrtorrent_Prefix.pch281833175#281833182#0(0"0(0#0#70"/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent_Prefix.pch4300882208#1611"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/i386 -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -c /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent_Prefix.pch -o /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hdjfxudavuhqweaxgttzpubhfvzt/mrtorrent_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hfloydvbjesfjwbvpanjbrnzqvrn/mrtorrent_Prefix.pch.gch mrtorrent_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
-s281833978.014474
-e281833980.579340
-r1
-xProcessPCH
-x/var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hfloydvbjesfjwbvpanjbrnzqvrn/mrtorrent_Prefix.pch.gch
-xmrtorrent_Prefix.pch
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@31"Precompile mrtorrent_Prefix.pch281833978#281833980#0(0"0(0#0#70"/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent_Prefix.pch4300882208#1616"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-generated-files.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-own-target-headers.hmap -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-all-target-headers.hmap -iquote /Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/mrtorrent-project-headers.hmap -F/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release -F/Users/will/Documents/Development/Cocoa/mrtorrent/../xmlrpc/build/Release -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/include -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources/ppc -I/Users/will/Documents/Development/Cocoa/mrtorrent/build/mrtorrent.build/Release/mrtorrent.build/DerivedSources -c /Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent_Prefix.pch -o /var/folders/YW/YWBbvBRUHOSNE9ZhZyYsUE+++yc/-Caches-/com.apple.Xcode.1002/SharedPrecompiledHeaders/mrtorrent_Prefix-hfloydvbjesfjwbvpanjbrnzqvrn/mrtorrent_Prefix.pch.gch0#
-
-CTouch /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app
-s282193430.245136
-e282193430.247236
-r1
-xTouch
-x/Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app
-lSLF07#2@83"Touch /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app282193430#282193430#0(0"0(0#0#0"4300882208#157"    cd /Users/will/Documents/Development/Cocoa/mrtorrent    /usr/bin/touch -c /Users/will/Documents/Development/Cocoa/mrtorrent/build/Release/mrtorrent.app0#
-
