@@ -11,7 +11,14 @@
 
 @interface Torrent : NSObject <NSCopying> {
 	NSString *name;
+
+	NSInteger size;
+	
 	NSInteger upRate;
+	NSInteger upTotal;
+	NSInteger downRate;
+	NSInteger completedBytes;
+	
 	double ratio;
 }
 
@@ -21,9 +28,25 @@
 
 - (NSString *)name;
 
+- (void)setSize:(NSInteger)size;
+
+- (NSInteger)size;
+
 - (void)setUpRate:(NSInteger)upRate;
 
 - (NSInteger)upRate;
+
+- (void)setUpTotal:(NSInteger)upTotal;
+
+- (NSInteger)upTotal;
+
+- (void)setDownRate:(NSInteger)downRate;
+
+- (NSInteger)downRate;
+
+- (void)setCompletedBytes:(NSInteger)completedBytes;
+
+- (NSInteger)completedBytes;
 
 - (void)setRatio:(double)ratio;
 

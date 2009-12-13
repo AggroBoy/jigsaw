@@ -45,12 +45,18 @@
 
 	[parser parse];
 	
-	NSInteger torrentCount = [elements count] / 3;
+	NSInteger torrentCount = [elements count] / 7;
 	for (NSInteger i = 0; i < torrentCount; i++) {
-		NSInteger firstElementOfTorrent = i * 3;
+		NSInteger firstElementOfTorrent = i * 7;
 		Torrent *torrent = [Torrent withName:[elements objectAtIndex:firstElementOfTorrent]];
-		[torrent setUpRate:[[elements objectAtIndex:firstElementOfTorrent + 1] intValue]];
-		[torrent setRatio:[[elements objectAtIndex:firstElementOfTorrent + 2] doubleValue]];
+		[torrent setSize:[[elements objectAtIndex:firstElementOfTorrent + 1] intValue]];
+
+		[torrent setUpRate:[[elements objectAtIndex:firstElementOfTorrent + 2] intValue]];
+		[torrent setUpTotal:[[elements objectAtIndex:firstElementOfTorrent + 3] intValue]];
+		[torrent setDownRate:[[elements objectAtIndex:firstElementOfTorrent + 4] intValue]];
+		[torrent setCompletedBytes:[[elements objectAtIndex:firstElementOfTorrent + 5] intValue]];
+		
+		[torrent setRatio:[[elements objectAtIndex:firstElementOfTorrent + 6] doubleValue]];
 		[building addObject:torrent];
 	}
 	
@@ -64,7 +70,19 @@
 		NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
 		XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
 	
-		[request setMethod: @"d.multicall" withParameters: [NSArray arrayWithObjects:view, @"d.get_name=", @"d.get_up_rate=", @"d.get_ratio=", nil]];
+		// multicall takes the view, followed by the list of fields (one per object)
+		NSArray *parameters = [NSArray arrayWithObjects:view,
+							   @"d.get_name=",
+							   @"d.get_size_bytes=",
+							   @"d.get_up_rate=",
+							   @"d.get_up_total=",
+							   @"d.get_down_rate=",
+							   @"d.get_completed_bytes=",
+							   @"d.get_ratio=",
+							   nil
+						   ];
+		
+		[request setMethod: @"d.multicall" withParameters:parameters];
 		XMLRPCResponse *response = [XMLRPCConnection sendSynchronousXMLRPCRequest:request];
 	
 		[self updateWithXml:response.body];
