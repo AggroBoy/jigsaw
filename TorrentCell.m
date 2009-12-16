@@ -19,6 +19,7 @@
 	
 	NSFont *smallFont = [NSFont fontWithName:@"Lucida Grande" size:9.0];
 	smallAttrsDictionary = [NSDictionary dictionaryWithObject:smallFont forKey:NSFontAttributeName];
+	smallGreyAttrsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:smallFont,NSFontAttributeName,[NSColor lightGrayColor],NSForegroundColorAttributeName,nil];
 	
 	return self;
 }
@@ -27,15 +28,31 @@
 {
 	Torrent *torrent = [self objectValue];
 	
+	NSInteger horizontalOne = theFrame.origin.y;
+	NSInteger horizontalTwo = horizontalOne + 15;
+	NSInteger horizontalThree = horizontalOne + 25;
+	
+	NSInteger verticalOne = theFrame.origin.x;
+	NSInteger verticalTwo = verticalOne + 35;
+	
 	// The torrent name
-	NSRect nameRect = NSMakeRect(theFrame.origin.x, theFrame.origin.y, theFrame.size.width - 35, theFrame.size.height);
-
-	[[torrent name] drawInRect:nameRect withAttributes:normalAttrsDictionary];
+	NSRect nameRect = NSMakeRect(theFrame.origin.x, horizontalOne, theFrame.size.width - 35, 15);
+	[[torrent name] drawWithRect:nameRect options:NSStringDrawingUsesLineFragmentOrigin|NSLineBreakByCharWrapping|NSStringDrawingTruncatesLastVisibleLine attributes:normalAttrsDictionary];
 	
 	// The ratio
-	NSRect ratioRect = NSMakeRect(theFrame.origin.x + theFrame.size.width - 30, theFrame.origin.y, 30, theFrame.size.height);
-	NSString *ratio = [NSString stringWithFormat:@"%.2f",[torrent ratio]/1000];
-	[ratio drawInRect:ratioRect withAttributes:smallAttrsDictionary];
+	//NSRect ratioRect = NSMakeRect(theFrame.origin.x + theFrame.size.width - 30, theFrame.origin.y, 30, theFrame.size.height);
+	//NSString *ratio = [NSString stringWithFormat:@"%.2f",[torrent ratio]/1000];
+	//[ratio drawInRect:ratioRect withAttributes:smallAttrsDictionary];
+
+	// The up rate
+	NSString *upRate = [NSString stringWithFormat:@"%0.1f",[torrent upRate]/1024.0];
+	[upRate drawInRect:NSMakeRect(verticalTwo, horizontalTwo, 50, 20) withAttributes:([torrent upRate] > 0 ? smallAttrsDictionary : smallGreyAttrsDictionary)];
+	
+	// The down rate
+	NSString *downRate = [NSString stringWithFormat:@"%0.1f",[torrent downRate]/1024.0];
+	[downRate drawInRect:NSMakeRect(verticalTwo, horizontalThree, 50, 20) withAttributes:([torrent downRate] > 0 ? smallAttrsDictionary : smallGreyAttrsDictionary)];
+	
+	
 }
 
 @end

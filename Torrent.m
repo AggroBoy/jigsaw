@@ -92,6 +92,9 @@
 {
 	Torrent *torrent = [Torrent withName:name];
 	[torrent setUpRate:upRate];
+	[torrent setUpTotal:upTotal];
+	[torrent setDownRate:downRate];
+	[torrent setCompletedBytes:completedBytes];
 	[torrent setRatio:ratio];
 	
 	return torrent;

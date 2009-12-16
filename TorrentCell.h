@@ -12,6 +12,7 @@
 @interface TorrentCell : NSCell {
 	NSDictionary *normalAttrsDictionary;
 	NSDictionary *smallAttrsDictionary;
+	NSDictionary *smallGreyAttrsDictionary;
 
 }
 

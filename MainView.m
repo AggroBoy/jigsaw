@@ -48,6 +48,6 @@
 	
 	waiting = false;
 	
-	timer = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(onTimer:) userInfo:nil repeats:TRUE];
+	timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(onTimer:) userInfo:nil repeats:TRUE];
 }
 @end
