@@ -29,14 +29,14 @@
 	Torrent *torrent = [self objectValue];
 	
 	NSInteger horizontalOne = theFrame.origin.y;
-	NSInteger horizontalTwo = horizontalOne + 15;
-	NSInteger horizontalThree = horizontalOne + 25;
+	NSInteger horizontalTwo = horizontalOne + 18;
+	NSInteger horizontalThree = horizontalOne + 28;
 	
 	NSInteger verticalOne = theFrame.origin.x;
 	NSInteger verticalTwo = verticalOne + 35;
 	
 	// The torrent name
-	NSRect nameRect = NSMakeRect(theFrame.origin.x, horizontalOne, theFrame.size.width - 35, 15);
+	NSRect nameRect = NSMakeRect(theFrame.origin.x, horizontalOne, theFrame.size.width - 35, 18);
 	[[torrent name] drawWithRect:nameRect options:NSStringDrawingUsesLineFragmentOrigin|NSLineBreakByCharWrapping|NSStringDrawingTruncatesLastVisibleLine attributes:normalAttrsDictionary];
 	
 	// The ratio
