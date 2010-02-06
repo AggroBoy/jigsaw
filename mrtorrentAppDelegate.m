@@ -71,6 +71,10 @@
 		NSURL *url = [files objectAtIndex:0];
 		NSString *fileName = [url path];
 		[self addLocalTorrentFile:fileName];
+		
+		// Delete the .torrent file, now we've added it to rtorrent (this should be an option.)
+		NSFileManager *manager = [NSFileManager defaultManager];
+		[manager removeItemAtURL:url error:nil];
 	}
 }
 
