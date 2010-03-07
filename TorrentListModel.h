@@ -24,6 +24,11 @@
 
 - (IBAction)viewChanged:(id)sender;
 
+- (BOOL)validateMenuItem:(NSMenuItem *)item;
+- (IBAction)startTorrent:(id)sender;
+- (IBAction)stopTorrent:(id)sender;
+- (IBAction)deleteTorrent:(id)sender;
+
 - (void)update;
 
 @end

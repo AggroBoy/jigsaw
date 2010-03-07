@@ -29,6 +29,12 @@
 - (BOOL)application:(NSApplication *)theApplication openFile:(NSString *)filename
 {
 	[self addLocalTorrentFile:filename];
+	
+	// TODO: This should be an option
+	// Delete the .torrent file, now we've added it to rtorrent
+	NSFileManager *manager = [NSFileManager defaultManager];
+	[manager removeItemAtPath:filename error:nil];
+	
 	return YES;
 }
 
@@ -72,7 +78,8 @@
 		NSString *fileName = [url path];
 		[self addLocalTorrentFile:fileName];
 		
-		// Delete the .torrent file, now we've added it to rtorrent (this should be an option.)
+		// TODO: This should be an option
+		// Delete the .torrent file, now we've added it to rtorrent
 		NSFileManager *manager = [NSFileManager defaultManager];
 		[manager removeItemAtURL:url error:nil];
 	}

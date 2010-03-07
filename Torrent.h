@@ -11,6 +11,7 @@
 
 @interface Torrent : NSObject <NSCopying> {
 	NSString *name;
+	NSString *hash;
 
 	NSInteger size;
 	
@@ -20,6 +21,8 @@
 	NSInteger completedBytes;
 	
 	double ratio;
+	
+	NSInteger active;
 }
 
 + (Torrent *)withName:(NSString *)name;
@@ -27,6 +30,10 @@
 - (void)setName:(NSString *)name;
 
 - (NSString *)name;
+
+- (void)setHash:(NSString *)hash;
+
+- (NSString *)hash;
 
 - (void)setSize:(NSInteger)size;
 
@@ -51,5 +58,9 @@
 - (void)setRatio:(double)ratio;
 
 - (double)ratio;
+
+- (void)setActive:(NSInteger)active;
+
+- (int)active;
 
 @end

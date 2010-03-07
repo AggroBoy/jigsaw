@@ -16,6 +16,7 @@
 	[super init];
 	NSFont *normalFont = [NSFont fontWithName:@"Lucida Grande" size:13.0];
 	normalAttrsDictionary = [NSDictionary dictionaryWithObject:normalFont forKey:NSFontAttributeName];
+	greyAttrsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:normalFont,NSFontAttributeName,[NSColor lightGrayColor],NSForegroundColorAttributeName,nil];
 	
 	NSFont *smallFont = [NSFont fontWithName:@"Lucida Grande" size:9.0];
 	smallAttrsDictionary = [NSDictionary dictionaryWithObject:smallFont forKey:NSFontAttributeName];
@@ -37,7 +38,7 @@
 	
 	// The torrent name
 	NSRect nameRect = NSMakeRect(theFrame.origin.x, horizontalOne, theFrame.size.width - 35, 18);
-	[[torrent name] drawWithRect:nameRect options:NSStringDrawingUsesLineFragmentOrigin|NSLineBreakByCharWrapping|NSStringDrawingTruncatesLastVisibleLine attributes:normalAttrsDictionary];
+	[[torrent name] drawWithRect:nameRect options:NSStringDrawingUsesLineFragmentOrigin|NSLineBreakByCharWrapping|NSStringDrawingTruncatesLastVisibleLine attributes:([torrent active] == 1 ? normalAttrsDictionary : greyAttrsDictionary)];
 	
 	// The ratio
 	//NSRect ratioRect = NSMakeRect(theFrame.origin.x + theFrame.size.width - 30, theFrame.origin.y, 30, theFrame.size.height);

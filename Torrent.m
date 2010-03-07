@@ -28,6 +28,16 @@
 	return name;
 }
 
+- (void)setHash:(NSString *)torrentHash
+{
+	hash = [NSString stringWithString:torrentHash];
+}
+
+- (NSString *)hash
+{
+	return hash;
+}
+
 - (void)setSize:(NSInteger)torrentSize
 {
 	size = torrentSize;
@@ -88,14 +98,27 @@
 	return ratio;
 }
 
+- (void)setActive:(NSInteger)torrentActive
+{
+	active = torrentActive;
+}
+
+- (int)active
+{
+	return active;
+}
+
+
 - (id)copyWithZone:(NSZone *)zone
 {
 	Torrent *torrent = [Torrent withName:name];
+	[torrent setHash:hash];
 	[torrent setUpRate:upRate];
 	[torrent setUpTotal:upTotal];
 	[torrent setDownRate:downRate];
 	[torrent setCompletedBytes:completedBytes];
 	[torrent setRatio:ratio];
+	[torrent setActive:active];
 	
 	return torrent;
 }
