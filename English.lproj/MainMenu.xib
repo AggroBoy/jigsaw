@@ -11,8 +11,8 @@
 			<string key="NS.object.0">740</string>
 		</object>
 		<array class="NSMutableArray" key="IBDocument.EditedObjectIDs">
+			<integer value="371"/>
 			<integer value="81"/>
-			<integer value="533"/>
 			<integer value="727"/>
 		</array>
 		<array key="IBDocument.PluginDependencies">
@@ -1342,14 +1342,6 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 					</object>
 					<int key="connectionID">748</int>
 				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">itemClicked:</string>
-						<reference key="source" ref="382483352"/>
-						<reference key="destination" ref="397939147"/>
-					</object>
-					<int key="connectionID">749</int>
-				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -2024,9 +2016,9 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 				<string key="296.editorWindowContentRectSynchronizationRect">{{475, 832}, {234, 43}}</string>
 				<string key="297.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="298.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="371.IBEditorWindowLastContentRect">{{505, 153}, {420, 503}}</string>
+				<string key="371.IBEditorWindowLastContentRect">{{591, 155}, {420, 503}}</string>
 				<string key="371.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="371.IBWindowTemplateEditedContentRect">{{505, 153}, {420, 503}}</string>
+				<string key="371.IBWindowTemplateEditedContentRect">{{591, 155}, {420, 503}}</string>
 				<boolean value="YES" key="371.NSWindowTemplate.visibleAtLaunch"/>
 				<string key="371.editorWindowContentRectSynchronizationRect">{{33, 99}, {480, 360}}</string>
 				<string key="371.windowTemplate.maxSize">{3.40282e+38, 3.40282e+38}</string>
@@ -2163,7 +2155,6 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="deleteTorrent:">id</string>
-						<string key="itemClicked:">id</string>
 						<string key="startTorrent:">id</string>
 						<string key="stopTorrent:">id</string>
 						<string key="viewChanged:">id</string>

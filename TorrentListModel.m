@@ -146,6 +146,10 @@
 {
 	Torrent *torrent = [self selectedTorrent];
 
+	if (torrent == nil) {
+		return NO;
+	}
+	
 	BOOL active = [torrent active];
 	
 	if ([item action] == @selector(stopTorrent:)) {
