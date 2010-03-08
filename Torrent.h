@@ -27,40 +27,14 @@
 
 + (Torrent *)withName:(NSString *)name;
 
-- (void)setName:(NSString *)name;
-
-- (NSString *)name;
-
-- (void)setHash:(NSString *)hash;
-
-- (NSString *)hash;
-
-- (void)setSize:(NSInteger)size;
-
-- (NSInteger)size;
-
-- (void)setUpRate:(NSInteger)upRate;
-
-- (NSInteger)upRate;
-
-- (void)setUpTotal:(NSInteger)upTotal;
-
-- (NSInteger)upTotal;
-
-- (void)setDownRate:(NSInteger)downRate;
-
-- (NSInteger)downRate;
-
-- (void)setCompletedBytes:(NSInteger)completedBytes;
-
-- (NSInteger)completedBytes;
-
-- (void)setRatio:(double)ratio;
-
-- (double)ratio;
-
-- (void)setActive:(NSInteger)active;
-
-- (int)active;
+@property(readwrite, copy) NSString* name;
+@property(readwrite, copy) NSString* hash;
+@property(readwrite, assign) NSInteger size;
+@property(readwrite, assign) NSInteger upRate;
+@property(readwrite, assign) NSInteger upTotal;
+@property(readwrite, assign) NSInteger downRate;
+@property(readwrite, assign) NSInteger completedBytes;
+@property(readwrite, assign) double ratio;
+@property(readwrite, assign) NSInteger active;
 
 @end
