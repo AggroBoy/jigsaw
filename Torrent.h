@@ -13,28 +13,30 @@
 	NSString *name;
 	NSString *hash;
 
-	NSInteger size;
+	NSNumber* size;
 	
-	NSInteger upRate;
-	NSInteger upTotal;
-	NSInteger downRate;
-	NSInteger completedBytes;
+	NSNumber* upRate;
+	NSNumber* uploaded;
+	NSNumber* downRate;
+	NSNumber* downloaded;
 	
 	double ratio;
 	
-	NSInteger active;
+	BOOL active;
 }
-
-+ (Torrent *)withName:(NSString *)name;
 
 @property(readwrite, copy) NSString* name;
 @property(readwrite, copy) NSString* hash;
-@property(readwrite, assign) NSInteger size;
-@property(readwrite, assign) NSInteger upRate;
-@property(readwrite, assign) NSInteger upTotal;
-@property(readwrite, assign) NSInteger downRate;
-@property(readwrite, assign) NSInteger completedBytes;
+@property(readwrite, assign) NSNumber* size;
+@property(readwrite, assign) NSNumber* upRate;
+@property(readwrite, assign) NSNumber* uploaded;
+@property(readwrite, assign) NSNumber* downRate;
+@property(readwrite, assign) NSNumber* downloaded;
 @property(readwrite, assign) double ratio;
-@property(readwrite, assign) NSInteger active;
+@property(readwrite, assign) BOOL active;
+
++ (Torrent *)withHash:(NSString *)hash;
+
+- (BOOL)isEqual:(Torrent*)other;
 
 @end

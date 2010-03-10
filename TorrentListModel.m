@@ -7,64 +7,59 @@
 
 #import "TorrentListModel.h"
 #import "XMLRPC/XMLRPC.h"
-#import "TorrentCell.h"
 
 
 @implementation TorrentListModel
 
 -  (void)awakeFromNib
 {
-	torrentList = [NSArray array];
-
-	TorrentCell *torrentCell = [[TorrentCell alloc] init];
-	[[[tableView tableColumns] objectAtIndex:0] setDataCell:torrentCell];
-
+	torrentList = [NSMutableArray arrayWithCapacity:50];
+	numberFormatter = [NSNumberFormatter new];
+	
 	view = @"main";
 
 	for (NSInteger i = 0; i < [[views cells] count]; i++) {
 		[[[views cells] objectAtIndex:i] setTarget:self];
 		[[[views cells] objectAtIndex:i] setAction:@selector(viewChanged:)];
 	}
-	
-	[tableView setRowHeight:40];
 }
 
 - (void)updateWithXml:(NSString *) xml
 {
-	Torrent *torrent = [Torrent withName:@"woo!"];
-	[torrent setUpRate:10];
-	[torrent setRatio:1200];
-	
-	torrentList = [NSArray arrayWithObject:torrent];
-
 	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:[xml dataUsingEncoding:NSASCIIStringEncoding]];
 	[parser setDelegate:self];
 
 	elements = [NSMutableArray array];
-	building = [NSMutableArray array];
 
 	[parser parse];
 	
 	NSInteger torrentCount = [elements count] / 9;
+	building = [NSMutableArray arrayWithCapacity:torrentCount];
+	
 	for (NSInteger i = 0; i < torrentCount; i++) {
 		NSInteger firstElementOfTorrent = i * 9;
 		int offset = 0;
-		Torrent *torrent = [Torrent withName:[elements objectAtIndex:firstElementOfTorrent + offset++]];
-		[torrent setHash:[elements objectAtIndex:firstElementOfTorrent + offset++]];
-		[torrent setSize:[[elements objectAtIndex:firstElementOfTorrent + offset++] intValue]];
+		Torrent *torrent = [Torrent withHash:[elements objectAtIndex:firstElementOfTorrent + offset++]];
+		if ([torrentList indexOfObject:torrent] != NSNotFound) {
+			torrent = [torrentList objectAtIndex:[torrentList indexOfObject:torrent]];
+		}
+				
+		[torrent setName:[elements objectAtIndex:firstElementOfTorrent + offset++]];
+		[torrent setSize:[elements objectAtIndex:firstElementOfTorrent + offset++]];
 
-		[torrent setUpRate:[[elements objectAtIndex:firstElementOfTorrent + offset++] intValue]];
-		[torrent setUpTotal:[[elements objectAtIndex:firstElementOfTorrent + offset++] intValue]];
-		[torrent setDownRate:[[elements objectAtIndex:firstElementOfTorrent + offset++] intValue]];
+		[torrent setUpRate:[elements objectAtIndex:firstElementOfTorrent + offset++]];
+		[torrent setUploaded:[elements objectAtIndex:firstElementOfTorrent + offset++]];
 
-		[torrent setCompletedBytes:[[elements objectAtIndex:firstElementOfTorrent + offset++] intValue]];
+		[torrent setDownRate:[elements objectAtIndex:firstElementOfTorrent + offset++]];
+		[torrent setDownloaded:[elements objectAtIndex:firstElementOfTorrent + offset++]];
+		
 		[torrent setRatio:[[elements objectAtIndex:firstElementOfTorrent + offset++] doubleValue]];
-		[torrent setActive:[[elements objectAtIndex:firstElementOfTorrent + offset++] intValue]];
+		[torrent setActive:[[elements objectAtIndex:firstElementOfTorrent + offset++] longLongValue] == 1];
 		
 		[building addObject:torrent];
 	}
 	
-	torrentList = building;
+	[self setTorrentList:building];
 }
 
 - (void)update
@@ -76,8 +71,8 @@
 	
 		// multicall takes the view, followed by the list of fields (one per object)
 		NSArray *parameters = [NSArray arrayWithObjects:view,
-							   @"d.get_name=",
 							   @"d.get_hash=",
+							   @"d.get_name=",
 							   @"d.get_size_bytes=",
 							   @"d.get_up_rate=",
 							   @"d.get_up_total=",
@@ -92,10 +87,6 @@
 		XMLRPCResponse *response = [XMLRPCConnection sendSynchronousXMLRPCRequest:request];
 	
 		[self updateWithXml:response.body];
-		
-		dispatch_async(dispatch_get_main_queue(), ^{
-			[tableView reloadData];
-		});
 	});
 }	
 
@@ -114,18 +105,6 @@
 	}
 	
 	[self update];
-}
-
-
-#pragma mark TableView data source methods
-- (int)numberOfRowsInTableView:(NSTableView *)tv
-{
-	return [torrentList count];
-}
-
-- (id)tableView:(NSTableView *)tv objectValueForTableColumn:(NSTableColumn *)tableColumn row:(int)row
-{
-	return [torrentList objectAtIndex:row];
 }
 
 
@@ -228,7 +207,7 @@ didStartElement:(NSString *)elementName
 		
 	}
 	if ([elementName isEqualToString:@"i8"]) {
-		NSNumber *value = [NSNumber numberWithInt:[textInProgress intValue]];
+		NSNumber *value = [numberFormatter numberFromString:textInProgress];
 		[elements addObject:value];
 	}
 }
@@ -240,5 +219,7 @@ foundCharacters:(NSString *)string
 {
 	[textInProgress appendString:string];
 }
+
+@synthesize torrentList;
 
 @end

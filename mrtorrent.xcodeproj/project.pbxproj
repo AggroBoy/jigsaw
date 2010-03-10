@@ -15,10 +15,10 @@
 		BE110E7910CB4186008FC834 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE110E7810CB4186008FC834 /* MainView.m */; };
 		BE110EFE10CB4A77008FC834 /* XMLRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE110EFD10CB4A77008FC834 /* XMLRPC.framework */; };
 		BE110F2B10CB4D2C008FC834 /* XMLRPC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE110EFD10CB4A77008FC834 /* XMLRPC.framework */; };
-		BE1115A510CF033F008FC834 /* TorrentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1115A410CF033F008FC834 /* TorrentCell.m */; };
 		BE11165010CF2950008FC834 /* Torrent.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11164F10CF2950008FC834 /* Torrent.m */; };
 		BE46237110D022EE00A1DC17 /* TorrentListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE46237010D022EE00A1DC17 /* TorrentListModel.m */; };
 		BE46255510D07F9A00A1DC17 /* RateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE46255410D07F9A00A1DC17 /* RateModel.m */; };
+		BEF345DB11472DA700000CB3 /* BytesToReadbleSizeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF345DA11472DA700000CB3 /* BytesToReadbleSizeTransformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,14 +50,14 @@
 		BE110E7710CB4186008FC834 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		BE110E7810CB4186008FC834 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		BE110EFD10CB4A77008FC834 /* XMLRPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XMLRPC.framework; path = /Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework; sourceTree = "<absolute>"; };
-		BE1115A310CF033F008FC834 /* TorrentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentCell.h; sourceTree = "<group>"; };
-		BE1115A410CF033F008FC834 /* TorrentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentCell.m; sourceTree = "<group>"; };
 		BE11164E10CF2950008FC834 /* Torrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Torrent.h; sourceTree = "<group>"; };
 		BE11164F10CF2950008FC834 /* Torrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Torrent.m; sourceTree = "<group>"; };
 		BE46236F10D022EE00A1DC17 /* TorrentListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentListModel.h; sourceTree = "<group>"; };
 		BE46237010D022EE00A1DC17 /* TorrentListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentListModel.m; sourceTree = "<group>"; };
 		BE46255310D07F9A00A1DC17 /* RateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateModel.h; sourceTree = "<group>"; };
 		BE46255410D07F9A00A1DC17 /* RateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateModel.m; sourceTree = "<group>"; };
+		BEF345D911472DA700000CB3 /* BytesToReadbleSizeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BytesToReadbleSizeTransformer.h; sourceTree = "<group>"; };
+		BEF345DA11472DA700000CB3 /* BytesToReadbleSizeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BytesToReadbleSizeTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +82,12 @@
 				BE46237010D022EE00A1DC17 /* TorrentListModel.m */,
 				BE11164E10CF2950008FC834 /* Torrent.h */,
 				BE11164F10CF2950008FC834 /* Torrent.m */,
-				BE1115A310CF033F008FC834 /* TorrentCell.h */,
-				BE1115A410CF033F008FC834 /* TorrentCell.m */,
 				BE110E7710CB4186008FC834 /* MainView.h */,
 				BE110E7810CB4186008FC834 /* MainView.m */,
 				256AC3D80F4B6AC300CF3369 /* mrtorrentAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* mrtorrentAppDelegate.m */,
+				BEF345D911472DA700000CB3 /* BytesToReadbleSizeTransformer.h */,
+				BEF345DA11472DA700000CB3 /* BytesToReadbleSizeTransformer.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -218,10 +218,10 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* mrtorrentAppDelegate.m in Sources */,
 				BE110E7910CB4186008FC834 /* MainView.m in Sources */,
-				BE1115A510CF033F008FC834 /* TorrentCell.m in Sources */,
 				BE11165010CF2950008FC834 /* Torrent.m in Sources */,
 				BE46237110D022EE00A1DC17 /* TorrentListModel.m in Sources */,
 				BE46255510D07F9A00A1DC17 /* RateModel.m in Sources */,
+				BEF345DB11472DA700000CB3 /* BytesToReadbleSizeTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

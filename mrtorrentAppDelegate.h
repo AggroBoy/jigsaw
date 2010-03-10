@@ -25,6 +25,9 @@
 
 - (IBAction)addTorrentURL:(id)sender;
 
++ (void)initialize;
+
+
 
 @property (assign) IBOutlet NSWindow *window;
 

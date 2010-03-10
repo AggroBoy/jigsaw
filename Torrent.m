@@ -11,10 +11,10 @@
 
 @implementation Torrent
 
-+ (Torrent *)withName:(NSString *)name
++ (Torrent *)withHash:(NSString *)hash
 {
 	Torrent *torrent = [[Torrent alloc] init];
-	[torrent setName:name];
+	[torrent setHash:hash];
 	return torrent;
 }
 
@@ -22,25 +22,30 @@
 @synthesize hash;
 @synthesize size;
 @synthesize upRate;
-@synthesize upTotal;
+@synthesize uploaded;
 @synthesize downRate;
-@synthesize completedBytes;
+@synthesize downloaded;
 @synthesize ratio;
 @synthesize active;
 
 
 - (id)copyWithZone:(NSZone *)zone
 {
-	Torrent *torrent = [Torrent withName:name];
+	Torrent *torrent = [Torrent withHash:name];
 	[torrent setHash:hash];
 	[torrent setUpRate:upRate];
-	[torrent setUpTotal:upTotal];
+	[torrent setUploaded:uploaded];
 	[torrent setDownRate:downRate];
-	[torrent setCompletedBytes:completedBytes];
+	[torrent setDownloaded:downloaded];
 	[torrent setRatio:ratio];
 	[torrent setActive:active];
 	
 	return torrent;
+}
+
+- (BOOL)isEqual:(Torrent*)other
+{
+	return [hash isEqual:[other hash]];
 }
 
 @end

@@ -7,10 +7,18 @@
 #import "XMLRPC/XMLRPC.h"
 
 #import "mrtorrentAppDelegate.h"
+#import "BytesToReadbleSizeTransformer.h"
 
 @implementation mrtorrentAppDelegate
 
 @synthesize window;
+
++ (void)initialize
+{
+	BytesToReadbleSizeTransformer* transformer;
+	transformer = [[BytesToReadbleSizeTransformer alloc] init];
+	[NSValueTransformer setValueTransformer:transformer forName:@"BytesToReadableSizeTransformer"];
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Init code goes here

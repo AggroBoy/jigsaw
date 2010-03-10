@@ -7,7 +7,6 @@
 
 #import <Cocoa/Cocoa.h>
 #import <XMLRPC/XMLRPC.h>
-#import "TorrentCell.h"
 #import "TorrentListModel.h"
 #import "RateModel.h"
 

@@ -6,14 +6,15 @@
 //  Copyright 2009 Yell. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 #import "Torrent.h"
 
 @interface TorrentListModel : NSObject <NSXMLParserDelegate> {
 	IBOutlet NSMatrix *views;
 	IBOutlet NSTableView *tableView;
+	IBOutlet NSNumberFormatter *numberFormatter;
 	
-	NSArray *torrentList;
+	NSMutableArray *torrentList;
 	NSMutableString *textInProgress;
 	NSMutableArray *building;
 	NSMutableArray *elements;
@@ -30,5 +31,7 @@
 - (IBAction)deleteTorrent:(id)sender;
 
 - (void)update;
+
+@property (readwrite, assign) NSMutableArray* torrentList;
 
 @end
