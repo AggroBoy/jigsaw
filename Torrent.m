@@ -28,6 +28,32 @@
 @synthesize ratio;
 @synthesize active;
 
+- (NSNumber*) proportionComplete
+{
+	return [NSNumber numberWithDouble:[downloaded doubleValue] / [size doubleValue]];
+}
+
+- (NSNumber*) secondsRemaining
+{
+	long long bytesRemaining = [size longLongValue] - [downloaded longLongValue];
+	if ( bytesRemaining == 0 ) {
+		return [NSNumber numberWithInt:0];
+	}
+	
+	long long rate = [downRate longLongValue];
+	if (rate == 0) {
+		return [NSNumber numberWithInt:-1];
+	} else {
+		long long secondsRemaining = bytesRemaining / rate;
+		return [NSNumber numberWithInt:secondsRemaining];
+	}
+}
+
+- (NSNumber*) normalisedRatio
+{
+	return [NSNumber numberWithDouble:ratio / 1000]; 
+}
+
 
 - (id)copyWithZone:(NSZone *)zone
 {

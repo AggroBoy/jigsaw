@@ -7,7 +7,9 @@
 #import "XMLRPC/XMLRPC.h"
 
 #import "mrtorrentAppDelegate.h"
-#import "BytesToReadbleSizeTransformer.h"
+#import "BytesToReadableSizeTransformer.h"
+#import "BytesToReadableSpeedTransformer.h"
+#import "SecondsToReadableDurationTransformer.h"
 
 @implementation mrtorrentAppDelegate
 
@@ -15,9 +17,17 @@
 
 + (void)initialize
 {
-	BytesToReadbleSizeTransformer* transformer;
-	transformer = [[BytesToReadbleSizeTransformer alloc] init];
-	[NSValueTransformer setValueTransformer:transformer forName:@"BytesToReadableSizeTransformer"];
+	BytesToReadableSizeTransformer* sizeTransformer;
+	sizeTransformer = [[BytesToReadableSizeTransformer alloc] init];
+	[NSValueTransformer setValueTransformer:sizeTransformer forName:@"BytesToReadableSizeTransformer"];
+	
+	BytesToReadableSpeedTransformer* speedTransformer;
+	speedTransformer = [[BytesToReadableSpeedTransformer alloc] init];
+	[NSValueTransformer setValueTransformer:speedTransformer forName:@"BytesToReadableSpeedTransformer"];
+	
+	SecondsToReadableDurationTransformer* durationTransformer;
+	durationTransformer = [[SecondsToReadableDurationTransformer alloc] init];
+	[NSValueTransformer setValueTransformer:durationTransformer forName:@"SecondsToReadableDurationTransformer"];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {

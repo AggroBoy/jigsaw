@@ -39,4 +39,10 @@
 
 - (BOOL)isEqual:(Torrent*)other;
 
+- (NSNumber*) proportionComplete;
+
+- (NSNumber*) secondsRemaining;
+
+- (NSNumber*) normalisedRatio;
+
 @end

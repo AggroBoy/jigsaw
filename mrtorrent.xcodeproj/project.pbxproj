@@ -12,13 +12,15 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BE05C9A611487FDD00EC751B /* BytesToReadableSpeedTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C9A511487FDD00EC751B /* BytesToReadableSpeedTransformer.m */; };
+		BE05C9E7114884E200EC751B /* SecondsToReadableDurationTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05C9E6114884E200EC751B /* SecondsToReadableDurationTransformer.m */; };
 		BE110E7910CB4186008FC834 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE110E7810CB4186008FC834 /* MainView.m */; };
 		BE110EFE10CB4A77008FC834 /* XMLRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE110EFD10CB4A77008FC834 /* XMLRPC.framework */; };
 		BE110F2B10CB4D2C008FC834 /* XMLRPC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE110EFD10CB4A77008FC834 /* XMLRPC.framework */; };
 		BE11165010CF2950008FC834 /* Torrent.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11164F10CF2950008FC834 /* Torrent.m */; };
 		BE46237110D022EE00A1DC17 /* TorrentListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE46237010D022EE00A1DC17 /* TorrentListModel.m */; };
 		BE46255510D07F9A00A1DC17 /* RateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE46255410D07F9A00A1DC17 /* RateModel.m */; };
-		BEF345DB11472DA700000CB3 /* BytesToReadbleSizeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF345DA11472DA700000CB3 /* BytesToReadbleSizeTransformer.m */; };
+		BEF345DB11472DA700000CB3 /* BytesToReadableSizeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF345DA11472DA700000CB3 /* BytesToReadableSizeTransformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +49,10 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* mrtorrent-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "mrtorrent-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* mrtorrent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mrtorrent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE05C9A411487FDD00EC751B /* BytesToReadableSpeedTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BytesToReadableSpeedTransformer.h; sourceTree = "<group>"; };
+		BE05C9A511487FDD00EC751B /* BytesToReadableSpeedTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BytesToReadableSpeedTransformer.m; sourceTree = "<group>"; };
+		BE05C9E5114884E200EC751B /* SecondsToReadableDurationTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondsToReadableDurationTransformer.h; sourceTree = "<group>"; };
+		BE05C9E6114884E200EC751B /* SecondsToReadableDurationTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondsToReadableDurationTransformer.m; sourceTree = "<group>"; };
 		BE110E7710CB4186008FC834 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		BE110E7810CB4186008FC834 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		BE110EFD10CB4A77008FC834 /* XMLRPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XMLRPC.framework; path = /Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework; sourceTree = "<absolute>"; };
@@ -56,8 +62,8 @@
 		BE46237010D022EE00A1DC17 /* TorrentListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentListModel.m; sourceTree = "<group>"; };
 		BE46255310D07F9A00A1DC17 /* RateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateModel.h; sourceTree = "<group>"; };
 		BE46255410D07F9A00A1DC17 /* RateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateModel.m; sourceTree = "<group>"; };
-		BEF345D911472DA700000CB3 /* BytesToReadbleSizeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BytesToReadbleSizeTransformer.h; sourceTree = "<group>"; };
-		BEF345DA11472DA700000CB3 /* BytesToReadbleSizeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BytesToReadbleSizeTransformer.m; sourceTree = "<group>"; };
+		BEF345D911472DA700000CB3 /* BytesToReadableSizeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BytesToReadableSizeTransformer.h; sourceTree = "<group>"; };
+		BEF345DA11472DA700000CB3 /* BytesToReadableSizeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BytesToReadableSizeTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +92,12 @@
 				BE110E7810CB4186008FC834 /* MainView.m */,
 				256AC3D80F4B6AC300CF3369 /* mrtorrentAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* mrtorrentAppDelegate.m */,
-				BEF345D911472DA700000CB3 /* BytesToReadbleSizeTransformer.h */,
-				BEF345DA11472DA700000CB3 /* BytesToReadbleSizeTransformer.m */,
+				BEF345D911472DA700000CB3 /* BytesToReadableSizeTransformer.h */,
+				BEF345DA11472DA700000CB3 /* BytesToReadableSizeTransformer.m */,
+				BE05C9A411487FDD00EC751B /* BytesToReadableSpeedTransformer.h */,
+				BE05C9A511487FDD00EC751B /* BytesToReadableSpeedTransformer.m */,
+				BE05C9E5114884E200EC751B /* SecondsToReadableDurationTransformer.h */,
+				BE05C9E6114884E200EC751B /* SecondsToReadableDurationTransformer.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -221,7 +231,9 @@
 				BE11165010CF2950008FC834 /* Torrent.m in Sources */,
 				BE46237110D022EE00A1DC17 /* TorrentListModel.m in Sources */,
 				BE46255510D07F9A00A1DC17 /* RateModel.m in Sources */,
-				BEF345DB11472DA700000CB3 /* BytesToReadbleSizeTransformer.m in Sources */,
+				BEF345DB11472DA700000CB3 /* BytesToReadableSizeTransformer.m in Sources */,
+				BE05C9A611487FDD00EC751B /* BytesToReadableSpeedTransformer.m in Sources */,
+				BE05C9E7114884E200EC751B /* SecondsToReadableDurationTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

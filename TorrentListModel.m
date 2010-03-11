@@ -77,7 +77,7 @@
 							   @"d.get_up_rate=",
 							   @"d.get_up_total=",
 							   @"d.get_down_rate=",
-							   @"d.get_completed_bytes=",
+							   @"d.get_bytes_done=",
 							   @"d.get_ratio=",
 							   @"d.is_active=",
 							   nil
