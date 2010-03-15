@@ -6,7 +6,7 @@
 //  Copyright 2009 Yell. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 
 @interface Torrent : NSObject <NSCopying> {

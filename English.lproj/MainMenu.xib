@@ -11,9 +11,9 @@
 			<string key="NS.object.0">740</string>
 		</object>
 		<array class="NSMutableArray" key="IBDocument.EditedObjectIDs">
-			<integer value="536"/>
-			<integer value="81"/>
 			<integer value="727"/>
+			<integer value="81"/>
+			<integer value="372"/>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -390,13 +390,13 @@
 										<object class="NSTableView" id="397939147">
 											<reference key="NSNextResponder" ref="201099018"/>
 											<int key="NSvFlags">4352</int>
-											<string key="NSFrameSize">{805, 394}</string>
+											<string key="NSFrameSize">{737, 409}</string>
 											<reference key="NSSuperview" ref="201099018"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="999017045">
 												<reference key="NSNextResponder" ref="657595957"/>
 												<int key="NSvFlags">256</int>
-												<string key="NSFrameSize">{805, 17}</string>
+												<string key="NSFrameSize">{737, 17}</string>
 												<reference key="NSSuperview" ref="657595957"/>
 												<reference key="NSTableView" ref="397939147"/>
 											</object>
@@ -408,7 +408,7 @@
 											</object>
 											<array class="NSMutableArray" key="NSTableColumns">
 												<object class="NSTableColumn" id="780421499">
-													<double key="NSWidth">250</double>
+													<double key="NSWidth">230</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -688,6 +688,45 @@
 														<int key="NSCellFlags2">-2147481600</int>
 														<string key="NSContents">Text Cell</string>
 														<reference key="NSSupport" ref="223582608"/>
+														<object class="NSNumberFormatter" key="NSFormatter" id="72456203">
+															<dictionary class="NSMutableDictionary" key="NS.attributes">
+																<boolean value="YES" key="allowsFloats"/>
+																<integer value="1040" key="formatterBehavior"/>
+																<reference key="locale" ref="662800195"/>
+																<integer value="2" key="maximumFractionDigits"/>
+																<string key="negativeInfinitySymbol">-∞</string>
+																<string key="nilSymbol"/>
+																<integer value="1" key="numberStyle"/>
+																<integer value="0" key="paddingPosition"/>
+																<string key="positiveInfinitySymbol">+∞</string>
+																<boolean value="NO" key="usesGroupingSeparator"/>
+															</dictionary>
+															<string key="NS.positiveformat">#0.##</string>
+															<string key="NS.negativeformat">#0.##</string>
+															<nil key="NS.positiveattrs"/>
+															<nil key="NS.negativeattrs"/>
+															<nil key="NS.zero"/>
+															<object class="NSAttributedString" key="NS.nil">
+																<string key="NSString"/>
+															</object>
+															<object class="NSAttributedString" key="NS.nan">
+																<string key="NSString">NaN</string>
+																<reference key="NSAttributes" ref="43303402"/>
+															</object>
+															<reference key="NS.min" ref="80532266"/>
+															<reference key="NS.max" ref="80532266"/>
+															<object class="NSDecimalNumberHandler" key="NS.rounding">
+																<int key="NS.roundingmode">3</int>
+																<bool key="NS.raise.overflow">YES</bool>
+																<bool key="NS.raise.underflow">YES</bool>
+																<bool key="NS.raise.dividebyzero">YES</bool>
+															</object>
+															<string key="NS.decimal">.</string>
+															<string key="NS.thousand">,</string>
+															<bool key="NS.hasthousands">NO</bool>
+															<bool key="NS.localized">NO</bool>
+															<bool key="NS.allowsfloats">YES</bool>
+														</object>
 														<reference key="NSControlView" ref="397939147"/>
 														<reference key="NSBackgroundColor" ref="466685465"/>
 														<reference key="NSTextColor" ref="970883133"/>
@@ -698,7 +737,7 @@
 													<reference key="NSTableView" ref="397939147"/>
 												</object>
 												<object class="NSTableColumn" id="734593078">
-													<double key="NSWidth">64</double>
+													<double key="NSWidth">16</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -740,7 +779,7 @@
 												</object>
 											</object>
 											<double key="NSRowHeight">17</double>
-											<int key="NSTvFlags">-689963008</int>
+											<int key="NSTvFlags">-692060160</int>
 											<reference key="NSDelegate"/>
 											<reference key="NSDataSource"/>
 											<int key="NSColumnAutoresizingStyle">4</int>
@@ -750,8 +789,7 @@
 											<int key="NSTableViewDraggingDestinationStyle">0</int>
 										</object>
 									</array>
-									<string key="NSFrame">{{1, 17}, {737, 394}}</string>
-									<string key="NSBounds">{{68, 0}, {737, 394}}</string>
+									<string key="NSFrame">{{1, 17}, {737, 409}}</string>
 									<reference key="NSSuperview" ref="670668950"/>
 									<reference key="NSNextKeyView" ref="397939147"/>
 									<reference key="NSDocView" ref="397939147"/>
@@ -768,20 +806,18 @@
 									<reference key="NSSuperview" ref="670668950"/>
 									<reference key="NSTarget" ref="670668950"/>
 									<string key="NSAction">_doScroller:</string>
-									<double key="NSCurValue">0.60406091370558379</double>
+									<double key="NSCurValue">0.55695456294292145</double>
 									<double key="NSPercent">0.96332518337408313</double>
 								</object>
 								<object class="NSScroller" id="419293633">
 									<reference key="NSNextResponder" ref="670668950"/>
-									<int key="NSvFlags">256</int>
+									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrame">{{1, 411}, {737, 15}}</string>
 									<reference key="NSSuperview" ref="670668950"/>
-									<bool key="NSEnabled">YES</bool>
 									<int key="NSsFlags">1</int>
 									<reference key="NSTarget" ref="670668950"/>
 									<string key="NSAction">_doScroller:</string>
-									<double key="NSCurValue">1</double>
-									<double key="NSPercent">0.915527950310559</double>
+									<double key="NSPercent">0.98135818908122507</double>
 								</object>
 								<object class="NSClipView" id="657595957">
 									<reference key="NSNextResponder" ref="670668950"/>
@@ -790,7 +826,6 @@
 										<reference ref="999017045"/>
 									</array>
 									<string key="NSFrame">{{1, 0}, {737, 17}}</string>
-									<string key="NSBounds">{{68, 0}, {737, 17}}</string>
 									<reference key="NSSuperview" ref="670668950"/>
 									<reference key="NSNextKeyView" ref="999017045"/>
 									<reference key="NSDocView" ref="999017045"/>
@@ -802,7 +837,7 @@
 							<string key="NSFrame">{{20, 40}, {739, 427}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSNextKeyView" ref="201099018"/>
-							<int key="NSsFlags">690</int>
+							<int key="NSsFlags">562</int>
 							<reference key="NSVScroller" ref="711353557"/>
 							<reference key="NSHScroller" ref="419293633"/>
 							<reference key="NSContentView" ref="201099018"/>
@@ -1455,62 +1490,6 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 					<int key="connectionID">696</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">viewChanged:</string>
-						<reference key="source" ref="382483352"/>
-						<reference key="destination" ref="177282614"/>
-					</object>
-					<int key="connectionID">697</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">views</string>
-						<reference key="source" ref="382483352"/>
-						<reference key="destination" ref="87021474"/>
-					</object>
-					<int key="connectionID">698</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">tableView</string>
-						<reference key="source" ref="382483352"/>
-						<reference key="destination" ref="397939147"/>
-					</object>
-					<int key="connectionID">699</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">downBandwidth</string>
-						<reference key="source" ref="53261271"/>
-						<reference key="destination" ref="925953827"/>
-					</object>
-					<int key="connectionID">702</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">upBandwidth</string>
-						<reference key="source" ref="53261271"/>
-						<reference key="destination" ref="388482224"/>
-					</object>
-					<int key="connectionID">704</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">downThrottleChanged:</string>
-						<reference key="source" ref="53261271"/>
-						<reference key="destination" ref="619775910"/>
-					</object>
-					<int key="connectionID">711</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">upThrottleChanged:</string>
-						<reference key="source" ref="53261271"/>
-						<reference key="destination" ref="95320283"/>
-					</object>
-					<int key="connectionID">712</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">rateModel</string>
 						<reference key="source" ref="750561517"/>
@@ -1581,54 +1560,6 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 						<reference key="destination" ref="463495704"/>
 					</object>
 					<int key="connectionID">731</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">stopTorrent:</string>
-						<reference key="source" ref="382483352"/>
-						<reference key="destination" ref="241551157"/>
-					</object>
-					<int key="connectionID">738</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">deleteTorrent:</string>
-						<reference key="source" ref="382483352"/>
-						<reference key="destination" ref="833102531"/>
-					</object>
-					<int key="connectionID">739</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">startTorrent:</string>
-						<reference key="source" ref="382483352"/>
-						<reference key="destination" ref="445781057"/>
-					</object>
-					<int key="connectionID">745</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">startTorrent:</string>
-						<reference key="source" ref="382483352"/>
-						<reference key="destination" ref="592049874"/>
-					</object>
-					<int key="connectionID">746</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">stopTorrent:</string>
-						<reference key="source" ref="382483352"/>
-						<reference key="destination" ref="642924987"/>
-					</object>
-					<int key="connectionID">747</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">deleteTorrent:</string>
-						<reference key="source" ref="382483352"/>
-						<reference key="destination" ref="39184688"/>
-					</object>
-					<int key="connectionID">748</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -1838,6 +1769,134 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 						</object>
 					</object>
 					<int key="connectionID">814</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">torrentListController</string>
+						<reference key="source" ref="750561517"/>
+						<reference key="destination" ref="195810712"/>
+					</object>
+					<int key="connectionID">819</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">views</string>
+						<reference key="source" ref="750561517"/>
+						<reference key="destination" ref="87021474"/>
+					</object>
+					<int key="connectionID">821</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">startTorrent:</string>
+						<reference key="source" ref="750561517"/>
+						<reference key="destination" ref="592049874"/>
+					</object>
+					<int key="connectionID">822</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">stopTorrent:</string>
+						<reference key="source" ref="750561517"/>
+						<reference key="destination" ref="642924987"/>
+					</object>
+					<int key="connectionID">823</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">deleteTorrent:</string>
+						<reference key="source" ref="750561517"/>
+						<reference key="destination" ref="39184688"/>
+					</object>
+					<int key="connectionID">824</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">startTorrent:</string>
+						<reference key="source" ref="750561517"/>
+						<reference key="destination" ref="445781057"/>
+					</object>
+					<int key="connectionID">825</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">stopTorrent:</string>
+						<reference key="source" ref="750561517"/>
+						<reference key="destination" ref="241551157"/>
+					</object>
+					<int key="connectionID">826</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">deleteTorrent:</string>
+						<reference key="source" ref="750561517"/>
+						<reference key="destination" ref="833102531"/>
+					</object>
+					<int key="connectionID">827</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">upThrottleChanged:</string>
+						<reference key="source" ref="750561517"/>
+						<reference key="destination" ref="95320283"/>
+					</object>
+					<int key="connectionID">828</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">downThrottleChanged:</string>
+						<reference key="source" ref="750561517"/>
+						<reference key="destination" ref="619775910"/>
+					</object>
+					<int key="connectionID">829</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">downThrottlePopup</string>
+						<reference key="source" ref="750561517"/>
+						<reference key="destination" ref="619775910"/>
+					</object>
+					<int key="connectionID">830</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">upThrottlePopup</string>
+						<reference key="source" ref="750561517"/>
+						<reference key="destination" ref="95320283"/>
+					</object>
+					<int key="connectionID">831</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: upBandwidth</string>
+						<reference key="source" ref="388482224"/>
+						<reference key="destination" ref="53261271"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="388482224"/>
+							<reference key="NSDestination" ref="53261271"/>
+							<string key="NSLabel">value: upBandwidth</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">upBandwidth</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">833</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: downBandwidth</string>
+						<reference key="source" ref="925953827"/>
+						<reference key="destination" ref="53261271"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="925953827"/>
+							<reference key="NSDestination" ref="53261271"/>
+							<string key="NSLabel">value: downBandwidth</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">downBandwidth</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">835</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2577,7 +2636,9 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 					<object class="IBObjectRecord">
 						<int key="objectID">790</int>
 						<reference key="object" ref="396111813"/>
-						<array class="NSMutableArray" key="children"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="72456203"/>
+						</array>
 						<reference key="parent" ref="515273019"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -2598,6 +2659,11 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 						<int key="objectID">802</int>
 						<reference key="object" ref="1000524608"/>
 						<reference key="parent" ref="333362452"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">815</int>
+						<reference key="object" ref="72456203"/>
+						<reference key="parent" ref="396111813"/>
 					</object>
 				</array>
 			</object>
@@ -2636,7 +2702,7 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 				<string key="24.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="24.ImportedFromIB2"/>
 				<string key="24.editorWindowContentRectSynchronizationRect">{{525, 802}, {197, 73}}</string>
-				<string key="29.IBEditorWindowLastContentRect">{{1588, 1110}, {325, 20}}</string>
+				<string key="29.IBEditorWindowLastContentRect">{{1206, 1123}, {325, 20}}</string>
 				<string key="29.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="29.ImportedFromIB2"/>
 				<string key="29.WindowOrigin">{74, 862}</string>
@@ -2647,9 +2713,9 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 				<string key="296.editorWindowContentRectSynchronizationRect">{{475, 832}, {234, 43}}</string>
 				<string key="297.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="298.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="371.IBEditorWindowLastContentRect">{{418, 138}, {779, 500}}</string>
+				<string key="371.IBEditorWindowLastContentRect">{{421, 116}, {779, 500}}</string>
 				<string key="371.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="371.IBWindowTemplateEditedContentRect">{{418, 138}, {779, 500}}</string>
+				<string key="371.IBWindowTemplateEditedContentRect">{{421, 116}, {779, 500}}</string>
 				<boolean value="YES" key="371.NSWindowTemplate.visibleAtLaunch"/>
 				<string key="371.editorWindowContentRectSynchronizationRect">{{33, 99}, {480, 360}}</string>
 				<string key="371.windowTemplate.maxSize">{3.40282e+38, 3.40282e+38}</string>
@@ -2742,13 +2808,25 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 				<string key="758.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="759.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="766.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="785.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="786.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="787.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="788.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="789.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="790.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="791.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="792.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1041" key="802.IBNumberFormatterBehaviorMetadataKey"/>
 				<boolean value="YES" key="802.IBNumberFormatterLocalizesFormatMetadataKey"/>
 				<string key="802.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="81.IBEditorWindowLastContentRect">{{1689, 967}, {200, 143}}</string>
+				<string key="81.IBEditorWindowLastContentRect">{{1307, 980}, {200, 143}}</string>
 				<string key="81.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="81.ImportedFromIB2"/>
 				<string key="81.editorWindowContentRectSynchronizationRect">{{145, 474}, {199, 203}}</string>
+				<integer value="1040" key="815.IBNumberFormatterBehaviorMetadataKey"/>
+				<boolean value="YES" key="815.IBNumberFormatterLocalizesFormatMetadataKey"/>
+				<real value="1234.2349999999999" key="815.IBNumberFormatterSampleNumberKey"/>
+				<string key="815.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="82.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="82.ImportedFromIB2"/>
 				<string key="83.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -2760,16 +2838,28 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">814</int>
+			<int key="maxID">835</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">MainView</string>
 					<string key="superclassName">NSObject</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="deleteTorrent:">id</string>
+						<string key="downThrottleChanged:">id</string>
+						<string key="startTorrent:">id</string>
+						<string key="stopTorrent:">id</string>
+						<string key="upThrottleChanged:">id</string>
+						<string key="viewChanged:">id</string>
+					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="downThrottlePopup">NSPopUpButton</string>
 						<string key="rateModel">RateModel</string>
+						<string key="torrentListController">NSArrayController</string>
 						<string key="torrentListModel">TorrentListModel</string>
+						<string key="upThrottlePopup">NSPopUpButton</string>
+						<string key="views">NSMatrix</string>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
@@ -2779,14 +2869,8 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 				<object class="IBPartialClassDescription">
 					<string key="className">RateModel</string>
 					<string key="superclassName">NSObject</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="downThrottleChanged:">id</string>
-						<string key="upThrottleChanged:">id</string>
-					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="downBandwidth">NSTextField</string>
 						<string key="downThrottlePopup">NSPopUpButton</string>
-						<string key="upBandwidth">NSTextField</string>
 						<string key="upThrottlePopup">NSPopUpButton</string>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -2795,19 +2879,25 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
+					<string key="className">Torrent</string>
+					<string key="superclassName">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Torrent.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">TorrentListModel</string>
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="deleteTorrent:">id</string>
-						<string key="startTorrent:">id</string>
-						<string key="stopTorrent:">id</string>
-						<string key="viewChanged:">id</string>
+						<string key="deleteTorrent:">Torrent</string>
+						<string key="startTorrent:">Torrent</string>
+						<string key="stopTorrent:">Torrent</string>
 					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="numberFormatter">NSNumberFormatter</string>
-						<string key="tableView">NSTableView</string>
-						<string key="views">NSMatrix</string>
-					</dictionary>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">numberFormatter</string>
+						<string key="NS.object.0">NSNumberFormatter</string>
+					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">TorrentListModel.h</string>

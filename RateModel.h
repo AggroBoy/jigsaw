@@ -6,17 +6,15 @@
 //  Copyright 2009 Yell. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 
 @interface RateModel : NSObject <NSXMLParserDelegate> {
-	IBOutlet NSTextField *upBandwidth;
-	IBOutlet NSTextField *downBandwidth;
-	IBOutlet NSPopUpButton *upThrottlePopup;
-	IBOutlet NSPopUpButton *downThrottlePopup;
+	NSNumber *downBandwidth;
+	NSNumber *upBandwidth;
+	NSNumber *downLimit;
+	NSNumber *upLimit;
 	
-	NSArray *defaultDownThrottles;
-	NSArray *defaultUpThrottles;
 	
 	NSMutableString *textInProgress;
 	NSInteger xmlValue;
@@ -24,9 +22,13 @@
 
 - (void)update;
 
-- (IBAction)upThrottleChanged:(id)sender;
+- (void)setUpThrottle:(NSInteger) bytesPerSecond;
+- (void)setDownThrottle:(NSInteger) bytesPerSecond;
 
-- (IBAction)downThrottleChanged:(id)sender;
+@property (readwrite, assign) NSNumber* downBandwidth;
+@property (readwrite, assign) NSNumber* upBandwidth;
+@property (readwrite, assign) NSNumber* downLimit;
+@property (readwrite, assign) NSNumber* upLimit;
 
 
 @end

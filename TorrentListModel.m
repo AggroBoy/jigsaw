@@ -8,58 +8,49 @@
 #import "TorrentListModel.h"
 #import "XMLRPC/XMLRPC.h"
 
-
 @implementation TorrentListModel
 
--  (void)awakeFromNib
+#pragma mark initialisation
+- (void)awakeFromNib
 {
-	torrentList = [NSMutableArray arrayWithCapacity:50];
-	numberFormatter = [NSNumberFormatter new];
-	
 	view = @"main";
-
-	for (NSInteger i = 0; i < [[views cells] count]; i++) {
-		[[[views cells] objectAtIndex:i] setTarget:self];
-		[[[views cells] objectAtIndex:i] setAction:@selector(viewChanged:)];
-	}
 }
 
-- (void)updateWithXml:(NSString *) xml
+
+#pragma mark data handling
+- (NSMutableArray*)parseXml:(NSString*) xml
 {
 	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:[xml dataUsingEncoding:NSASCIIStringEncoding]];
 	[parser setDelegate:self];
-
+	
 	elements = [NSMutableArray array];
-
+	
 	[parser parse];
 	
 	NSInteger torrentCount = [elements count] / 9;
-	building = [NSMutableArray arrayWithCapacity:torrentCount];
+	NSMutableArray* newTorrentList = [NSMutableArray arrayWithCapacity:torrentCount];
 	
 	for (NSInteger i = 0; i < torrentCount; i++) {
 		NSInteger firstElementOfTorrent = i * 9;
 		int offset = 0;
 		Torrent *torrent = [Torrent withHash:[elements objectAtIndex:firstElementOfTorrent + offset++]];
-		if ([torrentList indexOfObject:torrent] != NSNotFound) {
-			torrent = [torrentList objectAtIndex:[torrentList indexOfObject:torrent]];
-		}
-				
+		
 		[torrent setName:[elements objectAtIndex:firstElementOfTorrent + offset++]];
 		[torrent setSize:[elements objectAtIndex:firstElementOfTorrent + offset++]];
-
+		
 		[torrent setUpRate:[elements objectAtIndex:firstElementOfTorrent + offset++]];
 		[torrent setUploaded:[elements objectAtIndex:firstElementOfTorrent + offset++]];
-
+		
 		[torrent setDownRate:[elements objectAtIndex:firstElementOfTorrent + offset++]];
 		[torrent setDownloaded:[elements objectAtIndex:firstElementOfTorrent + offset++]];
 		
 		[torrent setRatio:[[elements objectAtIndex:firstElementOfTorrent + offset++] doubleValue]];
 		[torrent setActive:[[elements objectAtIndex:firstElementOfTorrent + offset++] longLongValue] == 1];
 		
-		[building addObject:torrent];
+		[newTorrentList addObject:torrent];
 	}
 	
-	[self setTorrentList:building];
+	return newTorrentList;
 }
 
 - (void)update
@@ -86,69 +77,15 @@
 		[request setMethod: @"d.multicall" withParameters:parameters];
 		XMLRPCResponse *response = [XMLRPCConnection sendSynchronousXMLRPCRequest:request];
 	
-		[self updateWithXml:response.body];
+		[self setTorrentList:[NSArray arrayWithArray:[self parseXml:response.body]]];
 	});
 }	
 
-- (IBAction)viewChanged:(id)sender
-{
-	NSString *newView = [NSString stringWithString:[[views selectedCell] title]];
-	
-	if ([newView isEqualToString:@"All"]) {
-		view = @"main";
-	}
-	if ([newView isEqualToString:@"Complete"]) {
-		view = @"complete";
-	}
-	if ([newView isEqualToString:@"Incomplete"]) {
-		view = @"incomplete";
-	}
-	
-	[self update];
-}
 
-
-#pragma mark Menu item methods
-- (Torrent *) selectedTorrent {
-	// Bizarrely, the usually horrible assign-and-test is actually most readable for this snippet...
-	int row;
-	if ((row = [tableView clickedRow]) == -1) {
-		if ((row = [tableView selectedRow]) == -1) {
-			return NO;
-		}
-	}
-	
-	return [torrentList objectAtIndex:row];
-}
-
-- (BOOL)validateMenuItem:(NSMenuItem *)item
-{
-	Torrent *torrent = [self selectedTorrent];
-
-	if (torrent == nil) {
-		return NO;
-	}
-	
-	BOOL active = [torrent active];
-	
-	if ([item action] == @selector(stopTorrent:)) {
-		return active ? YES : NO;
-	}
-	if ([item action] == @selector(startTorrent:)) {
-		return active ? NO : YES;
-	}
-	if ([item action] == @selector(deleteTorrent:)) {
-		return active ? NO : YES;
-	}
-	
-	return NO;
-}
-
-- (IBAction)stopTorrent:(id)sender
+#pragma mark Torrent control functions
+- (void)stopTorrent:(Torrent*)torrent
 {
 	NSLog(@"Stop");
-
-	Torrent *torrent = [self selectedTorrent];
 
 	NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
 	XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
@@ -157,11 +94,9 @@
 	[XMLRPCConnection sendSynchronousXMLRPCRequest:request];
 }
 
-- (IBAction)startTorrent:(id)sender
+- (void)startTorrent:(Torrent*)torrent
 {
 	NSLog(@"start");
-	
-	Torrent *torrent = [self selectedTorrent];
 	
 	NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
 	XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
@@ -170,11 +105,9 @@
 	[XMLRPCConnection sendSynchronousXMLRPCRequest:request];
 }
 
-- (IBAction)deleteTorrent:(id)sender
+- (void)deleteTorrent:(Torrent*)torrent
 {
 	NSLog(@"delete");
-	
-	Torrent *torrent = [self selectedTorrent];
 	
 	NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
 	XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
@@ -207,7 +140,7 @@ didStartElement:(NSString *)elementName
 		
 	}
 	if ([elementName isEqualToString:@"i8"]) {
-		NSNumber *value = [numberFormatter numberFromString:textInProgress];
+		NSNumber *value = [NSNumber numberWithInt:[textInProgress intValue]];
 		[elements addObject:value];
 	}
 }
@@ -220,6 +153,9 @@ foundCharacters:(NSString *)string
 	[textInProgress appendString:string];
 }
 
+
+#pragma mark properties
 @synthesize torrentList;
+@synthesize view;
 
 @end

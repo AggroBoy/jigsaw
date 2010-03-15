@@ -10,28 +10,23 @@
 #import "Torrent.h"
 
 @interface TorrentListModel : NSObject <NSXMLParserDelegate> {
-	IBOutlet NSMatrix *views;
-	IBOutlet NSTableView *tableView;
-	IBOutlet NSNumberFormatter *numberFormatter;
-	
-	NSMutableArray *torrentList;
-	NSMutableString *textInProgress;
-	NSMutableArray *building;
-	NSMutableArray *elements;
-	
+	NSArray *torrentList;
 	NSString *view;
-
+	
+	NSMutableArray *elements;
+	NSMutableString *textInProgress;
 }
 
-- (IBAction)viewChanged:(id)sender;
+- (NSMutableArray*)parseXml:(NSString*) xml;
 
-- (BOOL)validateMenuItem:(NSMenuItem *)item;
-- (IBAction)startTorrent:(id)sender;
-- (IBAction)stopTorrent:(id)sender;
-- (IBAction)deleteTorrent:(id)sender;
+
+- (void)startTorrent:(Torrent*)torrent;
+- (void)stopTorrent:(Torrent*)torrent;
+- (void)deleteTorrent:(Torrent*)torrent;
 
 - (void)update;
 
-@property (readwrite, assign) NSMutableArray* torrentList;
+@property (readwrite, assign) NSArray* torrentList;
+@property (readwrite, copy) NSString* view;
 
 @end

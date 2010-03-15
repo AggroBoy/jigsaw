@@ -82,6 +82,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BEA40971114CFE4E00A0ACF5 /* Utility */,
 				BE46255310D07F9A00A1DC17 /* RateModel.h */,
 				BE46255410D07F9A00A1DC17 /* RateModel.m */,
 				BE46236F10D022EE00A1DC17 /* TorrentListModel.h */,
@@ -92,12 +93,6 @@
 				BE110E7810CB4186008FC834 /* MainView.m */,
 				256AC3D80F4B6AC300CF3369 /* mrtorrentAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* mrtorrentAppDelegate.m */,
-				BEF345D911472DA700000CB3 /* BytesToReadableSizeTransformer.h */,
-				BEF345DA11472DA700000CB3 /* BytesToReadableSizeTransformer.m */,
-				BE05C9A411487FDD00EC751B /* BytesToReadableSpeedTransformer.h */,
-				BE05C9A511487FDD00EC751B /* BytesToReadableSpeedTransformer.m */,
-				BE05C9E5114884E200EC751B /* SecondsToReadableDurationTransformer.h */,
-				BE05C9E6114884E200EC751B /* SecondsToReadableDurationTransformer.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -167,6 +162,19 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEA40971114CFE4E00A0ACF5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BEF345D911472DA700000CB3 /* BytesToReadableSizeTransformer.h */,
+				BEF345DA11472DA700000CB3 /* BytesToReadableSizeTransformer.m */,
+				BE05C9A411487FDD00EC751B /* BytesToReadableSpeedTransformer.h */,
+				BE05C9A511487FDD00EC751B /* BytesToReadableSpeedTransformer.m */,
+				BE05C9E5114884E200EC751B /* SecondsToReadableDurationTransformer.h */,
+				BE05C9E6114884E200EC751B /* SecondsToReadableDurationTransformer.m */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

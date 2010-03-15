@@ -14,13 +14,6 @@
 
 - (void)awakeFromNib
 {
-	defaultDownThrottles = [NSArray arrayWithObjects:[NSNumber numberWithInt:10],
-							[NSNumber numberWithInt:20],[NSNumber numberWithInt:50],[NSNumber numberWithInt:100],
-							[NSNumber numberWithInt:200],[NSNumber numberWithInt:400],[NSNumber numberWithInt:0], nil];
-	
-	defaultUpThrottles = [NSArray arrayWithObjects:[NSNumber numberWithInt:5],
-						  [NSNumber numberWithInt:10],[NSNumber numberWithInt:20],[NSNumber numberWithInt:40],
-						  [NSNumber numberWithInt:0], nil];
 }
 
 - (NSInteger)getIntegerXmlValue:(NSString *)method
@@ -39,81 +32,41 @@
 	return xmlValue;
 }
 
-- (void) updateThrottlePopup: (NSPopUpButton *) popup throttle: (NSInteger) throttle defaultValues: (NSArray *) defaultValues  {
-	if ([popup indexOfItemWithTag:throttle] != -1) {
-		[popup selectItemWithTag:throttle];
-	} else {
-		for (NSInteger i = 0; i < [popup numberOfItems]; i++) {
-			NSNumber *tag = [NSNumber numberWithInt:[[popup itemAtIndex:i] tag]];
-			if (![defaultValues containsObject:tag]) {
-				[popup removeItemAtIndex:i];
-				break;
-			}
-		}
-		for (NSInteger i = 0; i < [popup numberOfItems]; i++) {
-			NSInteger tag = [[popup itemAtIndex:i] tag];
-			if (tag > throttle || tag == 0) {
-				NSString *title = [NSString stringWithFormat:@"%d KB/s", throttle];
-				[popup insertItemWithTitle:title atIndex:i];
-				[[popup itemAtIndex:i] setTag:throttle];
-				[popup selectItemWithTag:throttle];
-				break;
-			} 
-		}
-	}
-}
-
-- (void)updateGlobalBandwith
-{
-	dispatch_async(dispatch_get_global_queue(0, 0), ^{
-		NSInteger currentDownBandwidth = [self getIntegerXmlValue:@"get_down_rate"];
-		NSInteger currentUpBandwidth = [self getIntegerXmlValue:@"get_up_rate"];
-		NSInteger currentDownLimit = [self getIntegerXmlValue:@"get_download_rate"];
-		NSInteger currentUpLimit = [self getIntegerXmlValue:@"get_upload_rate"];
-		
-		dispatch_async(dispatch_get_main_queue(), ^{
-			[downBandwidth setDoubleValue:currentDownBandwidth/1024.0];
-			[upBandwidth setDoubleValue:currentUpBandwidth/1024.0];
-
-			NSInteger upThrottle = currentUpLimit/1024;
-			[self updateThrottlePopup:upThrottlePopup throttle:upThrottle defaultValues:defaultUpThrottles];
-			
-			NSInteger downThrottle = currentDownLimit/1024;
-			[self updateThrottlePopup:downThrottlePopup throttle:downThrottle defaultValues:defaultDownThrottles];
-		});
-	});
-}
 
 - (void)update
 {
-	[self updateGlobalBandwith];
+	[self setDownBandwidth:[NSNumber numberWithDouble:[self getIntegerXmlValue:@"get_down_rate"] / 1024.0]];
+	[self setUpBandwidth:[NSNumber numberWithDouble:[self getIntegerXmlValue:@"get_up_rate"] / 1024.0]];
+	[self setDownLimit:[NSNumber numberWithDouble:[self getIntegerXmlValue:@"get_download_rate"] / 1024.0]];
+	[self setUpLimit:[NSNumber numberWithDouble:[self getIntegerXmlValue:@"get_upload_rate"] / 1024.0]];
 }
 
 
 #pragma mark Throttle changed actions
-- (IBAction)upThrottleChanged:(id)sender
+- (void)setUpThrottle:(NSInteger) kPerSecond
 {
-	NSLog(@"Up throttle changed to: %d", [[upThrottlePopup selectedItem] tag]);
+	NSLog(@"Up throttle changed to: %d", kPerSecond);
 	dispatch_async(dispatch_get_global_queue(0, 0), ^{
 		NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
 		XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
 		
-		[request setMethod: @"set_upload_rate" withParameter:[NSString stringWithFormat:@"%d", [[upThrottlePopup selectedItem] tag]*1024]];
+		[request setMethod: @"set_upload_rate" withParameter:[NSString stringWithFormat:@"%d", kPerSecond * 1024]];
 		[XMLRPCConnection sendSynchronousXMLRPCRequest:request];
 	});
 }
 
-- (IBAction)downThrottleChanged:(id)sender
+- (void)setDownThrottle:(NSInteger) kPerSecond
 {
-	NSLog(@"Up throttle changed to: %d", [[downThrottlePopup selectedItem] tag]);
+	NSLog(@"Down throttle changed to: %d", kPerSecond);
 	dispatch_async(dispatch_get_global_queue(0, 0), ^{
 		NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
 		XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
 		
-		[request setMethod: @"set_download_rate" withParameter:[NSString stringWithFormat:@"%d", [[downThrottlePopup selectedItem] tag]*1024]];
+		[request setMethod: @"set_download_rate" withParameter:[NSString stringWithFormat:@"%d", kPerSecond * 1024]];
 		[XMLRPCConnection sendSynchronousXMLRPCRequest:request];
 	});
 }
+
 
 #pragma mark NSXMLParser Delegate calls
 -  (void)parser:(NSXMLParser *)parser
@@ -144,5 +97,14 @@ foundCharacters:(NSString *)string
 {
 	[textInProgress appendString:string];
 }
+
+
+#pragma mark properties
+
+@synthesize downBandwidth;
+@synthesize upBandwidth;
+@synthesize downLimit;
+@synthesize upLimit;
+
 
 @end
