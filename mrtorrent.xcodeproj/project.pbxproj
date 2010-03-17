@@ -18,6 +18,7 @@
 		BE110EFE10CB4A77008FC834 /* XMLRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE110EFD10CB4A77008FC834 /* XMLRPC.framework */; };
 		BE110F2B10CB4D2C008FC834 /* XMLRPC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BE110EFD10CB4A77008FC834 /* XMLRPC.framework */; };
 		BE11165010CF2950008FC834 /* Torrent.m in Sources */ = {isa = PBXBuildFile; fileRef = BE11164F10CF2950008FC834 /* Torrent.m */; };
+		BE3B886A115069E2000900EB /* TorrentTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3B8869115069E2000900EB /* TorrentTable.m */; };
 		BE46237110D022EE00A1DC17 /* TorrentListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE46237010D022EE00A1DC17 /* TorrentListModel.m */; };
 		BE46255510D07F9A00A1DC17 /* RateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE46255410D07F9A00A1DC17 /* RateModel.m */; };
 		BEF345DB11472DA700000CB3 /* BytesToReadableSizeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF345DA11472DA700000CB3 /* BytesToReadableSizeTransformer.m */; };
@@ -58,6 +59,9 @@
 		BE110EFD10CB4A77008FC834 /* XMLRPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XMLRPC.framework; path = /Users/will/Documents/Development/Cocoa/xmlrpc/build/Release/XMLRPC.framework; sourceTree = "<absolute>"; };
 		BE11164E10CF2950008FC834 /* Torrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Torrent.h; sourceTree = "<group>"; };
 		BE11164F10CF2950008FC834 /* Torrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Torrent.m; sourceTree = "<group>"; };
+		BE3B87F7115062C1000900EB /* TorrentDelegates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentDelegates.h; sourceTree = "<group>"; };
+		BE3B8868115069E2000900EB /* TorrentTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentTable.h; sourceTree = "<group>"; };
+		BE3B8869115069E2000900EB /* TorrentTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentTable.m; sourceTree = "<group>"; };
 		BE46236F10D022EE00A1DC17 /* TorrentListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentListModel.h; sourceTree = "<group>"; };
 		BE46237010D022EE00A1DC17 /* TorrentListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentListModel.m; sourceTree = "<group>"; };
 		BE46255310D07F9A00A1DC17 /* RateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateModel.h; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BE3B8867115069D2000900EB /* Controls */,
 				BEA40971114CFE4E00A0ACF5 /* Utility */,
 				BE46255310D07F9A00A1DC17 /* RateModel.h */,
 				BE46255410D07F9A00A1DC17 /* RateModel.m */,
@@ -93,6 +98,7 @@
 				BE110E7810CB4186008FC834 /* MainView.m */,
 				256AC3D80F4B6AC300CF3369 /* mrtorrentAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* mrtorrentAppDelegate.m */,
+				BE3B87F7115062C1000900EB /* TorrentDelegates.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -162,6 +168,15 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE3B8867115069D2000900EB /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				BE3B8868115069E2000900EB /* TorrentTable.h */,
+				BE3B8869115069E2000900EB /* TorrentTable.m */,
+			);
+			name = Controls;
 			sourceTree = "<group>";
 		};
 		BEA40971114CFE4E00A0ACF5 /* Utility */ = {
@@ -242,6 +257,7 @@
 				BEF345DB11472DA700000CB3 /* BytesToReadableSizeTransformer.m in Sources */,
 				BE05C9A611487FDD00EC751B /* BytesToReadableSpeedTransformer.m in Sources */,
 				BE05C9E7114884E200EC751B /* SecondsToReadableDurationTransformer.m in Sources */,
+				BE3B886A115069E2000900EB /* TorrentTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
