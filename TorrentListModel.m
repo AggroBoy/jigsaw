@@ -11,9 +11,15 @@
 @implementation TorrentListModel
 
 #pragma mark initialisation
-- (void)awakeFromNib
+- (id)init
 {
+	[super init];
 	view = @"main";
+	
+	torrentListUpdateQueue = dispatch_queue_create("org.shadowrealm.mrtorrent.torrentListUpdate", NULL);
+	dispatch_retain(torrentListUpdateQueue);
+	
+	return self;
 }
 
 
@@ -55,7 +61,7 @@
 
 - (void)update
 {
-	dispatch_async(dispatch_get_global_queue(0, 0), ^{
+	dispatch_async(torrentListUpdateQueue, ^{
 
 		NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
 		XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];

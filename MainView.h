@@ -9,8 +9,9 @@
 #import <XMLRPC/XMLRPC.h>
 #import "TorrentListModel.h"
 #import "RateModel.h"
+#import "TorrentDelegates.h"
 
-@interface MainView : NSObject {
+@interface MainView : NSObject <RateModelDelegate> {
 	IBOutlet NSMatrix *views;
 
 	IBOutlet NSPopUpButton *upThrottlePopup;
@@ -32,7 +33,9 @@
 - (void)updateTorrentListModel;
 
 - (IBAction)viewChanged:(id)sender;
+- (IBAction)tableClicked:(id)sender;
 
+- (void)didUpdateRates;
 - (IBAction)upThrottleChanged:(id)sender;
 - (IBAction)downThrottleChanged:(id)sender;
 

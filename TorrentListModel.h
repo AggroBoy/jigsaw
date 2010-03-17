@@ -15,10 +15,9 @@
 	
 	NSMutableArray *elements;
 	NSMutableString *textInProgress;
+	
+	dispatch_queue_t torrentListUpdateQueue;
 }
-
-- (NSMutableArray*)parseXml:(NSString*) xml;
-
 
 - (void)startTorrent:(Torrent*)torrent;
 - (void)stopTorrent:(Torrent*)torrent;

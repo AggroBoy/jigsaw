@@ -15,6 +15,8 @@
 #pragma mark initialistion
 -  (void)awakeFromNib
 {
+	[rateModel setDelegate:self];
+	
 	for (NSInteger i = 0; i < [[views cells] count]; i++) {
 		[[[views cells] objectAtIndex:i] setTarget:self];
 		[[[views cells] objectAtIndex:i] setAction:@selector(viewChanged:)];
@@ -63,13 +65,7 @@
 #pragma mark data control
 - (void)updateRateModel
 {
-	dispatch_async(dispatch_get_global_queue(0, 0), ^{
-		[rateModel update];
-		dispatch_async(dispatch_get_main_queue(), ^{
-			[self updateThrottlePopup:upThrottlePopup throttle:[[rateModel upLimit] intValue] defaultValues:defaultUpThrottles];
-			[self updateThrottlePopup:downThrottlePopup throttle:[[rateModel downLimit] intValue] defaultValues:defaultDownThrottles];
-		});
-	});
+	[rateModel update];
 }
 
 - (void)updateTorrentListModel
@@ -101,6 +97,12 @@
 	}
 	
 	[torrentListModel update];
+}
+
+- (void)didUpdateRates
+{
+	[self updateThrottlePopup:upThrottlePopup throttle:[[rateModel upLimit] intValue] defaultValues:defaultUpThrottles];
+	[self updateThrottlePopup:downThrottlePopup throttle:[[rateModel downLimit] intValue] defaultValues:defaultDownThrottles];
 }
 
 - (IBAction)upThrottleChanged:(id)sender

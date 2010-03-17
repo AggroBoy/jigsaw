@@ -12,8 +12,14 @@
 
 @implementation RateModel
 
-- (void)awakeFromNib
+- (id)init
 {
+	[super init];
+	
+	rateUpdateQueue = dispatch_queue_create("org.shadowrealm.mrtorrent.rateUpdate", NULL);
+	dispatch_retain(rateUpdateQueue);
+	
+	return self;
 }
 
 - (NSInteger)getIntegerXmlValue:(NSString *)method
@@ -35,10 +41,16 @@
 
 - (void)update
 {
-	[self setDownBandwidth:[NSNumber numberWithDouble:[self getIntegerXmlValue:@"get_down_rate"] / 1024.0]];
-	[self setUpBandwidth:[NSNumber numberWithDouble:[self getIntegerXmlValue:@"get_up_rate"] / 1024.0]];
-	[self setDownLimit:[NSNumber numberWithDouble:[self getIntegerXmlValue:@"get_download_rate"] / 1024.0]];
-	[self setUpLimit:[NSNumber numberWithDouble:[self getIntegerXmlValue:@"get_upload_rate"] / 1024.0]];
+	dispatch_async(rateUpdateQueue, ^{
+		[self setDownBandwidth:[NSNumber numberWithDouble:[self getIntegerXmlValue:@"get_down_rate"] / 1024.0]];
+		[self setUpBandwidth:[NSNumber numberWithDouble:[self getIntegerXmlValue:@"get_up_rate"] / 1024.0]];
+		[self setDownLimit:[NSNumber numberWithDouble:[self getIntegerXmlValue:@"get_download_rate"] / 1024.0]];
+		[self setUpLimit:[NSNumber numberWithDouble:[self getIntegerXmlValue:@"get_upload_rate"] / 1024.0]];
+		
+		dispatch_async(dispatch_get_main_queue(), ^{
+			[delegate didUpdateRates];
+		});
+	});
 }
 
 
@@ -105,6 +117,8 @@ foundCharacters:(NSString *)string
 @synthesize upBandwidth;
 @synthesize downLimit;
 @synthesize upLimit;
+@synthesize delegate;
+
 
 
 @end

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "TorrentDelegates.h"
+
 
 @interface RateModel : NSObject <NSXMLParserDelegate> {
 	NSNumber *downBandwidth;
@@ -18,6 +20,10 @@
 	
 	NSMutableString *textInProgress;
 	NSInteger xmlValue;
+	
+	dispatch_queue_t rateUpdateQueue;
+	
+	id<RateModelDelegate> delegate;
 }
 
 - (void)update;
@@ -29,6 +35,7 @@
 @property (readwrite, assign) NSNumber* upBandwidth;
 @property (readwrite, assign) NSNumber* downLimit;
 @property (readwrite, assign) NSNumber* upLimit;
+@property (readwrite, assign) id<RateModelDelegate> delegate;
 
 
 @end
