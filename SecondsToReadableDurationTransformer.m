@@ -26,9 +26,9 @@
 	long long seconds = [secondsValue longLongValue];
 	
 	if (seconds == 0) {
-		return @"00:00:00";
+		return @"-";
 	} else if (seconds == -1) {
-		return @"bwaa!";
+		return @"∞";
 	} else {
 		int hours = seconds / 3600;
 		seconds %= 3600;
