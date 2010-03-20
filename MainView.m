@@ -30,6 +30,17 @@
 						  [NSNumber numberWithInt:10],[NSNumber numberWithInt:20],[NSNumber numberWithInt:40],
 						  [NSNumber numberWithInt:0], nil];
 	
+	NSArray *headers = [torrentTable tableColumns];
+	for (int i = 0; i < [headers count]; i++) {
+		NSTableColumn *column = [headers objectAtIndex:i];
+		NSMenuItem *item = [[NSMenuItem new] initWithTitle:[[column headerCell] stringValue] action:nil keyEquivalent:@"" ];
+		[item setState:NSOnState];
+		[item setTarget:self];
+		[item setAction:@selector(changeColumnState:)];
+		[column setIdentifier:item];
+		[headerSelectionMenu addItem:item ];
+	}
+	
 	[self updateTorrentListModel];
 	[self updateRateModel];
 	
@@ -168,5 +179,17 @@
 		return YES;
 	}
 }
+
+- (IBAction)changeColumnState:(id)sender
+{
+	if ([sender state]) {
+		[[torrentTable tableColumnWithIdentifier:sender] setHidden:YES];
+		[sender setState:NO];
+	} else {
+		[[torrentTable tableColumnWithIdentifier:sender] setHidden:NO];
+		[sender setState:YES];
+	}
+}
+
 
 @end

@@ -278,8 +278,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
-									<integer>2</integer>
+									<integer>19</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -304,7 +303,7 @@
 							<real>316</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>168 144 1463 1015 0 0 1920 1178 </string>
+						<string>134 114 1463 1015 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -322,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TorrentTable.m</string>
+								<string>MainView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TorrentTable.m</string>
+										<string>MainView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BE3B88841150766C000900EB</string>
+										<string>BE087C5D11548D3E00247001</string>
 										<key>history</key>
 										<array>
 											<string>BE1112F710CC5ED7008FC834</string>
@@ -343,30 +342,30 @@
 											<string>BE4623DC10D0284900A1DC17</string>
 											<string>BE46248810D075C300A1DC17</string>
 											<string>BEA39ADC1143B90800F74243</string>
-											<string>BE05C9C31148822700EC751B</string>
-											<string>BE05C9F4114886B600EC751B</string>
 											<string>BEA409B1114D209E00A0ACF5</string>
 											<string>BEA409B2114D209E00A0ACF5</string>
 											<string>BEA40C8D114DE9AA00A0ACF5</string>
 											<string>BEA40C90114DE9AA00A0ACF5</string>
-											<string>BE3B880F115064C3000900EB</string>
 											<string>BE3B8811115064C3000900EB</string>
 											<string>BE3B8812115064C3000900EB</string>
 											<string>BE3B88481150666D000900EB</string>
 											<string>BE3B885911506726000900EB</string>
-											<string>BE3B88771150766C000900EB</string>
 											<string>BE3B88781150766C000900EB</string>
-											<string>BE3B88791150766C000900EB</string>
 											<string>BE3B887A1150766C000900EB</string>
 											<string>BE3B887B1150766C000900EB</string>
 											<string>BE3B887C1150766C000900EB</string>
 											<string>BE3B887D1150766C000900EB</string>
 											<string>BE3B887E1150766C000900EB</string>
-											<string>BE3B887F1150766C000900EB</string>
-											<string>BE3B88801150766C000900EB</string>
 											<string>BE3B88811150766C000900EB</string>
 											<string>BE3B88821150766C000900EB</string>
-											<string>BE3B88831150766C000900EB</string>
+											<string>BE087C05115485ED00247001</string>
+											<string>BE087C06115485ED00247001</string>
+											<string>BE087C07115485ED00247001</string>
+											<string>BE087C08115485ED00247001</string>
+											<string>BE087C09115485ED00247001</string>
+											<string>BE087C211154886100247001</string>
+											<string>BE087C5111548B6400247001</string>
+											<string>BE087C5211548B6400247001</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -380,7 +379,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1125, 969}}</string>
 								<key>RubberWindowFrame</key>
-								<string>168 144 1463 1015 0 0 1920 1178 </string>
+								<string>134 114 1463 1015 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -400,7 +399,7 @@
 								<key>Frame</key>
 								<string>{{0, 974}, {1125, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>168 144 1463 1015 0 0 1920 1178 </string>
+								<string>134 114 1463 1015 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -424,9 +423,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>BE3B87AC11503551000900EB</string>
+				<string>BE087C0D115485ED00247001</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>BE3B87AD11503551000900EB</string>
+				<string>BE087C0E115485ED00247001</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -564,15 +563,15 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>BE3B87B711503551000900EB</string>
-		<string>BE3B87B811503551000900EB</string>
+		<string>BE087C0F115485ED00247001</string>
+		<string>BE087C10115485ED00247001</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>BE110E7F10CB4394008FC834</string>
 		<string>/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>168 144 1463 1015 0 0 1920 1178 </string>
+	<string>134 114 1463 1015 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -651,7 +650,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>BE110E7F10CB4394008FC834</string>
-				<string>BE3B87AE11503551000900EB</string>
+				<string>BE087BC01154606900247001</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -773,13 +772,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>BE3B87AF11503551000900EB</string>
+				<string>BE087BC11154606900247001</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>BE3B87B011503551000900EB</string>
-				<string>BE3B87B111503551000900EB</string>
-				<string>BE3B87B211503551000900EB</string>
-				<string>BE3B87B311503551000900EB</string>
-				<string>BE3B87B411503551000900EB</string>
+				<string>BE087BC21154606900247001</string>
+				<string>BE087BC31154606900247001</string>
+				<string>BE087BC41154606900247001</string>
+				<string>BE087BC51154606900247001</string>
+				<string>BE087BC61154606900247001</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -943,7 +942,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>BE3B87B511503551000900EB</string>
+				<string>BE087BF71154846600247001</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

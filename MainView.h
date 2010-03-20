@@ -23,6 +23,9 @@
 
 	IBOutlet NSArrayController *torrentListController;
 	
+	IBOutlet NSTableView *torrentTable;
+	IBOutlet NSMenu *headerSelectionMenu;
+	
 	NSTimer *timer;
 	
 	NSArray *defaultDownThrottles;
@@ -33,7 +36,6 @@
 - (void)updateTorrentListModel;
 
 - (IBAction)viewChanged:(id)sender;
-- (IBAction)tableClicked:(id)sender;
 
 - (void)didUpdateRates;
 - (IBAction)upThrottleChanged:(id)sender;
@@ -43,5 +45,7 @@
 - (IBAction)startTorrent:(id)sender;
 - (IBAction)deleteTorrent:(id)sender;
 - (BOOL)validateMenuItem:(NSMenuItem *)item;
+
+- (IBAction)changeColumnState:(id)sender;
 
 @end

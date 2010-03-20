@@ -26,9 +26,9 @@
 	long long seconds = [secondsValue longLongValue];
 	
 	if (seconds == 0) {
-		return @"-";
+		return [[NSAttributedString new] initWithString:@"-" attributes:[NSDictionary dictionaryWithObject:[NSColor grayColor] forKey:NSForegroundColorAttributeName]];
 	} else if (seconds == -1) {
-		return @"∞";
+		return [[NSAttributedString new] initWithString:@"∞" attributes:[NSDictionary dictionaryWithObject:[NSColor redColor] forKey:NSForegroundColorAttributeName]];
 	} else {
 		int hours = seconds / 3600;
 		seconds %= 3600;
