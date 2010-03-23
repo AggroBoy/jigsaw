@@ -6,7 +6,7 @@
 //
 
 #import "MainView.h"
-#import "Torrent.h"
+#import "TorrentModel.h"
 #import <dispatch/dispatch.h>
 
 
@@ -16,12 +16,34 @@
 -  (void)awakeFromNib
 {
 	[rateModel setDelegate:self];
-	
+
+	// Set the target for the view change buttons
 	for (NSInteger i = 0; i < [[views cells] count]; i++) {
 		[[[views cells] objectAtIndex:i] setTarget:self];
 		[[[views cells] objectAtIndex:i] setAction:@selector(viewChanged:)];
 	}
-
+	
+	// Set up the View NSPredicates
+	completeFilter = [NSPredicate predicateWithBlock:^(id evaluatedObject, NSDictionary *bindings)
+						{
+							TorrentModel *t = evaluatedObject;
+							if ([[t size] intValue] == [[t downloaded] intValue]) {
+								return YES;
+							} else {
+								return NO;
+							}
+						}];
+	incompleteFilter = [NSPredicate predicateWithBlock:^(id evaluatedObject, NSDictionary *bindings)
+						{
+							TorrentModel *t = evaluatedObject;
+							if ([[t size] intValue] == [[t downloaded] intValue]) {
+								return NO;
+							} else {
+								return YES;
+							}
+						}];
+	
+	// Set up the contents of the throttle selection menus
 	defaultDownThrottles = [NSArray arrayWithObjects:[NSNumber numberWithInt:10],
 							[NSNumber numberWithInt:20],[NSNumber numberWithInt:50],[NSNumber numberWithInt:100],
 							[NSNumber numberWithInt:200],[NSNumber numberWithInt:400],[NSNumber numberWithInt:0], nil];
@@ -30,15 +52,18 @@
 						  [NSNumber numberWithInt:10],[NSNumber numberWithInt:20],[NSNumber numberWithInt:40],
 						  [NSNumber numberWithInt:0], nil];
 	
+	// Create pop-up menu of available columns 
 	NSArray *headers = [torrentTable tableColumns];
 	for (int i = 0; i < [headers count]; i++) {
 		NSTableColumn *column = [headers objectAtIndex:i];
-		NSMenuItem *item = [[NSMenuItem new] initWithTitle:[[column headerCell] stringValue] action:nil keyEquivalent:@"" ];
-		[item setState:NSOnState];
-		[item setTarget:self];
-		[item setAction:@selector(changeColumnState:)];
-		[column setIdentifier:item];
-		[headerSelectionMenu addItem:item ];
+		if ([[[column headerCell] stringValue] length] > 0) {
+			NSMenuItem *item = [[NSMenuItem new] initWithTitle:[[column headerCell] stringValue] action:nil keyEquivalent:@"" ];
+			[item setState:NSOnState];
+			[item setTarget:self];
+			[item setAction:@selector(changeColumnState:)];
+			[column setIdentifier:item];
+			[headerSelectionMenu addItem:item ];
+		}
 	}
 	
 	[self updateTorrentListModel];
@@ -98,17 +123,15 @@
 	NSString *newView = [NSString stringWithString:[[views selectedCell] title]];
 	
 	if ([newView isEqualToString:@"All"]) {
-		[torrentListModel setView:@"main"];
+		[torrentListController setFilterPredicate:nil];
 	}
 	if ([newView isEqualToString:@"Complete"]) {
-		[torrentListModel setView:@"complete"];
+		[torrentListController setFilterPredicate:completeFilter];
 	}
 	if ([newView isEqualToString:@"Incomplete"]) {
-		[torrentListModel setView:@"incomplete"];
+		[torrentListController setFilterPredicate:incompleteFilter];
 	}
-	
-	[torrentListModel update];
-}
+	}
 
 - (void)didUpdateRates
 {
@@ -135,34 +158,37 @@
 #pragma mark menu handling methods
 - (IBAction)stopTorrent:(id)sender
 {
-	Torrent *torrent = [[torrentListController selectedObjects] objectAtIndex:0];
+	TorrentModel *torrent = [[torrentListController selectedObjects] objectAtIndex:0];
 
 	if (torrent != nil) {
-		[torrentListModel stopTorrent:torrent];
+		[torrent stop];
+		[torrentListModel update];
 	}
 }
 
 - (IBAction)startTorrent:(id)sender
 {
-	Torrent *torrent = [[torrentListController selectedObjects] objectAtIndex:0];
+	TorrentModel *torrent = [[torrentListController selectedObjects] objectAtIndex:0];
 	
 	if (torrent != nil) {
-		[torrentListModel startTorrent:torrent];
+		[torrent start];
+		[torrentListModel update];
 	}
 }
 
 - (IBAction)deleteTorrent:(id)sender
 {
-	Torrent *torrent = [[torrentListController selectedObjects] objectAtIndex:0];
+	TorrentModel *torrent = [[torrentListController selectedObjects] objectAtIndex:0];
 	
 	if (torrent != nil) {
-		[torrentListModel deleteTorrent:torrent];
+		[torrent remove];
+		[torrentListModel update];
 	}
 }
 
 - (BOOL)validateMenuItem:(NSMenuItem *)item
 {
-	Torrent *torrent = nil;
+	TorrentModel *torrent = nil;
 	if ( [[torrentListController selectedObjects] count] > 0 ) {
 		 torrent = [[torrentListController selectedObjects] objectAtIndex:0];
 	}

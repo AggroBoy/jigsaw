@@ -14,7 +14,8 @@
 - (id)init
 {
 	[super init];
-	view = @"main";
+	
+	url = @"http://horus/RPC2";
 	
 	torrentListUpdateQueue = dispatch_queue_create("org.shadowrealm.mrtorrent.torrentListUpdate", NULL);
 	dispatch_retain(torrentListUpdateQueue);
@@ -39,7 +40,7 @@
 	for (NSInteger i = 0; i < torrentCount; i++) {
 		NSInteger firstElementOfTorrent = i * 9;
 		int offset = 0;
-		Torrent *torrent = [Torrent withHash:[elements objectAtIndex:firstElementOfTorrent + offset++]];
+		TorrentModel *torrent = [TorrentModel withHash:[elements objectAtIndex:firstElementOfTorrent + offset++]];
 		
 		[torrent setName:[elements objectAtIndex:firstElementOfTorrent + offset++]];
 		[torrent setSize:[elements objectAtIndex:firstElementOfTorrent + offset++]];
@@ -53,6 +54,8 @@
 		[torrent setRatio:[[elements objectAtIndex:firstElementOfTorrent + offset++] doubleValue]];
 		[torrent setActive:[[elements objectAtIndex:firstElementOfTorrent + offset++] longLongValue] == 1];
 		
+		[torrent setUrl:url];
+		
 		[newTorrentList addObject:torrent];
 	}
 	
@@ -63,11 +66,11 @@
 {
 	dispatch_async(torrentListUpdateQueue, ^{
 
-		NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
+		NSURL *URL = [NSURL URLWithString:url];
 		XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
 	
 		// multicall takes the view, followed by the list of fields (one per object)
-		NSArray *parameters = [NSArray arrayWithObjects:view,
+		NSArray *parameters = [NSArray arrayWithObjects:@"main",
 							   @"d.get_hash=",
 							   @"d.get_name=",
 							   @"d.get_size_bytes=",
@@ -82,45 +85,12 @@
 		
 		[request setMethod: @"d.multicall" withParameters:parameters];
 		XMLRPCResponse *response = [XMLRPCConnection sendSynchronousXMLRPCRequest:request];
-	
-		[self setTorrentList:[NSArray arrayWithArray:[self parseXml:response.body]]];
+
+		dispatch_async(dispatch_get_main_queue(), ^{
+			[self setTorrentList:[NSArray arrayWithArray:[self parseXml:response.body]]];
+		});
 	});
 }	
-
-
-#pragma mark Torrent control functions
-- (void)stopTorrent:(Torrent*)torrent
-{
-	NSLog(@"Stop");
-
-	NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
-	XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
-	
-	[request setMethod: @"d.stop" withParameter:[torrent hash]];
-	[XMLRPCConnection sendSynchronousXMLRPCRequest:request];
-}
-
-- (void)startTorrent:(Torrent*)torrent
-{
-	NSLog(@"start");
-	
-	NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
-	XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
-	
-	[request setMethod: @"d.start" withParameter:[torrent hash]];
-	[XMLRPCConnection sendSynchronousXMLRPCRequest:request];
-}
-
-- (void)deleteTorrent:(Torrent*)torrent
-{
-	NSLog(@"delete");
-	
-	NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
-	XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
-	
-	[request setMethod: @"d.erase" withParameter:[torrent hash]];
-	[XMLRPCConnection sendSynchronousXMLRPCRequest:request];
-}
 
 
 #pragma mark NSXMLParser Delegate calls
@@ -162,6 +132,5 @@ foundCharacters:(NSString *)string
 
 #pragma mark properties
 @synthesize torrentList;
-@synthesize view;
 
 @end

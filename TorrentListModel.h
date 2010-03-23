@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Torrent.h"
+#import "TorrentModel.h"
 
 @interface TorrentListModel : NSObject <NSXMLParserDelegate> {
+	NSString* url;
+	
 	NSArray *torrentList;
-	NSString *view;
 	
 	NSMutableArray *elements;
 	NSMutableString *textInProgress;
@@ -19,13 +20,8 @@
 	dispatch_queue_t torrentListUpdateQueue;
 }
 
-- (void)startTorrent:(Torrent*)torrent;
-- (void)stopTorrent:(Torrent*)torrent;
-- (void)deleteTorrent:(Torrent*)torrent;
-
 - (void)update;
 
 @property (readwrite, assign) NSArray* torrentList;
-@property (readwrite, copy) NSString* view;
 
 @end

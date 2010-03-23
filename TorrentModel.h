@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Torrent : NSObject <NSCopying> {
+@interface TorrentModel : NSObject <NSCopying> {
 	NSString *name;
 	NSString *hash;
 
@@ -23,6 +23,8 @@
 	double ratio;
 	
 	BOOL active;
+	
+	NSString* url;
 }
 
 @property(readwrite, copy) NSString* name;
@@ -34,15 +36,19 @@
 @property(readwrite, assign) NSNumber* downloaded;
 @property(readwrite, assign) double ratio;
 @property(readwrite, assign) BOOL active;
+@property(readwrite, assign) NSString* url;
 
-+ (Torrent *)withHash:(NSString *)hash;
++ (TorrentModel *)withHash:(NSString *)hash;
 
-- (BOOL)isEqual:(Torrent*)other;
+- (BOOL)isEqual:(TorrentModel*)other;
 
 - (NSNumber*) proportionComplete;
-
 - (NSNumber*) secondsRemaining;
-
 - (NSNumber*) normalisedRatio;
+
+- (void) start;
+- (void) stop;
+- (void) remove;
+
 
 @end

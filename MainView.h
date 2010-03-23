@@ -23,6 +23,9 @@
 
 	IBOutlet NSArrayController *torrentListController;
 	
+	NSPredicate *completeFilter;
+	NSPredicate *incompleteFilter;
+	
 	IBOutlet NSTableView *torrentTable;
 	IBOutlet NSMenu *headerSelectionMenu;
 	
