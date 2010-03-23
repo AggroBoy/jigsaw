@@ -66,9 +66,11 @@
 		}
 	}
 	
+	// Get the initial state
 	[self updateTorrentListModel];
 	[self updateRateModel];
 	
+	// Set up a timer to update data regularly
 	timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(onTimer:) userInfo:nil repeats:TRUE];
 }
 
