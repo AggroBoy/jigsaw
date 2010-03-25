@@ -280,7 +280,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>23</integer>
+									<integer>19</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -323,7 +323,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>mrtorrentAppDelegate.m</string>
+								<string>TorrentModel.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,11 +331,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>mrtorrentAppDelegate.m</string>
+										<string>TorrentModel.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BE61BCAF115AF324002B502A</string>
+										<string>BE61BCC9115AF518002B502A</string>
 										<key>history</key>
 										<array>
 											<string>BE1112F710CC5ED7008FC834</string>
@@ -363,14 +363,14 @@
 											<string>BE932C4311594C2600F01398</string>
 											<string>BE932C671159505000F01398</string>
 											<string>BE932C77115951A800F01398</string>
-											<string>BE932C82115952F400F01398</string>
 											<string>BE932C83115952F400F01398</string>
-											<string>BE932C85115952F400F01398</string>
 											<string>BE61BC9A115AF26F002B502A</string>
 											<string>BE61BC9B115AF26F002B502A</string>
-											<string>BE61BC9C115AF26F002B502A</string>
 											<string>BE61BC9D115AF26F002B502A</string>
-											<string>BE61BC9E115AF26F002B502A</string>
+											<string>BE61BCB2115AF40E002B502A</string>
+											<string>BE61BCB8115AF4BE002B502A</string>
+											<string>BE61BCC5115AF4EF002B502A</string>
+											<string>BE61BCC6115AF4EF002B502A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

@@ -116,7 +116,7 @@ didStartElement:(NSString *)elementName
 		
 	}
 	if ([elementName isEqualToString:@"i8"]) {
-		NSNumber *value = [NSNumber numberWithInt:[textInProgress intValue]];
+		NSNumber *value = [NSNumber numberWithLongLong:[textInProgress longLongValue]];
 		[elements addObject:value];
 	}
 }

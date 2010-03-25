@@ -102,15 +102,15 @@
 {
 	long long bytesRemaining = [size longLongValue] - [downloaded longLongValue];
 	if ( bytesRemaining == 0 ) {
-		return [NSNumber numberWithInt:0];
+		return [NSNumber numberWithLongLong:0];
 	}
 	
 	long long rate = [downRate longLongValue];
 	if (rate == 0) {
-		return [NSNumber numberWithInt:-1];
+		return [NSNumber numberWithLongLong:-1];
 	} else {
 		long long secondsRemaining = bytesRemaining / rate;
-		return [NSNumber numberWithInt:secondsRemaining];
+		return [NSNumber numberWithLongLong:secondsRemaining];
 	}
 }
 

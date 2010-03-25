@@ -27,7 +27,7 @@
 	completeFilter = [NSPredicate predicateWithBlock:^(id evaluatedObject, NSDictionary *bindings)
 						{
 							TorrentModel *t = evaluatedObject;
-							if ([[t size] intValue] == [[t downloaded] intValue]) {
+							if ([[t size] longLongValue] == [[t downloaded] longLongValue]) {
 								return YES;
 							} else {
 								return NO;
@@ -36,7 +36,7 @@
 	incompleteFilter = [NSPredicate predicateWithBlock:^(id evaluatedObject, NSDictionary *bindings)
 						{
 							TorrentModel *t = evaluatedObject;
-							if ([[t size] intValue] == [[t downloaded] intValue]) {
+							if ([[t size] longLongValue] == [[t downloaded] longLongValue]) {
 								return NO;
 							} else {
 								return YES;
