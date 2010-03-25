@@ -230,8 +230,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -270,7 +268,9 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>BE3B8867115069D2000900EB</string>
 								<string>BEA40971114CFE4E00A0ACF5</string>
+								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>BE61BC391159A22D002B502A</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1058C7A0FEA54F0111CA2CBB</string>
 								<string>BE110EFD10CB4A77008FC834</string>
@@ -280,7 +280,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>21</integer>
+									<integer>23</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -305,7 +305,7 @@
 							<real>316</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>159 134 1463 1015 0 0 1920 1178 </string>
+						<string>103 144 1463 1015 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -316,12 +316,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainView.m</string>
+								<string>mrtorrentAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,11 +331,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MainView.m</string>
+										<string>mrtorrentAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BE932C87115952F400F01398</string>
+										<string>BE61BCAF115AF324002B502A</string>
 										<key>history</key>
 										<array>
 											<string>BE1112F710CC5ED7008FC834</string>
@@ -344,14 +346,12 @@
 											<string>BEA39ADC1143B90800F74243</string>
 											<string>BEA409B1114D209E00A0ACF5</string>
 											<string>BEA409B2114D209E00A0ACF5</string>
-											<string>BEA40C8D114DE9AA00A0ACF5</string>
 											<string>BE3B8811115064C3000900EB</string>
 											<string>BE3B88781150766C000900EB</string>
 											<string>BE3B887A1150766C000900EB</string>
 											<string>BE3B887B1150766C000900EB</string>
 											<string>BE3B887C1150766C000900EB</string>
 											<string>BE3B887D1150766C000900EB</string>
-											<string>BE3B887E1150766C000900EB</string>
 											<string>BE087C05115485ED00247001</string>
 											<string>BE087C06115485ED00247001</string>
 											<string>BE087C07115485ED00247001</string>
@@ -365,9 +365,12 @@
 											<string>BE932C77115951A800F01398</string>
 											<string>BE932C82115952F400F01398</string>
 											<string>BE932C83115952F400F01398</string>
-											<string>BE932C84115952F400F01398</string>
 											<string>BE932C85115952F400F01398</string>
-											<string>BE932C86115952F400F01398</string>
+											<string>BE61BC9A115AF26F002B502A</string>
+											<string>BE61BC9B115AF26F002B502A</string>
+											<string>BE61BC9C115AF26F002B502A</string>
+											<string>BE61BC9D115AF26F002B502A</string>
+											<string>BE61BC9E115AF26F002B502A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -381,7 +384,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1125, 969}}</string>
 								<key>RubberWindowFrame</key>
-								<string>159 134 1463 1015 0 0 1920 1178 </string>
+								<string>103 144 1463 1015 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -401,7 +404,7 @@
 								<key>Frame</key>
 								<string>{{0, 974}, {1125, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>159 134 1463 1015 0 0 1920 1178 </string>
+								<string>103 144 1463 1015 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -425,9 +428,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>BE932C12115943C400F01398</string>
+				<string>BE61BCA0115AF26F002B502A</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>BE932C13115943C400F01398</string>
+				<string>BE61BCA1115AF26F002B502A</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -565,16 +568,15 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>BE11133710CC6230008FC834</string>
-		<string>BE932C15115943C400F01398</string>
-		<string>BE932C16115943C400F01398</string>
+		<string>BE61BCAB115AF26F002B502A</string>
+		<string>BE61BCAC115AF26F002B502A</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>BE110E7F10CB4394008FC834</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/will/Documents/Development/Cocoa/mrtorrent/mrtorrent.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>159 134 1463 1015 0 0 1920 1178 </string>
+	<string>103 144 1463 1015 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -595,7 +597,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TorrentModel.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -612,8 +614,6 @@
 							<string>501pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -653,7 +653,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>BE110E7F10CB4394008FC834</string>
-				<string>BE932BE711593F7200F01398</string>
+				<string>BE61BCA2115AF26F002B502A</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -775,13 +775,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>BE932BE811593F7200F01398</string>
+				<string>BE61BCA3115AF26F002B502A</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>BE932BE911593F7200F01398</string>
-				<string>BE932BEA11593F7200F01398</string>
-				<string>BE932BEB11593F7200F01398</string>
-				<string>BE932BEC11593F7200F01398</string>
-				<string>BE932BED11593F7200F01398</string>
+				<string>BE61BCA4115AF26F002B502A</string>
+				<string>BE61BCA5115AF26F002B502A</string>
+				<string>BE61BCA6115AF26F002B502A</string>
+				<string>BE61BCA7115AF26F002B502A</string>
+				<string>BE61BCA8115AF26F002B502A</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -900,8 +900,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -937,7 +935,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>BE932BEE11593F7200F01398</string>
+				<string>BE61BCA9115AF26F002B502A</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -947,7 +945,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

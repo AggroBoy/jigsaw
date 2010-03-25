@@ -36,11 +36,8 @@
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication hasVisibleWindows:(BOOL)flag
 {
-	if ([window isVisible]) {
-		[window close];
-	} else {
-		[window makeKeyAndOrderFront:self];
-	}
+	[window makeKeyAndOrderFront:self];
+
 	return NO;
 }
 

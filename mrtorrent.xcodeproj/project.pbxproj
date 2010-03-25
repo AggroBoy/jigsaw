@@ -20,6 +20,8 @@
 		BE3B886A115069E2000900EB /* TorrentTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3B8869115069E2000900EB /* TorrentTable.m */; };
 		BE46237110D022EE00A1DC17 /* TorrentListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE46237010D022EE00A1DC17 /* TorrentListModel.m */; };
 		BE46255510D07F9A00A1DC17 /* RateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE46255410D07F9A00A1DC17 /* RateModel.m */; };
+		BE61BC491159A22D002B502A /* paused.png in Resources */ = {isa = PBXBuildFile; fileRef = BE61BC3F1159A22D002B502A /* paused.png */; };
+		BE61BC4D1159A22D002B502A /* playing.png in Resources */ = {isa = PBXBuildFile; fileRef = BE61BC451159A22D002B502A /* playing.png */; };
 		BE7719D1115935C000F0CAEA /* StateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7719D0115935C000F0CAEA /* StateCell.m */; };
 		BE932C721159517900F01398 /* TorrentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE932C711159517900F01398 /* TorrentModel.m */; };
 		BEF345DB11472DA700000CB3 /* BytesToReadableSizeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF345DA11472DA700000CB3 /* BytesToReadableSizeTransformer.m */; };
@@ -65,6 +67,8 @@
 		BE46237010D022EE00A1DC17 /* TorrentListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentListModel.m; sourceTree = "<group>"; };
 		BE46255310D07F9A00A1DC17 /* RateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateModel.h; sourceTree = "<group>"; };
 		BE46255410D07F9A00A1DC17 /* RateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateModel.m; sourceTree = "<group>"; };
+		BE61BC3F1159A22D002B502A /* paused.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paused.png; sourceTree = "<group>"; };
+		BE61BC451159A22D002B502A /* playing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playing.png; sourceTree = "<group>"; };
 		BE7719CF115935C000F0CAEA /* StateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateCell.h; sourceTree = "<group>"; };
 		BE7719D0115935C000F0CAEA /* StateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateCell.m; sourceTree = "<group>"; };
 		BE932C701159517900F01398 /* TorrentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorrentModel.h; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BE61BC391159A22D002B502A /* Icons */,
 				8D1107310486CEB800E47090 /* mrtorrent-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -182,6 +187,15 @@
 				BE7719D0115935C000F0CAEA /* StateCell.m */,
 			);
 			name = Controls;
+			sourceTree = "<group>";
+		};
+		BE61BC391159A22D002B502A /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				BE61BC3F1159A22D002B502A /* paused.png */,
+				BE61BC451159A22D002B502A /* playing.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 		BEA40971114CFE4E00A0ACF5 /* Utility */ = {
@@ -243,6 +257,8 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				BE61BC491159A22D002B502A /* paused.png in Resources */,
+				BE61BC4D1159A22D002B502A /* playing.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
