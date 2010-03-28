@@ -43,13 +43,13 @@
 		TorrentModel *torrent = [TorrentModel withHash:[elements objectAtIndex:firstElementOfTorrent + offset++]];
 		
 		[torrent setName:[elements objectAtIndex:firstElementOfTorrent + offset++]];
-		[torrent setSize:[elements objectAtIndex:firstElementOfTorrent + offset++]];
+		[torrent setSize:[[elements objectAtIndex:firstElementOfTorrent + offset++] longLongValue]];
 		
-		[torrent setUpRate:[elements objectAtIndex:firstElementOfTorrent + offset++]];
-		[torrent setUploaded:[elements objectAtIndex:firstElementOfTorrent + offset++]];
+		[torrent setUpRate:[[elements objectAtIndex:firstElementOfTorrent + offset++] longLongValue]];
+		[torrent setUploaded:[[elements objectAtIndex:firstElementOfTorrent + offset++] longLongValue]];
 		
-		[torrent setDownRate:[elements objectAtIndex:firstElementOfTorrent + offset++]];
-		[torrent setDownloaded:[elements objectAtIndex:firstElementOfTorrent + offset++]];
+		[torrent setDownRate:[[elements objectAtIndex:firstElementOfTorrent + offset++] longLongValue]];
+		[torrent setDownloaded:[[elements objectAtIndex:firstElementOfTorrent + offset++] longLongValue]];
 		
 		[torrent setRatio:[[elements objectAtIndex:firstElementOfTorrent + offset++] doubleValue]];
 		[torrent setActive:[[elements objectAtIndex:firstElementOfTorrent + offset++] longLongValue] == 1];
@@ -119,14 +119,10 @@ didStartElement:(NSString *)elementName
   namespaceURI:(NSString *)namespaceURI
  qualifiedName:(NSString *)qName
 {
-	if ([elementName isEqualToString:@"string"]) {
+	if ([elementName isEqualToString:@"string"] || [elementName isEqualToString:@"i8"]) {
 		NSString *string = [NSString stringWithString:textInProgress];
 		[elements addObject:string];
 		
-	}
-	if ([elementName isEqualToString:@"i8"]) {
-		NSNumber *value = [NSNumber numberWithLongLong:[textInProgress longLongValue]];
-		[elements addObject:value];
 	}
 }
 

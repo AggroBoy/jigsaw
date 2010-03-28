@@ -93,30 +93,30 @@
 
 #pragma mark calculated properties
 
-- (NSNumber*) proportionComplete
+- (double) proportionComplete
 {
-	return [NSNumber numberWithDouble:[downloaded doubleValue] / [size doubleValue]];
+	return downloaded / size;
 }
 
-- (NSNumber*) secondsRemaining
+- (long long) secondsRemaining
 {
-	long long bytesRemaining = [size longLongValue] - [downloaded longLongValue];
+	long long bytesRemaining = size - downloaded;
 	if ( bytesRemaining == 0 ) {
-		return [NSNumber numberWithLongLong:0];
+		return 0;
 	}
 	
-	long long rate = [downRate longLongValue];
+	long long rate = downRate;
 	if (rate == 0) {
-		return [NSNumber numberWithLongLong:-1];
+		return -1;
 	} else {
 		long long secondsRemaining = bytesRemaining / rate;
-		return [NSNumber numberWithLongLong:secondsRemaining];
+		return secondsRemaining;
 	}
 }
 
-- (NSNumber*) normalisedRatio
+- (double) normalisedRatio
 {
-	return [NSNumber numberWithDouble:ratio / 1000]; 
+	return ratio / 1000; 
 }
 
 

@@ -13,12 +13,12 @@
 	NSString *name;
 	NSString *hash;
 
-	NSNumber* size;
+	long long size;
 	
-	NSNumber* upRate;
-	NSNumber* uploaded;
-	NSNumber* downRate;
-	NSNumber* downloaded;
+	long long upRate;
+	long long uploaded;
+	long long downRate;
+	long long downloaded;
 	
 	double ratio;
 	
@@ -29,11 +29,11 @@
 
 @property(readwrite, copy) NSString* name;
 @property(readwrite, copy) NSString* hash;
-@property(readwrite, assign) NSNumber* size;
-@property(readwrite, assign) NSNumber* upRate;
-@property(readwrite, assign) NSNumber* uploaded;
-@property(readwrite, assign) NSNumber* downRate;
-@property(readwrite, assign) NSNumber* downloaded;
+@property(readwrite, assign) long long size;
+@property(readwrite, assign) long long upRate;
+@property(readwrite, assign) long long uploaded;
+@property(readwrite, assign) long long downRate;
+@property(readwrite, assign) long long downloaded;
 @property(readwrite, assign) double ratio;
 @property(readwrite, assign) BOOL active;
 @property(readwrite, assign) NSString* url;
@@ -42,9 +42,9 @@
 
 - (BOOL)isEqual:(TorrentModel*)other;
 
-- (NSNumber*) proportionComplete;
-- (NSNumber*) secondsRemaining;
-- (NSNumber*) normalisedRatio;
+- (double) proportionComplete;
+- (long long) secondsRemaining;
+- (double) normalisedRatio;
 
 - (void) start;
 - (void) stop;
