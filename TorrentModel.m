@@ -98,7 +98,7 @@
 	return downloaded / size;
 }
 
-- (long long) secondsRemaining
+- (unsigned long long) secondsRemaining
 {
 	long long bytesRemaining = size - downloaded;
 	if ( bytesRemaining == 0 ) {
@@ -107,7 +107,7 @@
 	
 	long long rate = downRate;
 	if (rate == 0) {
-		return -1;
+		return ULLONG_MAX;
 	} else {
 		long long secondsRemaining = bytesRemaining / rate;
 		return secondsRemaining;

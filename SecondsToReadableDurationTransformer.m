@@ -27,7 +27,7 @@
 	
 	if (seconds == 0) {
 		return [[NSAttributedString new] initWithString:@"-" attributes:[NSDictionary dictionaryWithObject:[NSColor grayColor] forKey:NSForegroundColorAttributeName]];
-	} else if (seconds == -1) {
+	} else if (seconds == ULLONG_MAX) {
 		return [[NSAttributedString new] initWithString:@"∞" attributes:[NSDictionary dictionaryWithObject:[NSColor redColor] forKey:NSForegroundColorAttributeName]];
 	} else {
 		int hours = seconds / 3600;

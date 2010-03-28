@@ -266,6 +266,8 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>BE3B8867115069D2000900EB</string>
+								<string>BEA40971114CFE4E00A0ACF5</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
@@ -320,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainController.m</string>
+								<string>TorrentModel.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MainController.m</string>
+										<string>TorrentModel.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BED19085115FCA3900323B8E</string>
+										<string>BED19095115FCE0E00323B8E</string>
 										<key>history</key>
 										<array>
 											<string>BE1112F710CC5ED7008FC834</string>
@@ -350,7 +352,6 @@
 											<string>BE087C06115485ED00247001</string>
 											<string>BE087C07115485ED00247001</string>
 											<string>BE087C08115485ED00247001</string>
-											<string>BE087C09115485ED00247001</string>
 											<string>BE7718EA11590E9300F0CAEA</string>
 											<string>BE932C0C115943C400F01398</string>
 											<string>BE932C0E115943C400F01398</string>
@@ -366,10 +367,11 @@
 											<string>BED19021115FC45C00323B8E</string>
 											<string>BED19046115FC69800323B8E</string>
 											<string>BED19072115FC9BF00323B8E</string>
-											<string>BED19073115FC9BF00323B8E</string>
-											<string>BED19083115FCA3900323B8E</string>
 											<string>BED19084115FCA3900323B8E</string>
-											<string>BED1902F115FC4DA00323B8E</string>
+											<string>BED1908A115FCCAE00323B8E</string>
+											<string>BED19090115FCD0A00323B8E</string>
+											<string>BED19091115FCD0A00323B8E</string>
+											<string>BED19092115FCD0A00323B8E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -567,7 +569,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>BED19086115FCA3900323B8E</string>
 		<string>BED18FEA115FC14200323B8E</string>
 		<string>BED18FEB115FC14200323B8E</string>
 		<string>BE11133710CC6230008FC834</string>
