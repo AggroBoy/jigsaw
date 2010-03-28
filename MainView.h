@@ -11,7 +11,7 @@
 #import "RateModel.h"
 #import "TorrentDelegates.h"
 
-@interface MainView : NSObject <RateModelDelegate> {
+@interface MainView : NSObject <RateModelDelegate, NSWindowDelegate> {
 	IBOutlet NSMatrix *views;
 
 	IBOutlet NSPopUpButton *upThrottlePopup;
@@ -35,9 +35,13 @@
 	NSArray *defaultUpThrottles;
 }
 
+- (void)displayed;
+- (void)hidden;
+
 - (void)updateRateModel;
 - (void)updateTorrentListModel;
 
+- (void)windowWillClose:(NSNotification*)notification;
 - (IBAction)viewChanged:(id)sender;
 
 - (void)didUpdateRates;

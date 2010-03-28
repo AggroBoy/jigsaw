@@ -7,10 +7,12 @@
 
 #import <Cocoa/Cocoa.h>
 #import "TorrentListModel.h"
+#import "MainView.h"
 
 @interface mrtorrentAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
 	IBOutlet TorrentListModel *torrentList;
+	IBOutlet MainView *mainView;
 	
 	NSString *fileToOpen;
 }

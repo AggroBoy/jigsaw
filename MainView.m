@@ -65,13 +65,9 @@
 			[headerSelectionMenu addItem:item ];
 		}
 	}
-	
-	// Get the initial state
-	[self updateTorrentListModel];
-	[self updateRateModel];
-	
-	// Set up a timer to update data regularly
-	timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(onTimer:) userInfo:nil repeats:TRUE];
+
+	// Get the current state and start the update timer
+	[self displayed];
 }
 
 #pragma mark UI control
@@ -101,6 +97,21 @@
 
 
 #pragma mark data control
+-(void)displayed
+{
+	[self updateRateModel];
+	[self updateTorrentListModel];
+	
+	[timer invalidate];
+	timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(onTimer:) userInfo:nil repeats:TRUE];
+}
+
+-(void)hidden
+{
+	[timer invalidate];
+	timer = [NSTimer scheduledTimerWithTimeInterval:120 target:self selector:@selector(onTimer:) userInfo:nil repeats:TRUE];
+}
+
 - (void)updateRateModel
 {
 	[rateModel update];
@@ -120,6 +131,12 @@
 }
 
 
+- (void)windowWillClose:(NSNotification*)notification
+{
+	[self hidden];
+}
+   
+   
 - (IBAction)viewChanged:(id)sender
 {
 	NSString *newView = [NSString stringWithString:[[views selectedCell] title]];

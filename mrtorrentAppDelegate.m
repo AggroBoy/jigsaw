@@ -32,11 +32,13 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Init code goes here
+	[window setDelegate:mainView];
 }
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication hasVisibleWindows:(BOOL)flag
 {
 	[window makeKeyAndOrderFront:self];
+	[mainView displayed];
 
 	return NO;
 }

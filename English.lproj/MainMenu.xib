@@ -11,10 +11,10 @@
 			<string key="NS.object.0">740</string>
 		</object>
 		<array class="NSMutableArray" key="IBDocument.EditedObjectIDs">
-			<integer value="81"/>
-			<integer value="845"/>
-			<integer value="836"/>
 			<integer value="727"/>
+			<integer value="372"/>
+			<integer value="836"/>
+			<integer value="81"/>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -393,12 +393,14 @@
 											<int key="NSvFlags">4352</int>
 											<string key="NSFrameSize">{737, 409}</string>
 											<reference key="NSSuperview" ref="201099018"/>
+											<int key="NSViewLayerContentsRedrawPolicy">2</int>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="999017045">
 												<reference key="NSNextResponder" ref="657595957"/>
 												<int key="NSvFlags">256</int>
 												<string key="NSFrameSize">{737, 17}</string>
 												<reference key="NSSuperview" ref="657595957"/>
+												<int key="NSViewLayerContentsRedrawPolicy">2</int>
 												<reference key="NSTableView" ref="397939147"/>
 											</object>
 											<object class="_NSCornerView" key="NSCornerView" id="732924346">
@@ -406,6 +408,7 @@
 												<int key="NSvFlags">-2147483392</int>
 												<string key="NSFrame">{{723, 0}, {16, 17}}</string>
 												<reference key="NSSuperview" ref="670668950"/>
+												<int key="NSViewLayerContentsRedrawPolicy">2</int>
 											</object>
 											<array class="NSMutableArray" key="NSTableColumns">
 												<object class="NSTableColumn" id="727197830">
@@ -815,6 +818,7 @@
 									<string key="NSFrame">{{1, 17}, {737, 409}}</string>
 									<reference key="NSSuperview" ref="670668950"/>
 									<reference key="NSNextKeyView" ref="397939147"/>
+									<int key="NSViewLayerContentsRedrawPolicy">2</int>
 									<reference key="NSDocView" ref="397939147"/>
 									<object class="NSColor" key="NSBGColor">
 										<int key="NSColorSpace">1</int>
@@ -827,6 +831,7 @@
 									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrame">{{723, 17}, {15, 394}}</string>
 									<reference key="NSSuperview" ref="670668950"/>
+									<int key="NSViewLayerContentsRedrawPolicy">2</int>
 									<reference key="NSTarget" ref="670668950"/>
 									<string key="NSAction">_doScroller:</string>
 									<double key="NSCurValue">0.0024449877750611247</double>
@@ -837,7 +842,7 @@
 									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrame">{{1, 411}, {737, 15}}</string>
 									<reference key="NSSuperview" ref="670668950"/>
-									<bool key="NSEnabled">YES</bool>
+									<int key="NSViewLayerContentsRedrawPolicy">2</int>
 									<int key="NSsFlags">1</int>
 									<reference key="NSTarget" ref="670668950"/>
 									<string key="NSAction">_doScroller:</string>
@@ -852,6 +857,7 @@
 									<string key="NSFrame">{{1, 0}, {737, 17}}</string>
 									<reference key="NSSuperview" ref="670668950"/>
 									<reference key="NSNextKeyView" ref="999017045"/>
+									<int key="NSViewLayerContentsRedrawPolicy">2</int>
 									<reference key="NSDocView" ref="999017045"/>
 									<reference key="NSBGColor" ref="466685465"/>
 									<int key="NScvFlags">4</int>
@@ -861,7 +867,9 @@
 							<string key="NSFrame">{{20, 40}, {739, 427}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSNextKeyView" ref="201099018"/>
-							<int key="NSsFlags">690</int>
+							<bool key="NSViewIsLayerTreeHost">YES</bool>
+							<int key="NSViewLayerContentsRedrawPolicy">2</int>
+							<int key="NSsFlags">562</int>
 							<reference key="NSVScroller" ref="711353557"/>
 							<reference key="NSHScroller" ref="419293633"/>
 							<reference key="NSContentView" ref="201099018"/>
@@ -1956,6 +1964,14 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 					</object>
 					<int key="connectionID">847</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">mainView</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="750561517"/>
+					</object>
+					<int key="connectionID">853</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -2922,7 +2938,7 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">852</int>
+			<int key="maxID">853</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2997,6 +3013,7 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 						<string key="addTorrentURL:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="mainView">MainView</string>
 						<string key="torrentList">TorrentListModel</string>
 						<string key="window">NSWindow</string>
 					</dictionary>
