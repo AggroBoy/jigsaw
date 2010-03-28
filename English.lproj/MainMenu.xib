@@ -11,10 +11,10 @@
 			<string key="NS.object.0">740</string>
 		</object>
 		<array class="NSMutableArray" key="IBDocument.EditedObjectIDs">
-			<integer value="727"/>
+			<integer value="372"/>
 			<integer value="81"/>
 			<integer value="836"/>
-			<integer value="372"/>
+			<integer value="727"/>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -412,6 +412,7 @@
 											</object>
 											<array class="NSMutableArray" key="NSTableColumns">
 												<object class="NSTableColumn" id="727197830">
+													<string key="NSIdentifier">Icon</string>
 													<double key="NSWidth">18</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -467,6 +468,7 @@
 													<reference key="NSTableView" ref="397939147"/>
 												</object>
 												<object class="NSTableColumn" id="780421499">
+													<string key="NSIdentifier">Name</string>
 													<double key="NSWidth">296</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -505,6 +507,7 @@
 													<reference key="NSTableView" ref="397939147"/>
 												</object>
 												<object class="NSTableColumn" id="116516025">
+													<string key="NSIdentifier">Size</string>
 													<double key="NSWidth">30</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -535,6 +538,7 @@
 													<reference key="NSTableView" ref="397939147"/>
 												</object>
 												<object class="NSTableColumn" id="238893095">
+													<string key="NSIdentifier">Percent</string>
 													<double key="NSWidth">48</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -605,6 +609,7 @@
 													<reference key="NSTableView" ref="397939147"/>
 												</object>
 												<object class="NSTableColumn" id="515273019">
+													<string key="NSIdentifier">Ratio</string>
 													<double key="NSWidth">36</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -669,6 +674,7 @@
 													<reference key="NSTableView" ref="397939147"/>
 												</object>
 												<object class="NSTableColumn" id="734593078">
+													<string key="NSIdentifier">ETA</string>
 													<double key="NSWidth">29</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -694,6 +700,7 @@
 													<reference key="NSTableView" ref="397939147"/>
 												</object>
 												<object class="NSTableColumn" id="449791530">
+													<string key="NSIdentifier">Downloaded</string>
 													<double key="NSWidth">75</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -719,6 +726,7 @@
 													<reference key="NSTableView" ref="397939147"/>
 												</object>
 												<object class="NSTableColumn" id="666071341">
+													<string key="NSIdentifier">Down Rate</string>
 													<double key="NSWidth">66</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -744,6 +752,7 @@
 													<reference key="NSTableView" ref="397939147"/>
 												</object>
 												<object class="NSTableColumn" id="816822250">
+													<string key="NSIdentifier">Uploaded</string>
 													<double key="NSWidth">59</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -769,6 +778,7 @@
 													<reference key="NSTableView" ref="397939147"/>
 												</object>
 												<object class="NSTableColumn" id="250021140">
+													<string key="NSIdentifier">Up Rate</string>
 													<double key="NSWidth">50</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -805,9 +815,10 @@
 												<bytes key="NSRGB">MC44NDIzOTEzMDQzIDAuODQyMzkxMzA0MyAwLjg0MjM5MTMwNDMgMC4yAA</bytes>
 											</object>
 											<double key="NSRowHeight">14</double>
-											<int key="NSTvFlags">-759169024</int>
+											<int key="NSTvFlags">-742391808</int>
 											<reference key="NSDelegate"/>
 											<reference key="NSDataSource"/>
+											<string key="NSAutosaveName">org.shadowrealm.mrtorrent.All</string>
 											<int key="NSColumnAutoresizingStyle">4</int>
 											<int key="NSDraggingSourceMaskForLocal">15</int>
 											<int key="NSDraggingSourceMaskForNonLocal">0</int>
@@ -834,7 +845,6 @@
 									<int key="NSViewLayerContentsRedrawPolicy">2</int>
 									<reference key="NSTarget" ref="670668950"/>
 									<string key="NSAction">_doScroller:</string>
-									<double key="NSCurValue">0.0024449877750611247</double>
 									<double key="NSPercent">0.96332518337408313</double>
 								</object>
 								<object class="NSScroller" id="419293633">
@@ -2806,9 +2816,9 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 				<string key="296.editorWindowContentRectSynchronizationRect">{{475, 832}, {234, 43}}</string>
 				<string key="297.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="298.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="371.IBEditorWindowLastContentRect">{{425, 225}, {779, 500}}</string>
+				<string key="371.IBEditorWindowLastContentRect">{{420, 236}, {779, 500}}</string>
 				<string key="371.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="371.IBWindowTemplateEditedContentRect">{{425, 225}, {779, 500}}</string>
+				<string key="371.IBWindowTemplateEditedContentRect">{{420, 236}, {779, 500}}</string>
 				<boolean value="YES" key="371.NSWindowTemplate.visibleAtLaunch"/>
 				<string key="371.editorWindowContentRectSynchronizationRect">{{33, 99}, {480, 360}}</string>
 				<string key="371.windowTemplate.maxSize">{3.40282e+38, 3.40282e+38}</string>
@@ -2937,7 +2947,7 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">853</int>
+			<int key="maxID">857</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

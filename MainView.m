@@ -58,13 +58,14 @@
 		NSTableColumn *column = [headers objectAtIndex:i];
 		if ([[[column headerCell] stringValue] length] > 0) {
 			NSMenuItem *item = [[NSMenuItem new] initWithTitle:[[column headerCell] stringValue] action:nil keyEquivalent:@"" ];
-			[item setState:NSOnState];
 			[item setTarget:self];
 			[item setAction:@selector(changeColumnState:)];
-			[column setIdentifier:item];
-			[headerSelectionMenu addItem:item ];
+			[column setIdentifier:[item title]];
+			[headerSelectionMenu addItem:item];
 		}
 	}
+	[self setColumnMenuStates];
+
 
 	// Get the current state and start the update timer
 	[self displayed];
@@ -143,14 +144,19 @@
 	
 	if ([newView isEqualToString:@"All"]) {
 		[torrentListController setFilterPredicate:nil];
+		[torrentTable setAutosaveName:@"org.shadowrealm.mrtorrent.All"];
 	}
 	if ([newView isEqualToString:@"Complete"]) {
 		[torrentListController setFilterPredicate:completeFilter];
+		[torrentTable setAutosaveName:@"org.shadowrealm.mrtorrent.Complete"];
 	}
 	if ([newView isEqualToString:@"Incomplete"]) {
 		[torrentListController setFilterPredicate:incompleteFilter];
+		[torrentTable setAutosaveName:@"org.shadowrealm.mrtorrent.Incomplete"];
 	}
-	}
+	
+	[self setColumnMenuStates];
+}
 
 - (void)didUpdateRates
 {
@@ -228,11 +234,25 @@
 - (IBAction)changeColumnState:(id)sender
 {
 	if ([sender state]) {
-		[[torrentTable tableColumnWithIdentifier:sender] setHidden:YES];
-		[sender setState:NO];
+		[[torrentTable tableColumnWithIdentifier:[sender title]] setHidden:YES];
+		[sender setState:NSOffState];
 	} else {
-		[[torrentTable tableColumnWithIdentifier:sender] setHidden:NO];
-		[sender setState:YES];
+		[[torrentTable tableColumnWithIdentifier:[sender title]] setHidden:NO];
+		[sender setState:NSOnState];
+	}
+}
+
+- (void)setColumnMenuStates
+{
+	NSArray *items = [headerSelectionMenu itemArray];
+	for (int item = 0; item < [items count]; item++) {
+		NSMenuItem *menuItem = [items objectAtIndex:item];
+		if ([[torrentTable tableColumnWithIdentifier:[menuItem title]] isHidden]) {
+			[menuItem setState:NSOffState];
+		} else {
+			[menuItem setState:NSOnState];
+		}
+
 	}
 }
 

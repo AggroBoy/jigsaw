@@ -6,8 +6,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "TorrentListModel.h"
-#import "MainView.h"
+
+#import "TorrentListModel.h";
+#import "MainView.h";
 
 @interface mrtorrentAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;

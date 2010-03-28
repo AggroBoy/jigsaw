@@ -54,5 +54,6 @@
 - (BOOL)validateMenuItem:(NSMenuItem *)item;
 
 - (IBAction)changeColumnState:(id)sender;
+- (void)setColumnMenuStates;
 
 @end
