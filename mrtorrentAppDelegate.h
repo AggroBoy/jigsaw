@@ -8,25 +8,21 @@
 #import <Cocoa/Cocoa.h>
 
 #import "TorrentListModel.h";
-#import "MainView.h";
+#import "MainController.h";
 
-@interface mrtorrentAppDelegate : NSObject <NSApplicationDelegate> {
+@interface mrtorrentAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate> {
     NSWindow *window;
 	IBOutlet TorrentListModel *torrentList;
-	IBOutlet MainView *mainView;
+	IBOutlet MainController *mainController;
 	
 	NSString *fileToOpen;
 }
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication hasVisibleWindows:(BOOL)flag;
 
+- (void)windowWillClose:(NSNotification*)notification;
+
 - (BOOL)application:(NSApplication *)theApplication openFile:(NSString *)filename;
-
-- (void)addLocalTorrentFile:(NSString *)fileName;
-
-- (IBAction)addTorrentFile:(id)sender;
-
-- (IBAction)addTorrentURL:(id)sender;
 
 + (void)initialize;
 

@@ -5,22 +5,22 @@
 //  Created by Will Goring on 06/12/2009.
 //
 
-#import "MainView.h"
+#import "MainController.h"
 #import "TorrentModel.h"
 #import <dispatch/dispatch.h>
 
 
-@implementation MainView
+@implementation MainController
 
 #pragma mark initialistion
 -  (void)awakeFromNib
 {
 	[rateModel setDelegate:self];
 
-	// Set the target for the view change buttons
-	for (NSInteger i = 0; i < [[views cells] count]; i++) {
-		[[[views cells] objectAtIndex:i] setTarget:self];
-		[[[views cells] objectAtIndex:i] setAction:@selector(viewChanged:)];
+	// Set the target for the filter change buttons
+	for (NSInteger i = 0; i < [[filters cells] count]; i++) {
+		[[[filters cells] objectAtIndex:i] setTarget:self];
+		[[[filters cells] objectAtIndex:i] setAction:@selector(filterChanged:)];
 	}
 	
 	// Set up the View NSPredicates
@@ -123,6 +123,54 @@
 	[torrentListModel update];
 }
 
+- (void)addLocalTorrentFile:(NSString *)filename
+{
+	NSLog(@"%@", filename);
+	NSData *torrentData = [[NSFileManager defaultManager] contentsAtPath:filename];
+	
+	[torrentListModel addTorrentWithData:torrentData];
+
+	[self updateTorrentListModel];
+	
+	// TODO: This should be an option
+	// Delete the .torrent file, now we've added it to rtorrent
+	NSFileManager *manager = [NSFileManager defaultManager];
+	[manager removeItemAtPath:filename error:nil];	
+}
+
+- (IBAction)addTorrentFile:(id)sender
+{
+	// Create the File Open Dialog class.
+	NSOpenPanel* openDlg = [NSOpenPanel openPanel];
+	
+	// Enable the selection of files in the dialog.
+	[openDlg setCanChooseFiles:YES];
+	
+	// Enable the selection of directories in the dialog.
+	[openDlg setCanChooseDirectories:NO];
+	
+	// Disable Multiple Selection
+	[openDlg setAllowsMultipleSelection:NO];
+	
+	// Types we allow
+	NSArray* fileType = [NSArray arrayWithObjects: @"torrent", nil];
+	
+	// Display the dialog. If the OK button was pressed,
+	// process the files.
+	if ( [openDlg runModalForDirectory:nil file:nil types:fileType] == NSOKButton )
+	{
+		NSArray *files = [openDlg URLs];
+		NSURL *url = [files objectAtIndex:0];
+		NSString *fileName = [url path];
+		[self addLocalTorrentFile:fileName];
+		
+		// TODO: This should be an option
+		// Delete the .torrent file, now we've added it to rtorrent
+		NSFileManager *manager = [NSFileManager defaultManager];
+		[manager removeItemAtURL:url error:nil];
+	}
+}
+
 
 #pragma mark events
 - (void)onTimer:(NSTimer *)timer
@@ -131,16 +179,9 @@
 	[self updateRateModel];
 }
 
-
-- (void)windowWillClose:(NSNotification*)notification
+- (IBAction)filterChanged:(id)sender
 {
-	[self hidden];
-}
-   
-   
-- (IBAction)viewChanged:(id)sender
-{
-	NSString *newView = [NSString stringWithString:[[views selectedCell] title]];
+	NSString *newView = [NSString stringWithString:[[filters selectedCell] title]];
 	
 	if ([newView isEqualToString:@"All"]) {
 		[torrentListController setFilterPredicate:nil];

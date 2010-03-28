@@ -92,6 +92,15 @@
 	});
 }	
 
+- (void)addTorrentWithData:(NSData*)data
+{
+	NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
+	XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
+	
+	[request setMethod: @"load_raw_start" withParameter:data];
+	[XMLRPCConnection sendSynchronousXMLRPCRequest:request];
+}	
+
 
 #pragma mark NSXMLParser Delegate calls
 -  (void)parser:(NSXMLParser *)parser

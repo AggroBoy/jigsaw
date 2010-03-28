@@ -21,6 +21,7 @@
 }
 
 - (void)update;
+- (void)addTorrentWithData:(NSData*)data;
 
 @property (readwrite, assign) NSArray* torrentList;
 

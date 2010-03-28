@@ -6,13 +6,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <XMLRPC/XMLRPC.h>
 #import "TorrentListModel.h"
 #import "RateModel.h"
 #import "TorrentDelegates.h"
 
-@interface MainView : NSObject <RateModelDelegate, NSWindowDelegate> {
-	IBOutlet NSMatrix *views;
+@interface MainController : NSObject <RateModelDelegate> {
+	IBOutlet NSMatrix *filters;
 
 	IBOutlet NSPopUpButton *upThrottlePopup;
 	IBOutlet NSPopUpButton *downThrottlePopup;
@@ -41,8 +40,7 @@
 - (void)updateRateModel;
 - (void)updateTorrentListModel;
 
-- (void)windowWillClose:(NSNotification*)notification;
-- (IBAction)viewChanged:(id)sender;
+- (IBAction)filterChanged:(id)sender;
 
 - (void)didUpdateRates;
 - (IBAction)upThrottleChanged:(id)sender;
@@ -51,6 +49,9 @@
 - (IBAction)stopTorrent:(id)sender;
 - (IBAction)startTorrent:(id)sender;
 - (IBAction)deleteTorrent:(id)sender;
+- (void)addLocalTorrentFile:(NSString *)fileName;
+- (IBAction)addTorrentFile:(id)sender;
+
 - (BOOL)validateMenuItem:(NSMenuItem *)item;
 
 - (IBAction)changeColumnState:(id)sender;
