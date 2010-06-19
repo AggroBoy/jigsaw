@@ -235,6 +235,7 @@
 			BE1B690111CD3BE90019E46A /* PBXTextBookmark */ = BE1B690111CD3BE90019E46A /* PBXTextBookmark */;
 			BE1B690211CD3BE90019E46A /* PBXTextBookmark */ = BE1B690211CD3BE90019E46A /* PBXTextBookmark */;
 			BE1B690311CD3BE90019E46A /* PBXTextBookmark */ = BE1B690311CD3BE90019E46A /* PBXTextBookmark */;
+			BE1B690A11CD3D230019E46A /* PBXTextBookmark */ = BE1B690A11CD3D230019E46A /* PBXTextBookmark */;
 			BE3B88781150766C000900EB = BE3B88781150766C000900EB /* PBXTextBookmark */;
 			BE3B887B1150766C000900EB = BE3B887B1150766C000900EB /* PBXTextBookmark */;
 			BE3B887D1150766C000900EB = BE3B887D1150766C000900EB /* PBXTextBookmark */;
@@ -1362,6 +1363,16 @@
 		vrLen = 290;
 		vrLoc = 0;
 	};
+	BE1B690A11CD3D230019E46A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BEF345D911472DA700000CB3 /* BytesToReadableSizeTransformer.h */;
+		name = "BytesToReadableSizeTransformer.h: 17";
+		rLen = 0;
+		rLoc = 265;
+		rType = 0;
+		vrLen = 290;
+		vrLoc = 0;
+	};
 	BE3B87F7115062C1000900EB /* TorrentDelegates.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1064, 937}}";
@@ -1694,7 +1705,7 @@
 	BEF345D911472DA700000CB3 /* BytesToReadableSizeTransformer.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1064, 937}}";
-			sepNavSelRange = "{98, 0}";
+			sepNavSelRange = "{265, 0}";
 			sepNavVisRange = "{0, 290}";
 		};
 	};
