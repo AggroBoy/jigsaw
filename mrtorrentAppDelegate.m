@@ -8,6 +8,7 @@
 #import "BytesToReadableSizeTransformer.h"
 #import "BytesToReadableSpeedTransformer.h"
 #import "SecondsToReadableDurationTransformer.h"
+#import "TorrentNameDecorationTransformer.h"
 
 @implementation mrtorrentAppDelegate
 
@@ -26,6 +27,10 @@
 	SecondsToReadableDurationTransformer* durationTransformer;
 	durationTransformer = [[SecondsToReadableDurationTransformer alloc] init];
 	[NSValueTransformer setValueTransformer:durationTransformer forName:@"SecondsToReadableDurationTransformer"];
+	
+	TorrentNameDecorationTransformer* nameTransformer;
+	nameTransformer = [[TorrentNameDecorationTransformer alloc] init];
+	[NSValueTransformer setValueTransformer:nameTransformer forName:@"TorrentNameDecorationTransformer"];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {

@@ -52,6 +52,9 @@
 						  [NSNumber numberWithInt:10],[NSNumber numberWithInt:20],[NSNumber numberWithInt:40],
 						  [NSNumber numberWithInt:0], nil];
 	
+	// Load the column order/visibility/size settings
+	[torrentTable setAutosaveName:@"org.shadowrealm.mrtorrent.All"];
+	
 	// Create pop-up menu of available columns 
 	NSArray *headers = [torrentTable tableColumns];
 	for (int i = 0; i < [headers count]; i++) {
@@ -65,7 +68,6 @@
 		}
 	}
 	[self setColumnMenuStates];
-
 
 	// Get the current state and start the update timer
 	[self displayed];

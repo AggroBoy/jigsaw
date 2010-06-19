@@ -95,7 +95,7 @@
 
 - (double) proportionComplete
 {
-	return downloaded / size;
+	return (double)downloaded / (double)size;
 }
 
 - (unsigned long long) secondsRemaining

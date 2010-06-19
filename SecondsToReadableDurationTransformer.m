@@ -10,6 +10,7 @@
 
 
 @implementation SecondsToReadableDurationTransformer
+
 + (Class)transformedValueClass
 {
 	return [NSString class];
