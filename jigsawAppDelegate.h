@@ -10,7 +10,7 @@
 #import "TorrentListModel.h";
 #import "MainController.h";
 
-@interface mrtorrentAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate> {
+@interface jigsawAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate> {
     NSWindow *window;
 	IBOutlet TorrentListModel *torrentList;
 	IBOutlet MainController *mainController;

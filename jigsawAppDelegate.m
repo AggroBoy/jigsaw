@@ -4,13 +4,13 @@
 //
 //  Created by Will Goring on 06/12/2009.
 //
-#import "mrtorrentAppDelegate.h"
+#import "jigsawAppDelegate.h"
 #import "BytesToReadableSizeTransformer.h"
 #import "BytesToReadableSpeedTransformer.h"
 #import "SecondsToReadableDurationTransformer.h"
 #import "TorrentNameDecorationTransformer.h"
 
-@implementation mrtorrentAppDelegate
+@implementation jigsawAppDelegate
 
 @synthesize window;
 
