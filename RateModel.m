@@ -3,7 +3,6 @@
 //  mrtorrent
 //
 //  Created by Will Goring on 10/12/2009.
-//  Copyright 2009 Yell. All rights reserved.
 //
 
 #import "RateModel.h"

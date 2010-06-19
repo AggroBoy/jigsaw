@@ -3,7 +3,6 @@
 //  mrtorrent
 //
 //  Created by Will Goring on 17/03/2010.
-//  Copyright 2010 Yell. All rights reserved.
 //
 
 #import "TorrentTable.h"
