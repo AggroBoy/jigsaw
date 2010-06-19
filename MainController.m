@@ -106,14 +106,22 @@
 	[self updateRateModel];
 	[self updateTorrentListModel];
 	
-	[timer invalidate];
-	timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(onTimer:) userInfo:nil repeats:TRUE];
+	if ([timer isValid]) {
+		[timer invalidate];
+	}
+	
+	timer = [NSTimer scheduledTimerWithTimeInterval:[[NSUserDefaults standardUserDefaults] integerForKey:SROUpdate] target:self selector:@selector(onTimer:) userInfo:nil repeats:TRUE];
 }
 
 -(void)hidden
 {
-	[timer invalidate];
-	timer = [NSTimer scheduledTimerWithTimeInterval:120 target:self selector:@selector(onTimer:) userInfo:nil repeats:TRUE];
+	if ([timer isValid]) {
+		[timer invalidate];
+	}
+
+	if ([[NSUserDefaults standardUserDefaults] boolForKey:SROUpdateWhileHidden]) {
+		timer = [NSTimer scheduledTimerWithTimeInterval:[[NSUserDefaults standardUserDefaults] integerForKey:SROHiddenUpdate] target:self selector:@selector(onTimer:) userInfo:nil repeats:TRUE];
+	}
 }
 
 - (void)updateRateModel

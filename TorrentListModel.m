@@ -6,6 +6,7 @@
 //
 
 #import "TorrentListModel.h"
+#import "PreferenceController.h"
 #import "XMLRPC/XMLRPC.h"
 
 @implementation TorrentListModel
@@ -14,8 +15,6 @@
 - (id)init
 {
 	[super init];
-	
-	url = @"http://horus/RPC2";
 	
 	torrentListUpdateQueue = dispatch_queue_create("org.shadowrealm.mrtorrent.torrentListUpdate", NULL);
 	dispatch_retain(torrentListUpdateQueue);
@@ -54,7 +53,7 @@
 		[torrent setRatio:[[elements objectAtIndex:firstElementOfTorrent + offset++] doubleValue]];
 		[torrent setActive:[[elements objectAtIndex:firstElementOfTorrent + offset++] longLongValue] == 1];
 		
-		[torrent setUrl:url];
+		[torrent setUrl:[[NSUserDefaults standardUserDefaults] stringForKey:SROURL]];
 		
 		[newTorrentList addObject:torrent];
 	}
@@ -66,7 +65,7 @@
 {
 	dispatch_async(torrentListUpdateQueue, ^{
 
-		NSURL *URL = [NSURL URLWithString:url];
+		NSURL *URL = [NSURL URLWithString:[[NSUserDefaults standardUserDefaults] stringForKey:SROURL]];
 		XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
 	
 		// multicall takes the view, followed by the list of fields (one per object)

@@ -6,6 +6,7 @@
 //
 
 #import "RateModel.h"
+#import "PreferenceController.h"
 #import "XMLRPC/XMLRPC.h"
 
 
@@ -23,7 +24,7 @@
 
 - (NSInteger)getIntegerXmlValue:(NSString *)method
 {
-	NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
+	NSURL *URL = [NSURL URLWithString:[[NSUserDefaults standardUserDefaults] stringForKey:SROURL]];
 	XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
 	
 	[request setMethod: method];
@@ -58,7 +59,7 @@
 {
 	NSLog(@"Up throttle changed to: %d", kPerSecond);
 	dispatch_async(dispatch_get_global_queue(0, 0), ^{
-		NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
+		NSURL *URL = [NSURL URLWithString:[[NSUserDefaults standardUserDefaults] stringForKey:SROURL]];
 		XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
 		
 		[request setMethod: @"set_upload_rate" withParameter:[NSString stringWithFormat:@"%d", kPerSecond * 1024]];
@@ -70,7 +71,7 @@
 {
 	NSLog(@"Down throttle changed to: %d", kPerSecond);
 	dispatch_async(dispatch_get_global_queue(0, 0), ^{
-		NSURL *URL = [NSURL URLWithString:@"http://horus/RPC2"];
+		NSURL *URL = [NSURL URLWithString:[[NSUserDefaults standardUserDefaults] stringForKey:SROURL]];
 		XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
 		
 		[request setMethod: @"set_download_rate" withParameter:[NSString stringWithFormat:@"%d", kPerSecond * 1024]];

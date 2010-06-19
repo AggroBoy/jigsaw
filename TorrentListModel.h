@@ -9,8 +9,6 @@
 #import "TorrentModel.h"
 
 @interface TorrentListModel : NSObject <NSXMLParserDelegate> {
-	NSString* url;
-	
 	NSArray *torrentList;
 	
 	NSMutableArray *elements;
