@@ -167,8 +167,7 @@
 		NSString *fileName = [url path];
 		[self addLocalTorrentFile:fileName];
 		
-		// TODO: This should be an option
-		// Delete the .torrent file, now we've added it to rtorrent
+		// (Optionally) delete the .torrent file, now we've added it to rtorrent
 		if ([[NSUserDefaults standardUserDefaults] boolForKey:SRODeleteOnAdd]) {
 			NSFileManager *manager = [NSFileManager defaultManager];
 			[manager removeItemAtURL:url error:nil];
