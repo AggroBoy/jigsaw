@@ -7,6 +7,7 @@
 
 #import "MainController.h"
 #import "TorrentModel.h"
+#import "PreferenceController.h"
 #import <dispatch/dispatch.h>
 
 
@@ -168,8 +169,10 @@
 		
 		// TODO: This should be an option
 		// Delete the .torrent file, now we've added it to rtorrent
-		NSFileManager *manager = [NSFileManager defaultManager];
-		[manager removeItemAtURL:url error:nil];
+		if ([[NSUserDefaults standardUserDefaults] boolForKey:SRODeleteOnAdd]) {
+			NSFileManager *manager = [NSFileManager defaultManager];
+			[manager removeItemAtURL:url error:nil];
+		}
 	}
 }
 

@@ -275,7 +275,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>25</integer>
+									<integer>23</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -300,7 +300,7 @@
 							<real>316</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>278 141 1463 1015 0 0 1920 1178 </string>
+						<string>354 158 1463 1015 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -318,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>jigsawAppDelegate.m</string>
+								<string>MainController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +326,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>jigsawAppDelegate.m</string>
+										<string>MainController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BE1B689511CD2D080019E46A</string>
+										<string>BE1B68D511CD39350019E46A</string>
 										<key>history</key>
 										<array>
 											<string>BE1112F710CC5ED7008FC834</string>
@@ -365,12 +365,16 @@
 											<string>BE1B688A11CD2CF60019E46A</string>
 											<string>BE1B688B11CD2CF60019E46A</string>
 											<string>BE1B688C11CD2CF60019E46A</string>
-											<string>BE1B688D11CD2CF60019E46A</string>
 											<string>BE1B688E11CD2CF60019E46A</string>
 											<string>BE1B688F11CD2CF60019E46A</string>
 											<string>BE1B689011CD2CF60019E46A</string>
 											<string>BE1B689111CD2CF60019E46A</string>
-											<string>BE1B689211CD2CF60019E46A</string>
+											<string>BE1B68B811CD385A0019E46A</string>
+											<string>BE1B68B911CD385A0019E46A</string>
+											<string>BE1B68C711CD38A30019E46A</string>
+											<string>BE1B68D311CD39350019E46A</string>
+											<string>BE1B68D411CD39350019E46A</string>
+											<string>BE1B688D11CD2CF60019E46A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -384,7 +388,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1125, 969}}</string>
 								<key>RubberWindowFrame</key>
-								<string>278 141 1463 1015 0 0 1920 1178 </string>
+								<string>354 158 1463 1015 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -404,7 +408,7 @@
 								<key>Frame</key>
 								<string>{{0, 974}, {1125, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>278 141 1463 1015 0 0 1920 1178 </string>
+								<string>354 158 1463 1015 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -578,7 +582,7 @@
 		<string>/Users/will/Documents/Development/Cocoa/mrtorrent/jigsaw.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>278 141 1463 1015 0 0 1920 1178 </string>
+	<string>354 158 1463 1015 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -599,7 +603,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>jigsawAppController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -616,6 +620,8 @@
 							<string>501pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -815,7 +821,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>jigsawAppDelegate.m</string>
+										<string>PreferenceController.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -914,18 +920,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1074, 267}}</string>
+								<string>{{0, 0}, {743, 264}}</string>
 								<key>RubberWindowFrame</key>
-								<string>842 67 1074 308 0 0 1920 1178 </string>
+								<string>1181 9 743 305 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
 							<key>Proportion</key>
-							<string>267pt</string>
+							<string>264pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>267pt</string>
+					<string>264pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -945,7 +951,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>842 67 1074 308 0 0 1920 1178 </string>
+			<string>1181 9 743 305 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
