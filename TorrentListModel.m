@@ -33,11 +33,11 @@
 	
 	[parser parse];
 	
-	NSInteger torrentCount = [elements count] / 9;
+	NSInteger torrentCount = [elements count] / 10;
 	NSMutableArray* newTorrentList = [NSMutableArray arrayWithCapacity:torrentCount];
 	
 	for (NSInteger i = 0; i < torrentCount; i++) {
-		NSInteger firstElementOfTorrent = i * 9;
+		NSInteger firstElementOfTorrent = i * 10;
 		int offset = 0;
 		TorrentModel *torrent = [TorrentModel withHash:[elements objectAtIndex:firstElementOfTorrent + offset++]];
 		
@@ -52,6 +52,7 @@
 		
 		[torrent setRatio:[[elements objectAtIndex:firstElementOfTorrent + offset++] doubleValue]];
 		[torrent setActive:[[elements objectAtIndex:firstElementOfTorrent + offset++] longLongValue] == 1];
+		[torrent setPriority:[[elements objectAtIndex:firstElementOfTorrent + offset++] longLongValue]];
 		
 		[torrent setUrl:[[NSUserDefaults standardUserDefaults] stringForKey:SROURL]];
 		
@@ -79,6 +80,7 @@
 							   @"d.get_bytes_done=",
 							   @"d.get_ratio=",
 							   @"d.is_active=",
+							   @"d.get_priority=",
 							   nil
 						   ];
 		

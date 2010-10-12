@@ -29,6 +29,7 @@
 		BE932C721159517900F01398 /* TorrentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE932C711159517900F01398 /* TorrentModel.m */; };
 		BED4D41511C9A28D0050E074 /* jigsaw.icns in Resources */ = {isa = PBXBuildFile; fileRef = BED4D41411C9A28D0050E074 /* jigsaw.icns */; };
 		BEE5E183115FBD3F00217F8C /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE5E182115FBD3F00217F8C /* MainController.m */; };
+		BEE87C561264D1920084D79D /* PriorityTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE87C551264D1920084D79D /* PriorityTransformer.m */; };
 		BEF345DB11472DA700000CB3 /* BytesToReadableSizeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF345DA11472DA700000CB3 /* BytesToReadableSizeTransformer.m */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,8 @@
 		BE932C711159517900F01398 /* TorrentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorrentModel.m; sourceTree = "<group>"; };
 		BED4D41411C9A28D0050E074 /* jigsaw.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = jigsaw.icns; sourceTree = "<group>"; };
 		BEE5E182115FBD3F00217F8C /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		BEE87C541264D1920084D79D /* PriorityTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriorityTransformer.h; sourceTree = "<group>"; };
+		BEE87C551264D1920084D79D /* PriorityTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriorityTransformer.m; sourceTree = "<group>"; };
 		BEF345D911472DA700000CB3 /* BytesToReadableSizeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BytesToReadableSizeTransformer.h; sourceTree = "<group>"; };
 		BEF345DA11472DA700000CB3 /* BytesToReadableSizeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BytesToReadableSizeTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,6 +231,8 @@
 				BE05C9E6114884E200EC751B /* SecondsToReadableDurationTransformer.m */,
 				BE0BBB8611602AE0002F5C80 /* TorrentNameDecorationTransformer.h */,
 				BE0BBB8711602AE0002F5C80 /* TorrentNameDecorationTransformer.m */,
+				BEE87C541264D1920084D79D /* PriorityTransformer.h */,
+				BEE87C551264D1920084D79D /* PriorityTransformer.m */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				BE0BBB8811602AE0002F5C80 /* TorrentNameDecorationTransformer.m in Sources */,
 				BE1B689811CD30720019E46A /* jigsawAppController.m in Sources */,
 				BE1B689D11CD32220019E46A /* PreferenceController.m in Sources */,
+				BEE87C561264D1920084D79D /* PriorityTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
