@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'mrtorrent' target in the 'mrtorrent' project
+// Prefix header for all source files of the 'jigsaw' target in the 'jigsaw' project
 //
 
 #ifdef __OBJC__

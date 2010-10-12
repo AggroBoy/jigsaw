@@ -1,6 +1,6 @@
 //
 //  TorrentTable.h
-//  mrtorrent
+//  jigsaw
 //
 //  Created by Will Goring on 17/03/2010.
 //

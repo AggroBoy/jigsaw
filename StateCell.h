@@ -1,6 +1,6 @@
 //
 //  StateCell.h
-//  mrtorrent
+//  jigsaw
 //
 //  Created by Will Goring on 23/03/2010.
 //

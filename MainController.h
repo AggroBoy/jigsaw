@@ -1,6 +1,6 @@
 //
 //  MainView.h
-//  mrtorrent
+//  jigsaw
 //
 //  Created by Will Goring on 06/12/2009.
 //

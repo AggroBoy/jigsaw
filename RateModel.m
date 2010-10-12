@@ -1,6 +1,6 @@
 //
 //  RateModel.m
-//  mrtorrent
+//  jigsaw
 //
 //  Created by Will Goring on 10/12/2009.
 //
@@ -16,7 +16,7 @@
 {
 	[super init];
 	
-	rateUpdateQueue = dispatch_queue_create("org.shadowrealm.mrtorrent.rateUpdate", NULL);
+	rateUpdateQueue = dispatch_queue_create("org.shadowrealm.jigsaw.rateUpdate", NULL);
 	dispatch_retain(rateUpdateQueue);
 	
 	return self;

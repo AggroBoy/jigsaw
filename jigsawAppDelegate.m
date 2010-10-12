@@ -1,6 +1,6 @@
 //
-//  mrtorrentAppDelegate.m
-//  mrtorrent
+//  jigsawAppDelegate.m
+//  jigsaw
 //
 //  Created by Will Goring on 06/12/2009.
 //

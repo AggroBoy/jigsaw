@@ -1,6 +1,6 @@
 //
 //  Torrent.m
-//  mrtorrent
+//  jigsaw
 //
 //  Created by Will Goring on 09/12/2009.
 //

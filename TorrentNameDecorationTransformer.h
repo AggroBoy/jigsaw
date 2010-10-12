@@ -1,6 +1,6 @@
 //
 //  TorrentNameDecorationTransformer.h
-//  mrtorrent
+//  jigsaw
 //
 //  Created by Will Goring on 29/03/2010.
 //

@@ -1,6 +1,6 @@
 //
 //  SecondsToReadableDurationTransformer.h
-//  mrtorrent
+//  jigsaw
 //
 //  Created by Will Goring on 11/03/2010.
 //

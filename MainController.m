@@ -1,6 +1,6 @@
 //
 //  MainView.m
-//  mrtorrent
+//  jigsaw
 //
 //  Created by Will Goring on 06/12/2009.
 //
@@ -54,7 +54,7 @@
 						  [NSNumber numberWithInt:0], nil];
 	
 	// Load the column order/visibility/size settings
-	[torrentTable setAutosaveName:@"org.shadowrealm.mrtorrent.All"];
+	[torrentTable setAutosaveName:@"org.shadowrealm.jigsaw.All"];
 	
 	// Create pop-up menu of available columns 
 	NSArray *headers = [torrentTable tableColumns];
@@ -197,15 +197,15 @@
 	
 	if ([newView isEqualToString:@"All"]) {
 		[torrentListController setFilterPredicate:nil];
-		[torrentTable setAutosaveName:@"org.shadowrealm.mrtorrent.All"];
+		[torrentTable setAutosaveName:@"org.shadowrealm.jigsaw.All"];
 	}
 	if ([newView isEqualToString:@"Complete"]) {
 		[torrentListController setFilterPredicate:completeFilter];
-		[torrentTable setAutosaveName:@"org.shadowrealm.mrtorrent.Complete"];
+		[torrentTable setAutosaveName:@"org.shadowrealm.jigsaw.Complete"];
 	}
 	if ([newView isEqualToString:@"Incomplete"]) {
 		[torrentListController setFilterPredicate:incompleteFilter];
-		[torrentTable setAutosaveName:@"org.shadowrealm.mrtorrent.Incomplete"];
+		[torrentTable setAutosaveName:@"org.shadowrealm.jigsaw.Incomplete"];
 	}
 	
 	[self setColumnMenuStates];

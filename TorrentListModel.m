@@ -1,6 +1,6 @@
 //
 //  TorrentListModel.m
-//  mrtorrent
+//  jigsaw
 //
 //  Created by Will Goring on 09/12/2009.
 //
@@ -16,7 +16,7 @@
 {
 	[super init];
 	
-	torrentListUpdateQueue = dispatch_queue_create("org.shadowrealm.mrtorrent.torrentListUpdate", NULL);
+	torrentListUpdateQueue = dispatch_queue_create("org.shadowrealm.jigsaw.torrentListUpdate", NULL);
 	dispatch_retain(torrentListUpdateQueue);
 	
 	return self;
