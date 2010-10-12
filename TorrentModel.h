@@ -23,6 +23,8 @@
 	
 	BOOL active;
 	
+	unsigned long long priority;
+	
 	NSString* url;
 }
 
@@ -36,6 +38,7 @@
 @property(readwrite, assign) double ratio;
 @property(readwrite, assign) BOOL active;
 @property(readwrite, assign) NSString* url;
+@property(readwrite, assign) unsigned long long priority;
 
 + (TorrentModel *)withHash:(NSString *)hash;
 
@@ -48,6 +51,7 @@
 - (void) start;
 - (void) stop;
 - (void) remove;
+- (void) changePriority:(int)new_priority;
 
 
 @end

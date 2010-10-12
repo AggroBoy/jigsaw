@@ -32,6 +32,9 @@
 	
 	NSArray *defaultDownThrottles;
 	NSArray *defaultUpThrottles;
+	
+	IBOutlet NSMenu *priorityMenu;
+	IBOutlet NSMenu *priorityContextMenu;
 }
 
 - (void)displayed;
@@ -51,6 +54,7 @@
 - (IBAction)deleteTorrent:(id)sender;
 - (void)addLocalTorrentFile:(NSString *)fileName;
 - (IBAction)addTorrentFile:(id)sender;
+- (IBAction)setTorrentPriority:(id)sender;
 
 - (BOOL)validateMenuItem:(NSMenuItem *)item;
 

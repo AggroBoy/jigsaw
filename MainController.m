@@ -264,11 +264,37 @@
 	}
 }
 
+- (IBAction)setTorrentPriority:(id)sender
+{
+	TorrentModel *torrent = [[torrentListController selectedObjects] objectAtIndex:0];
+	int priority = [sender tag];
+	[torrent changePriority:priority];
+}
+
+- (void)setPriorityCheckMark:(NSMenu*)menu forTorrent:(TorrentModel*)torrent
+{
+	NSArray *items = [menu itemArray];
+	for (NSInteger menuItem = 0; menuItem < [items count]; menuItem++) {
+		if ([[items objectAtIndex:menuItem] tag] == [torrent priority]) {
+			[[items objectAtIndex:menuItem] setState:NSOnState];
+		} else {
+			[[items objectAtIndex:menuItem] setState:NSOffState];
+		}
+	}
+}
+
 - (BOOL)validateMenuItem:(NSMenuItem *)item
 {
 	TorrentModel *torrent = nil;
 	if ( [[torrentListController selectedObjects] count] > 0 ) {
 		 torrent = [[torrentListController selectedObjects] objectAtIndex:0];
+	}
+	
+	if ([item action] == @selector(setTorrentPriority:)) {
+		[self setPriorityCheckMark:priorityMenu forTorrent:torrent];
+		[self setPriorityCheckMark:priorityContextMenu forTorrent:torrent];
+		
+		return (torrent != nil);
 	}
 
 	if ([item action] == @selector(stopTorrent:)) {

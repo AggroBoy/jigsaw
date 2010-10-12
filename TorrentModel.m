@@ -33,6 +33,7 @@
 @synthesize ratio;
 @synthesize active;
 @synthesize url;
+@synthesize priority;
 
 - (BOOL) active
 {
@@ -89,6 +90,17 @@
 	[XMLRPCConnection sendSynchronousXMLRPCRequest:request];
 }
 
+- (void) changePriority:(int)new_priority
+{
+	NSLog(@"set priority");
+	
+	NSURL *URL = [NSURL URLWithString:url];
+	XMLRPCRequest *request = [[XMLRPCRequest alloc] initWithURL: URL];
+	
+	[request setMethod: @"d.set_priority" withParameters:[NSArray arrayWithObjects:hash, [NSString stringWithFormat:@"%d", new_priority], nil]];
+	[XMLRPCConnection sendSynchronousXMLRPCRequest:request];
+}
+
 
 #pragma mark calculated properties
 
@@ -132,6 +144,7 @@
 	[torrent setRatio:ratio];
 	[torrent setActive:active];
 	[torrent setUrl:url];
+	[torrent setPriority:priority];
 	
 	return torrent;
 }
