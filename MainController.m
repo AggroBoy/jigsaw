@@ -45,12 +45,12 @@
 						}];
 	
 	// Set up the contents of the throttle selection menus
-	defaultDownThrottles = [NSArray arrayWithObjects:[NSNumber numberWithInt:10],
-							[NSNumber numberWithInt:20],[NSNumber numberWithInt:50],[NSNumber numberWithInt:100],
-							[NSNumber numberWithInt:200],[NSNumber numberWithInt:400],[NSNumber numberWithInt:0], nil];
+	defaultDownThrottles = [NSArray arrayWithObjects:[NSNumber numberWithInt:50],
+							[NSNumber numberWithInt:100],[NSNumber numberWithInt:500],
+							[NSNumber numberWithInt:1000],[NSNumber numberWithInt:2000],[NSNumber numberWithInt:0], nil];
 	
-	defaultUpThrottles = [NSArray arrayWithObjects:[NSNumber numberWithInt:5],
-						  [NSNumber numberWithInt:10],[NSNumber numberWithInt:20],[NSNumber numberWithInt:40],
+	defaultUpThrottles = [NSArray arrayWithObjects:[NSNumber numberWithInt:10],[NSNumber numberWithInt:50],
+						  [NSNumber numberWithInt:100],[NSNumber numberWithInt:200],[NSNumber numberWithInt:500],
 						  [NSNumber numberWithInt:0], nil];
 	
 	// Load the column order/visibility/size settings

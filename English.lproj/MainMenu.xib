@@ -2,18 +2,18 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1060</int>
-		<string key="IBDocument.SystemVersion">10F569</string>
+		<string key="IBDocument.SystemVersion">10J567</string>
 		<string key="IBDocument.InterfaceBuilderVersion">762</string>
-		<string key="IBDocument.AppKitVersion">1038.29</string>
-		<string key="IBDocument.HIToolboxVersion">461.00</string>
+		<string key="IBDocument.AppKitVersion">1038.35</string>
+		<string key="IBDocument.HIToolboxVersion">462.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			<string key="NS.object.0">762</string>
 		</object>
 		<array class="NSMutableArray" key="IBDocument.EditedObjectIDs">
-			<integer value="900"/>
-			<integer value="536"/>
 			<integer value="904"/>
+			<integer value="900"/>
+			<integer value="626"/>
 			<integer value="836"/>
 		</array>
 		<array key="IBDocument.PluginDependencies">
@@ -1095,28 +1095,26 @@
 								<string key="NSKeyEquivalent"/>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
-								<object class="NSMenuItem" key="NSMenuItem" id="95921263">
+								<object class="NSMenuItem" key="NSMenuItem" id="839305452">
 									<reference key="NSMenu" ref="910140141"/>
-									<string key="NSTitle">5 KB/s</string>
+									<string key="NSTitle">500 KB/s</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<int key="NSState">1</int>
 									<reference key="NSOnImage" ref="35465992"/>
 									<reference key="NSMixedImage" ref="502551668"/>
 									<string key="NSAction">_popUpItemAction:</string>
-									<int key="NSTag">5</int>
+									<int key="NSTag">500</int>
 									<reference key="NSTarget" ref="954101974"/>
 								</object>
 								<bool key="NSMenuItemRespectAlignment">YES</bool>
 								<object class="NSMenu" key="NSMenu" id="910140141">
 									<string key="NSTitle">OtherViews</string>
 									<array class="NSMutableArray" key="NSMenuItems">
-										<reference ref="95921263"/>
-										<object class="NSMenuItem" id="303252923">
+										<object class="NSMenuItem" id="95921263">
 											<reference key="NSMenu" ref="910140141"/>
 											<string key="NSTitle">10 KB/s</string>
 											<string key="NSKeyEquiv"/>
-											<int key="NSKeyEquivModMask">1048576</int>
 											<int key="NSMnemonicLoc">2147483647</int>
 											<reference key="NSOnImage" ref="35465992"/>
 											<reference key="NSMixedImage" ref="502551668"/>
@@ -1124,30 +1122,43 @@
 											<int key="NSTag">10</int>
 											<reference key="NSTarget" ref="954101974"/>
 										</object>
-										<object class="NSMenuItem" id="438153565">
+										<object class="NSMenuItem" id="303252923">
 											<reference key="NSMenu" ref="910140141"/>
-											<string key="NSTitle">20 KB/s</string>
+											<string key="NSTitle">50 KB/s</string>
 											<string key="NSKeyEquiv"/>
 											<int key="NSKeyEquivModMask">1048576</int>
 											<int key="NSMnemonicLoc">2147483647</int>
 											<reference key="NSOnImage" ref="35465992"/>
 											<reference key="NSMixedImage" ref="502551668"/>
 											<string key="NSAction">_popUpItemAction:</string>
-											<int key="NSTag">20</int>
+											<int key="NSTag">50</int>
+											<reference key="NSTarget" ref="954101974"/>
+										</object>
+										<object class="NSMenuItem" id="438153565">
+											<reference key="NSMenu" ref="910140141"/>
+											<string key="NSTitle">100 KB/s</string>
+											<string key="NSKeyEquiv"/>
+											<int key="NSKeyEquivModMask">1048576</int>
+											<int key="NSMnemonicLoc">2147483647</int>
+											<reference key="NSOnImage" ref="35465992"/>
+											<reference key="NSMixedImage" ref="502551668"/>
+											<string key="NSAction">_popUpItemAction:</string>
+											<int key="NSTag">100</int>
 											<reference key="NSTarget" ref="954101974"/>
 										</object>
 										<object class="NSMenuItem" id="344046219">
 											<reference key="NSMenu" ref="910140141"/>
-											<string key="NSTitle">40 KB/s</string>
+											<string key="NSTitle">200 KB/s</string>
 											<string key="NSKeyEquiv"/>
 											<int key="NSKeyEquivModMask">1048576</int>
 											<int key="NSMnemonicLoc">2147483647</int>
 											<reference key="NSOnImage" ref="35465992"/>
 											<reference key="NSMixedImage" ref="502551668"/>
 											<string key="NSAction">_popUpItemAction:</string>
-											<int key="NSTag">40</int>
+											<int key="NSTag">200</int>
 											<reference key="NSTarget" ref="954101974"/>
 										</object>
+										<reference ref="839305452"/>
 										<object class="NSMenuItem" id="521352026">
 											<reference key="NSMenu" ref="910140141"/>
 											<string key="NSTitle">Unlimited</string>
@@ -1161,6 +1172,7 @@
 									</array>
 									<reference key="NSMenuFont" ref="223582608"/>
 								</object>
+								<int key="NSSelectedIndex">4</int>
 								<int key="NSPreferredEdge">1</int>
 								<bool key="NSUsesItemFromMenu">YES</bool>
 								<bool key="NSAltersState">YES</bool>
@@ -1185,37 +1197,12 @@
 								<string key="NSKeyEquivalent"/>
 								<int key="NSPeriodicDelay">400</int>
 								<int key="NSPeriodicInterval">75</int>
-								<object class="NSMenuItem" key="NSMenuItem" id="858626745">
-									<reference key="NSMenu" ref="204690831"/>
-									<string key="NSTitle">10 KB/s</string>
-									<string key="NSKeyEquiv"/>
-									<int key="NSKeyEquivModMask">1048576</int>
-									<int key="NSMnemonicLoc">2147483647</int>
-									<int key="NSState">1</int>
-									<reference key="NSOnImage" ref="35465992"/>
-									<reference key="NSMixedImage" ref="502551668"/>
-									<string key="NSAction">_popUpItemAction:</string>
-									<int key="NSTag">10</int>
-									<reference key="NSTarget" ref="838103623"/>
-								</object>
+								<nil key="NSMenuItem"/>
 								<bool key="NSMenuItemRespectAlignment">YES</bool>
 								<object class="NSMenu" key="NSMenu" id="204690831">
 									<string key="NSTitle">OtherViews</string>
 									<array class="NSMutableArray" key="NSMenuItems">
-										<reference ref="858626745"/>
-										<object class="NSMenuItem" id="418992569">
-											<reference key="NSMenu" ref="204690831"/>
-											<string key="NSTitle">20 KB/s</string>
-											<string key="NSKeyEquiv"/>
-											<int key="NSKeyEquivModMask">1048576</int>
-											<int key="NSMnemonicLoc">2147483647</int>
-											<reference key="NSOnImage" ref="35465992"/>
-											<reference key="NSMixedImage" ref="502551668"/>
-											<string key="NSAction">_popUpItemAction:</string>
-											<int key="NSTag">20</int>
-											<reference key="NSTarget" ref="838103623"/>
-										</object>
-										<object class="NSMenuItem" id="622210615">
+										<object class="NSMenuItem" id="858626745">
 											<reference key="NSMenu" ref="204690831"/>
 											<string key="NSTitle">50 KB/s</string>
 											<string key="NSKeyEquiv"/>
@@ -1227,10 +1214,11 @@
 											<int key="NSTag">50</int>
 											<reference key="NSTarget" ref="838103623"/>
 										</object>
-										<object class="NSMenuItem" id="335294873">
+										<object class="NSMenuItem" id="418992569">
 											<reference key="NSMenu" ref="204690831"/>
 											<string key="NSTitle">100 KB/s</string>
 											<string key="NSKeyEquiv"/>
+											<int key="NSKeyEquivModMask">1048576</int>
 											<int key="NSMnemonicLoc">2147483647</int>
 											<reference key="NSOnImage" ref="35465992"/>
 											<reference key="NSMixedImage" ref="502551668"/>
@@ -1238,26 +1226,38 @@
 											<int key="NSTag">100</int>
 											<reference key="NSTarget" ref="838103623"/>
 										</object>
-										<object class="NSMenuItem" id="514311852">
+										<object class="NSMenuItem" id="622210615">
 											<reference key="NSMenu" ref="204690831"/>
-											<string key="NSTitle">200 KB/s</string>
+											<string key="NSTitle">500 KB/s</string>
 											<string key="NSKeyEquiv"/>
+											<int key="NSKeyEquivModMask">1048576</int>
 											<int key="NSMnemonicLoc">2147483647</int>
 											<reference key="NSOnImage" ref="35465992"/>
 											<reference key="NSMixedImage" ref="502551668"/>
 											<string key="NSAction">_popUpItemAction:</string>
-											<int key="NSTag">200</int>
+											<int key="NSTag">500</int>
 											<reference key="NSTarget" ref="838103623"/>
 										</object>
-										<object class="NSMenuItem" id="458608931">
+										<object class="NSMenuItem" id="335294873">
 											<reference key="NSMenu" ref="204690831"/>
-											<string key="NSTitle">400 KB/s</string>
+											<string key="NSTitle">1000 KB/s</string>
 											<string key="NSKeyEquiv"/>
 											<int key="NSMnemonicLoc">2147483647</int>
 											<reference key="NSOnImage" ref="35465992"/>
 											<reference key="NSMixedImage" ref="502551668"/>
 											<string key="NSAction">_popUpItemAction:</string>
-											<int key="NSTag">400</int>
+											<int key="NSTag">1000</int>
+											<reference key="NSTarget" ref="838103623"/>
+										</object>
+										<object class="NSMenuItem" id="514311852">
+											<reference key="NSMenu" ref="204690831"/>
+											<string key="NSTitle">2000 KB/s</string>
+											<string key="NSKeyEquiv"/>
+											<int key="NSMnemonicLoc">2147483647</int>
+											<reference key="NSOnImage" ref="35465992"/>
+											<reference key="NSMixedImage" ref="502551668"/>
+											<string key="NSAction">_popUpItemAction:</string>
+											<int key="NSTag">2000</int>
 											<reference key="NSTarget" ref="838103623"/>
 										</object>
 										<object class="NSMenuItem" id="215653024">
@@ -1273,6 +1273,7 @@
 									</array>
 									<reference key="NSMenuFont" ref="223582608"/>
 								</object>
+								<int key="NSSelectedIndex">-1</int>
 								<int key="NSPreferredEdge">1</int>
 								<bool key="NSUsesItemFromMenu">YES</bool>
 								<bool key="NSAltersState">YES</bool>
@@ -2588,6 +2589,7 @@
 							<reference ref="521352026"/>
 							<reference ref="95921263"/>
 							<reference ref="438153565"/>
+							<reference ref="839305452"/>
 						</array>
 						<reference key="parent" ref="954101974"/>
 					</object>
@@ -2631,7 +2633,6 @@
 							<reference ref="622210615"/>
 							<reference ref="335294873"/>
 							<reference ref="514311852"/>
-							<reference ref="458608931"/>
 							<reference ref="215653024"/>
 						</array>
 						<reference key="parent" ref="838103623"/>
@@ -2716,11 +2717,6 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">647</int>
 						<reference key="object" ref="514311852"/>
-						<reference key="parent" ref="204690831"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">648</int>
-						<reference key="object" ref="458608931"/>
 						<reference key="parent" ref="204690831"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -3058,6 +3054,11 @@
 						<reference key="object" ref="966960158"/>
 						<reference key="parent" ref="801501263"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">920</int>
+						<reference key="object" ref="839305452"/>
+						<reference key="parent" ref="910140141"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -3095,7 +3096,7 @@
 				<string key="24.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="24.ImportedFromIB2"/>
 				<string key="24.editorWindowContentRectSynchronizationRect">{{525, 802}, {197, 73}}</string>
-				<string key="29.IBEditorWindowLastContentRect">{{680, 1000}, {301, 20}}</string>
+				<string key="29.IBEditorWindowLastContentRect">{{1211, 1024}, {301, 20}}</string>
 				<string key="29.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="29.ImportedFromIB2"/>
 				<string key="29.WindowOrigin">{74, 862}</string>
@@ -3106,9 +3107,9 @@
 				<string key="296.editorWindowContentRectSynchronizationRect">{{475, 832}, {234, 43}}</string>
 				<string key="297.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="298.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="371.IBEditorWindowLastContentRect">{{447, 244}, {779, 500}}</string>
+				<string key="371.IBEditorWindowLastContentRect">{{478, 170}, {779, 500}}</string>
 				<string key="371.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="371.IBWindowTemplateEditedContentRect">{{447, 244}, {779, 500}}</string>
+				<string key="371.IBWindowTemplateEditedContentRect">{{478, 170}, {779, 500}}</string>
 				<boolean value="YES" key="371.NSWindowTemplate.visibleAtLaunch"/>
 				<string key="371.editorWindowContentRectSynchronizationRect">{{33, 99}, {480, 360}}</string>
 				<string key="371.windowTemplate.maxSize">{3.40282e+38, 3.40282e+38}</string>
@@ -3148,14 +3149,14 @@
 				<string key="609.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="618.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="619.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="620.IBEditorWindowLastContentRect">{{1023, 398}, {98, 78}}</string>
+				<string key="620.IBEditorWindowLastContentRect">{{558, 112}, {98, 93}}</string>
 				<string key="620.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="621.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="622.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="623.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="624.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="625.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="626.IBEditorWindowLastContentRect">{{1023, 355}, {98, 108}}</string>
+				<string key="626.IBEditorWindowLastContentRect">{{558, 99}, {102, 93}}</string>
 				<string key="626.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="627.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="628.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3171,7 +3172,6 @@
 				<string key="645.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="646.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="647.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="648.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="649.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="650.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="674.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3181,7 +3181,7 @@
 				<string key="72.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="72.ImportedFromIB2"/>
 				<string key="720.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="727.IBEditorWindowLastContentRect">{{1083, 914}, {147, 93}}</string>
+				<string key="727.IBEditorWindowLastContentRect">{{1083, 649}, {147, 93}}</string>
 				<string key="727.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="728.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="729.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3214,7 +3214,7 @@
 				<integer value="1041" key="802.IBNumberFormatterBehaviorMetadataKey"/>
 				<boolean value="YES" key="802.IBNumberFormatterLocalizesFormatMetadataKey"/>
 				<string key="802.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="81.IBEditorWindowLastContentRect">{{757, 827}, {200, 173}}</string>
+				<string key="81.IBEditorWindowLastContentRect">{{1288, 851}, {200, 173}}</string>
 				<string key="81.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="81.ImportedFromIB2"/>
 				<string key="81.editorWindowContentRectSynchronizationRect">{{145, 474}, {199, 203}}</string>
@@ -3235,12 +3235,12 @@
 				<string key="880.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="898.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="899.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="900.IBEditorWindowLastContentRect">{{1230, 874}, {102, 63}}</string>
+				<string key="900.IBEditorWindowLastContentRect">{{1230, 609}, {102, 63}}</string>
 				<string key="900.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="901.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="902.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="903.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="904.IBEditorWindowLastContentRect">{{957, 817}, {102, 63}}</string>
+				<string key="904.IBEditorWindowLastContentRect">{{1488, 841}, {102, 63}}</string>
 				<string key="904.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="905.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="906.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3249,12 +3249,13 @@
 				<string key="909.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="92.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="92.ImportedFromIB2"/>
+				<string key="920.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">919</int>
+			<int key="maxID">920</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
