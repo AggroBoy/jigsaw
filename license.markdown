@@ -1,4 +1,4 @@
-The main application icon was sourced from [psdgraphics.com](http://www.psdgraphics.com/icons/psd-jigsaw-puzzle-icon/) and (their terms of use)[http://www.psdgraphics.com/about/terms-of-use/] remain in effect.
+The main application icon was sourced from [psdgraphics.com](http://www.psdgraphics.com/icons/psd-jigsaw-puzzle-icon/) and [their terms of use](http://www.psdgraphics.com/about/terms-of-use/) remain in effect.
 
 ### All other assets:
 
